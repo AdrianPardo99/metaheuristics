@@ -1,0 +1,96 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[document]{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=3
+}
+
+\lstset{style=mystyle}
+
+\title{Actividad No. 3\\ Solución de problemas mediante Ascensión de Colinas}
+
+\author{Adrian González Pardo}
+
+\date{\today}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+\maketitle
+\section{Ventajas y desventajas de la Ascensión de Colinas}
+Inicialmente el espacio de soluciones de un problema puede ser representado en una grafíca en $R^{2}$, $R^{3}$, hasta $R^{n}$ por lo que podemos explorar su espacio mediante una heuristica la cual es generalmente el Ascensio de Colinas el cual proporciona las siguientes ventajas y desventajas:
+\begin{center}
+  \begin{tabular}{| p{6cm} | p{6cm} | }
+    \hline
+    Ventajas & Desventajas
+    \\\hline
+    Permite realizar un número menor de iteraciones con respecto a la exploración del espacio en modalidad de fuerza bruta & El resultado puede quedarse en un minimo local sin que sea el minimo del espacio\\
+    \hline
+    Permite moverse en el espacio de diferentes formas, permitiendo que encuentre un minimo & Dependiendo de la implementación del algoritmo puede que que llegue al minimo o no, pero al final arroja una solución\\\hline
+    Dependiendo de la implementación puede que tenga un número distinto de iteraciones & En caso de ser un espacio muy grande puede que la implementación, salto o movimiento entre el espacio demore demasiado\\\hline
+  \end{tabular}
+\end{center}
+\section{Pseudocódigo del Algoritmo Steepest Ascent Hill Climbing (Ascenso Más Empinado Escalada de Colinas)(SAHC)}
+\lstinputlisting[language=C]{sahc.c}
+\section{Next-Ascent Hill-Climbing (Próxima Ascenso Escalado)(NAHC)}
+\lstinputlisting[language=C]{nahc.c}
+\section{Random-Mutation Hill-Climbing (Ascenso Por Mutación Aleatoria)(RMHC)}
+\lstinputlisting[language=C]{rmhc.c}
+\section{Resultados de Forrest y Mitchell}
+Si bien en sus conclusiones nos podemos dar cuenta en cuestios de los algoritmos heuristicos SAHC y NAHC en la busqueda de soluciones de un espacio bidimensional no encontraron la zona optima, el algoritmo RMHC lo encontro en un número menor de iteraciones con respecto a los algoritmos geneticos que se implementaron en la investigación, esto pasa en relación a que el algoritmo RMHC explora el espacio de soluciones en este caso digamos o aproximemos en grafos es más sencillo tomar la decisión sobre que nodo iterar sin realizar tantas comparaciones.
+\section{Aplicaciones de Algoritmos de Ascenso de Colinas}
+Si bien en muchas ocasiones estos algoritmos se ven como una caja negra a la hora de ser utilizados en muchos modulos o toolbox de lenguajes de programación estos estan intimamente aplicados en el cálculo de gradiente descendente de $N$ variables para optimizar un aprendizaje supervisado o no supervisado, donde sobre cada iteración se realiza el calculo de un nuevo movimiento en el espacio de soluciones, por otro lado tambien este tipo de algoritmo esta implementado en algunas aplicaciones en las que se realiza la planificación de rutas de transporte e incluso en sistemas de reconocimiento de objetos 3D, una vez más retomando los terminos del Aprendizaje de Maquina podemos encontrar desde regresión lineal, polinomial y logistica.
+\section{Aplicación de RMHC en distintos problemas}
+\subsection{Knapsack Problem}
+\lstinputlisting[language=Ruby]{knapRMHC.rb}
+\subsection{Travel Salesman Problem}
+\lstinputlisting[language=Ruby]{tspRMHC.rb}
+\subsection{Obtencion de minimos de la función f(x)}
+Función:
+\[f(x)=\sum_{i=1}^{D}x_{i}^2\;\;\;\;con\;\;\;\;x_{i}\in[-10,10]\]
+\lstinputlisting[language=Ruby]{minfRMHC.rb}
+\end{document}
