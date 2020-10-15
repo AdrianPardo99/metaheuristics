@@ -1,0 +1,417 @@
+Iteracion 1
+Con valor en funcion de: 74.12	En la iteracion 201
+Tiempo de ejecucion en busqueda de la solucion de Alpine 6.9796700000000005 ms
+
+Con valor en funcion de: 13323.50	En la iteracion 54
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.6787 ms
+
+Con valor en funcion de: 601624.53	En la iteracion 142
+Tiempo de ejecucion en busqueda de la solucion de Quintic 13.643127999999999 ms
+
+Con valor en funcion de: 20988773072.51	En la iteracion 93
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.011176 ms
+
+Con valor en funcion de: 5.46	En la iteracion 114
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.480236 ms
+
+Con valor en funcion de: 18672.76	En la iteracion 448
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.753617 ms
+
+
+
+Iteracion 2
+Con valor en funcion de: 74.39	En la iteracion 328
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.752365 ms
+
+Con valor en funcion de: 14911.27	En la iteracion 3
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.303477 ms
+
+Con valor en funcion de: 404579.12	En la iteracion 304
+Tiempo de ejecucion en busqueda de la solucion de Quintic 13.909533999999999 ms
+
+Con valor en funcion de: 16021996516.73	En la iteracion 76
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.129697 ms
+
+Con valor en funcion de: 9.53	En la iteracion 127
+Tiempo de ejecucion en busqueda de la solucion de Streched 16.167869000000003 ms
+
+Con valor en funcion de: 12646.36	En la iteracion 105
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 6.114913 ms
+
+
+
+Iteracion 3
+Con valor en funcion de: 74.62	En la iteracion 450
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.793653 ms
+
+Con valor en funcion de: 12943.74	En la iteracion 100
+Tiempo de ejecucion en busqueda de la solucion de Dixon 7.995487000000001 ms
+
+Con valor en funcion de: 529240.27	En la iteracion 356
+Tiempo de ejecucion en busqueda de la solucion de Quintic 15.643157 ms
+
+Con valor en funcion de: 11907427061.55	En la iteracion 161
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.0482629999999995 ms
+
+Con valor en funcion de: 4.23	En la iteracion 198
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.207332000000001 ms
+
+Con valor en funcion de: 13102.22	En la iteracion 9
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 7.046024 ms
+
+
+
+Iteracion 4
+Con valor en funcion de: 91.20	En la iteracion 135
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.987420999999999 ms
+
+Con valor en funcion de: 15786.38	En la iteracion 244
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.145492 ms
+
+Con valor en funcion de: 434264.32	En la iteracion 388
+Tiempo de ejecucion en busqueda de la solucion de Quintic 15.424615 ms
+
+Con valor en funcion de: 32036609652.26	En la iteracion 13
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.285113999999999 ms
+
+Con valor en funcion de: 14.99	En la iteracion 357
+Tiempo de ejecucion en busqueda de la solucion de Streched 14.456076 ms
+
+Con valor en funcion de: 13068.69	En la iteracion 232
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 6.024362999999999 ms
+
+
+
+Iteracion 5
+Con valor en funcion de: 103.51	En la iteracion 482
+Tiempo de ejecucion en busqueda de la solucion de Alpine 7.63283 ms
+
+Con valor en funcion de: 15327.43	En la iteracion 120
+Tiempo de ejecucion en busqueda de la solucion de Dixon 7.924723 ms
+
+Con valor en funcion de: 668042.30	En la iteracion 346
+Tiempo de ejecucion en busqueda de la solucion de Quintic 14.020235000000001 ms
+
+Con valor en funcion de: 38914164707.76	En la iteracion 172
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 5.524807 ms
+
+Con valor en funcion de: 3.19	En la iteracion 326
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.379278999999999 ms
+
+Con valor en funcion de: 15097.18	En la iteracion 213
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.580082 ms
+
+
+
+Iteracion 6
+Con valor en funcion de: 77.88	En la iteracion 61
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.973728 ms
+
+Con valor en funcion de: 17989.17	En la iteracion 242
+Tiempo de ejecucion en busqueda de la solucion de Dixon 9.479467 ms
+
+Con valor en funcion de: 396409.16	En la iteracion 209
+Tiempo de ejecucion en busqueda de la solucion de Quintic 13.848409 ms
+
+Con valor en funcion de: 14414811769.83	En la iteracion 12
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.253463 ms
+
+Con valor en funcion de: -0.05	En la iteracion 327
+Tiempo de ejecucion en busqueda de la solucion de Streched 16.089869999999998 ms
+
+Con valor en funcion de: 9714.17	En la iteracion 344
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.517823 ms
+
+
+
+Iteracion 7
+Con valor en funcion de: 94.02	En la iteracion 241
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.530158999999999 ms
+
+Con valor en funcion de: 14971.30	En la iteracion 204
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.356066 ms
+
+Con valor en funcion de: 474443.24	En la iteracion 154
+Tiempo de ejecucion en busqueda de la solucion de Quintic 14.143932999999999 ms
+
+Con valor en funcion de: 22790819484.06	En la iteracion 104
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.000901000000001 ms
+
+Con valor en funcion de: 2.94	En la iteracion 40
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.227218 ms
+
+Con valor en funcion de: 17143.31	En la iteracion 137
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 6.130143 ms
+
+
+
+Iteracion 8
+Con valor en funcion de: 61.21	En la iteracion 463
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.776110999999999 ms
+
+Con valor en funcion de: 15815.53	En la iteracion 432
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.278104999999998 ms
+
+Con valor en funcion de: 265655.09	En la iteracion 446
+Tiempo de ejecucion en busqueda de la solucion de Quintic 14.882479 ms
+
+Con valor en funcion de: 16708583896.98	En la iteracion 32
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 3.9385380000000003 ms
+
+Con valor en funcion de: 0.01	En la iteracion 123
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.153303999999999 ms
+
+Con valor en funcion de: 15117.11	En la iteracion 181
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 6.224135 ms
+
+
+
+Iteracion 9
+Con valor en funcion de: 70.33	En la iteracion 207
+Tiempo de ejecucion en busqueda de la solucion de Alpine 6.7572209999999995 ms
+
+Con valor en funcion de: 15594.16	En la iteracion 276
+Tiempo de ejecucion en busqueda de la solucion de Dixon 9.021357 ms
+
+Con valor en funcion de: 429964.62	En la iteracion 333
+Tiempo de ejecucion en busqueda de la solucion de Quintic 13.708473 ms
+
+Con valor en funcion de: 16496496396.87	En la iteracion 82
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.758081 ms
+
+Con valor en funcion de: 5.52	En la iteracion 248
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.012864 ms
+
+Con valor en funcion de: 15868.36	En la iteracion 157
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.396027 ms
+
+
+
+Iteracion 10
+Con valor en funcion de: 80.59	En la iteracion 114
+Tiempo de ejecucion en busqueda de la solucion de Alpine 7.821055 ms
+
+Con valor en funcion de: 19572.84	En la iteracion 218
+Tiempo de ejecucion en busqueda de la solucion de Dixon 14.54709 ms
+
+Con valor en funcion de: 373960.46	En la iteracion 181
+Tiempo de ejecucion en busqueda de la solucion de Quintic 17.761383 ms
+
+Con valor en funcion de: 22718306950.79	En la iteracion 212
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 5.427284 ms
+
+Con valor en funcion de: 29.50	En la iteracion 110
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.533286 ms
+
+Con valor en funcion de: 11392.43	En la iteracion 323
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.528875 ms
+
+
+
+Iteracion 11
+Con valor en funcion de: 97.38	En la iteracion 393
+Tiempo de ejecucion en busqueda de la solucion de Alpine 6.270088 ms
+
+Con valor en funcion de: 19746.38	En la iteracion 258
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.925298999999999 ms
+
+Con valor en funcion de: 805727.73	En la iteracion 342
+Tiempo de ejecucion en busqueda de la solucion de Quintic 13.599998000000001 ms
+
+Con valor en funcion de: 13100475060.50	En la iteracion 86
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.008865999999999 ms
+
+Con valor en funcion de: -0.53	En la iteracion 411
+Tiempo de ejecucion en busqueda de la solucion de Streched 16.305592 ms
+
+Con valor en funcion de: 20388.41	En la iteracion 293
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.790208 ms
+
+
+
+Iteracion 12
+Con valor en funcion de: 84.42	En la iteracion 239
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.800826 ms
+
+Con valor en funcion de: 18577.55	En la iteracion 269
+Tiempo de ejecucion en busqueda de la solucion de Dixon 9.242324 ms
+
+Con valor en funcion de: 534556.95	En la iteracion 311
+Tiempo de ejecucion en busqueda de la solucion de Quintic 14.303358000000001 ms
+
+Con valor en funcion de: 11002680913.91	En la iteracion 29
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.193922 ms
+
+Con valor en funcion de: 9.24	En la iteracion 174
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.512427 ms
+
+Con valor en funcion de: 14271.31	En la iteracion 371
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 6.415851999999999 ms
+
+
+
+Iteracion 13
+Con valor en funcion de: 76.79	En la iteracion 75
+Tiempo de ejecucion en busqueda de la solucion de Alpine 6.0301670000000005 ms
+
+Con valor en funcion de: 15857.80	En la iteracion 11
+Tiempo de ejecucion en busqueda de la solucion de Dixon 7.9109 ms
+
+Con valor en funcion de: 506296.70	En la iteracion 62
+Tiempo de ejecucion en busqueda de la solucion de Quintic 14.806749 ms
+
+Con valor en funcion de: 34930838896.62	En la iteracion 51
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 3.9261549999999996 ms
+
+Con valor en funcion de: 0.01	En la iteracion 196
+Tiempo de ejecucion en busqueda de la solucion de Streched 14.893121 ms
+
+Con valor en funcion de: 14428.06	En la iteracion 406
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 7.377098 ms
+
+
+
+Iteracion 14
+Con valor en funcion de: 86.31	En la iteracion 466
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.826428 ms
+
+Con valor en funcion de: 16157.29	En la iteracion 252
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.099813000000001 ms
+
+Con valor en funcion de: 533119.60	En la iteracion 386
+Tiempo de ejecucion en busqueda de la solucion de Quintic 15.032278 ms
+
+Con valor en funcion de: 6657143214.52	En la iteracion 31
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.965141999999999 ms
+
+Con valor en funcion de: 13.74	En la iteracion 263
+Tiempo de ejecucion en busqueda de la solucion de Streched 14.803332000000001 ms
+
+Con valor en funcion de: 16117.13	En la iteracion 498
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.686575 ms
+
+
+
+Iteracion 15
+Con valor en funcion de: 74.30	En la iteracion 123
+Tiempo de ejecucion en busqueda de la solucion de Alpine 7.2440880000000005 ms
+
+Con valor en funcion de: 20985.28	En la iteracion 13
+Tiempo de ejecucion en busqueda de la solucion de Dixon 7.888571000000001 ms
+
+Con valor en funcion de: 721992.54	En la iteracion 147
+Tiempo de ejecucion en busqueda de la solucion de Quintic 14.035891999999999 ms
+
+Con valor en funcion de: 26465546527.63	En la iteracion 23
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 3.968414 ms
+
+Con valor en funcion de: 29.79	En la iteracion 325
+Tiempo de ejecucion en busqueda de la solucion de Streched 16.67281 ms
+
+Con valor en funcion de: 20698.17	En la iteracion 220
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.330743 ms
+
+
+
+Iteracion 16
+Con valor en funcion de: 90.27	En la iteracion 287
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.900792999999999 ms
+
+Con valor en funcion de: 13464.60	En la iteracion 155
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.988856 ms
+
+Con valor en funcion de: 636104.29	En la iteracion 462
+Tiempo de ejecucion en busqueda de la solucion de Quintic 13.615468 ms
+
+Con valor en funcion de: 28369843852.58	En la iteracion 80
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 3.728643 ms
+
+Con valor en funcion de: 0.82	En la iteracion 445
+Tiempo de ejecucion en busqueda de la solucion de Streched 16.364032 ms
+
+Con valor en funcion de: 15486.64	En la iteracion 432
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.744194 ms
+
+
+
+Iteracion 17
+Con valor en funcion de: 68.61	En la iteracion 223
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.6488700000000005 ms
+
+Con valor en funcion de: 22560.26	En la iteracion 417
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.379967 ms
+
+Con valor en funcion de: 427010.32	En la iteracion 336
+Tiempo de ejecucion en busqueda de la solucion de Quintic 15.042079999999999 ms
+
+Con valor en funcion de: 16703034551.55	En la iteracion 26
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.677139 ms
+
+Con valor en funcion de: 5.13	En la iteracion 84
+Tiempo de ejecucion en busqueda de la solucion de Streched 14.430771 ms
+
+Con valor en funcion de: 12926.66	En la iteracion 293
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 7.582789 ms
+
+
+
+Iteracion 18
+Con valor en funcion de: 75.56	En la iteracion 168
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.800489 ms
+
+Con valor en funcion de: 15225.82	En la iteracion 177
+Tiempo de ejecucion en busqueda de la solucion de Dixon 7.840801999999999 ms
+
+Con valor en funcion de: 521964.05	En la iteracion 37
+Tiempo de ejecucion en busqueda de la solucion de Quintic 14.263062999999999 ms
+
+Con valor en funcion de: 36889059472.04	En la iteracion 307
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 5.679549 ms
+
+Con valor en funcion de: 3.66	En la iteracion 456
+Tiempo de ejecucion en busqueda de la solucion de Streched 14.370416 ms
+
+Con valor en funcion de: 15708.77	En la iteracion 185
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.564306 ms
+
+
+
+Iteracion 19
+Con valor en funcion de: 76.09	En la iteracion 466
+Tiempo de ejecucion en busqueda de la solucion de Alpine 6.452343999999999 ms
+
+Con valor en funcion de: 22784.04	En la iteracion 357
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.725484999999999 ms
+
+Con valor en funcion de: 377459.01	En la iteracion 235
+Tiempo de ejecucion en busqueda de la solucion de Quintic 13.955737 ms
+
+Con valor en funcion de: 22513430059.63	En la iteracion 5
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.804386 ms
+
+Con valor en funcion de: 4.79	En la iteracion 393
+Tiempo de ejecucion en busqueda de la solucion de Streched 16.247958999999998 ms
+
+Con valor en funcion de: 14243.71	En la iteracion 52
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.732266 ms
+
+
+
+Iteracion 20
+Con valor en funcion de: 104.23	En la iteracion 261
+Tiempo de ejecucion en busqueda de la solucion de Alpine 5.682758000000001 ms
+
+Con valor en funcion de: 10743.86	En la iteracion 400
+Tiempo de ejecucion en busqueda de la solucion de Dixon 8.678872 ms
+
+Con valor en funcion de: 587971.83	En la iteracion 400
+Tiempo de ejecucion en busqueda de la solucion de Quintic 14.754254 ms
+
+Con valor en funcion de: 27397395175.74	En la iteracion 85
+Tiempo de ejecucion en busqueda de la solucion de Schwefel 4.062093999999999 ms
+
+Con valor en funcion de: -0.02	En la iteracion 294
+Tiempo de ejecucion en busqueda de la solucion de Streched 15.421937 ms
+
+Con valor en funcion de: 12620.54	En la iteracion 367
+Tiempo de ejecucion en busqueda de la solucion de Sum Squares 5.48674 ms
