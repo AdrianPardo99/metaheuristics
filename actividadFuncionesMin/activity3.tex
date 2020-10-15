@@ -54,9 +54,9 @@
 
 \lstset{style=mystyle}
 
-\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Actividad No. 5\\ Solución de problemas mediante Ascensión de Colinas}
+\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad No. 5\\ Solución de problemas mediante Ascensión de Colinas}
 
-\author{Adrian González Pardo}
+\author{Por: Adrian González Pardo}
 
 \date{\today}
 
@@ -64,5 +64,65 @@
 
 \begin{document}
 \maketitle
+\section{Funciones a optimizar}
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    Función a evaluar & Forma o descripción de la función\\
+    \hline
+    Alpine Function & \(\displaystyle f_{1}(x)=\sum_{i=1}^{D} \left|x_{i}\sin(x_{i})+0.1x_{i}\right|\) \\
+    \hline
+    Dixon \& Price Function & \(\displaystyle f_{2}(x)=(x_{1}-1)^{2}\sum_{i=2}^{D} i\left(2\sin(x_{i})-x_{i-1}\right)^{2}\)\\
+    \hline
+    Quintic Function & \(\displaystyle f_{3}(x)=\sum_{i=1}^{D} \left|x_{i}^{5}-3x_{i}^{4}+4x_{i}^3-2x_{i}^{2}-10x_{i}-4\right|\)\\
+    \hline
+    Schwefel 2.23 Function & \(\displaystyle f_{4}(x)=\sum_{i=1}^{D}x_{i}^{10}\)\\
+    \hline
+    Streched V Sine Wave Function & \(\displaystyle f_{5}(x)=\sum_{i=1}^{D-1}(x_{i+1}^{2}+x_{i}^{2})^{0.25}\left[\sin^{2}\left\{50(x_{i+1}^{2}+x_{i}^{2})^{0.1}\right\}+1\right]\)\\
+    \hline
+    Sum Squares Function & \(\displaystyle f_{6}(x)=\sum_{i=1}^{D}ix_{i}^{2}\)\\
+    \hline
+  \end{tabular}
+\end{center}
+\clearpage
+\section{Código de implementación}
+El código fue implementado en lenguaje Ruby para el cálculo de las funciones en $D$ dimensiones y a traves de 1 indice se determina la selección de que función se trabajara.
+\subsection{Función que selecciona que $f(x)$ trabajara}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion0.rb}
+\end{center}
+\subsection{Función Alpine}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion1.rb}
+\end{center}
+
+\subsection{Función Dixon \& Price}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion2.rb}
+\end{center}
+
+\subsection{Función Quintic}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion3.rb}
+\end{center}
+
+\subsection{Función Schwefel}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion4.rb}
+\end{center}
+
+\subsection{Función Streched}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion5.rb}
+\end{center}
+
+\subsection{Función Sum Squares}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion6.rb}
+\end{center}
+
+\section{Tabla de resultados}
+
+
 \includepdf[pages=-]{../funciones_min.pdf}
 \end{document}
