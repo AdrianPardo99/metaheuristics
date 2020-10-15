@@ -51,7 +51,7 @@
 
 \lstset{style=mystyle}
 
-\title{Actividad No. 4\\ Solución de problemas mediante Ascensión de Colinas}
+\title{Actividad No. 4 Correción\\ Solución de problemas mediante Ascensión de Colinas\\Laboratorio 1}
 
 \author{Adrian González Pardo}
 
@@ -84,13 +84,62 @@ Inicialmente el espacio de soluciones de un problema puede ser representado en u
 Si bien en sus conclusiones nos podemos dar cuenta en cuestios de los algoritmos heuristicos SAHC y NAHC en la busqueda de soluciones de un espacio bidimensional no encontraron la zona optima, el algoritmo RMHC lo encontro en un número menor de iteraciones con respecto a los algoritmos geneticos que se implementaron en la investigación, esto pasa en relación a que el algoritmo RMHC explora el espacio de soluciones en este caso digamos o aproximemos en grafos es más sencillo tomar la decisión sobre que nodo iterar sin realizar tantas comparaciones.
 \section{Aplicaciones de Algoritmos de Ascenso de Colinas}
 Si bien en muchas ocasiones estos algoritmos se ven como una caja negra a la hora de ser utilizados en muchos modulos o toolbox de lenguajes de programación estos estan intimamente aplicados en el cálculo de gradiente descendente de $N$ variables para optimizar un aprendizaje supervisado o no supervisado, donde sobre cada iteración se realiza el calculo de un nuevo movimiento en el espacio de soluciones, por otro lado tambien este tipo de algoritmo esta implementado en algunas aplicaciones en las que se realiza la planificación de rutas de transporte e incluso en sistemas de reconocimiento de objetos 3D, una vez más retomando los terminos del Aprendizaje de Maquina podemos encontrar desde regresión lineal, polinomial y logistica.
-\section{Aplicación de RMHC en distintos problemas}
+\section{Aplicación de RMHC en distintos problemas con su estructura de datos}
 \subsection{Knapsack Problem}
-Matemáticamente sabemos que el Knapsack Problem es un problema en el cual se busca una funcion $f(x_{0},x_{1},\cdots,x_{n})$ la cual busca maximizar la utilidad de la solución al problema, es decir, $max\{f((x_{0},x_{1},\cdots,x_{n})\}$ por lo que los valores iniciales de este problema son $max_peso$ que es el peso maximo que soporta la mochila, $iterator$ que es un valor numerico el cual permite llevar el control del número de iteraciones en el algoritmo, por otro lado podemos llamar a nuestro estado inicial $objeto$ el cual es seleccionado de nuestro conjunto o lista de objetos $objetos$ los cuales al pasar por la otra función $g(x_{i})$ el cual devuelve el peso del objeto en la mochila, $h(x_{i})$ la cual devuelve el beneficio del objeto al ser incluido en la mochila, por otro lado para cada $x_{i}$ corresponde al objeto que pertenece a la lista de objetos, entonces al momento de seleccionar un valor $x_{i}$ aleatorio podemos guardarlo en una lista de soluciones $sol_knapsack$ el cual solo se le ingresara si en cada iteración el $objeto [x_{i}] > objeto [x_{j}] $ para asi no desperdiciar memoria en la implementación cuidando que si se busca agregar alguna de las dos opciones se debe considerar el limite en peso de la mochila, por lo tanto debemos evaluar que si el peso contenido de la mochila más el peso del objeto no sobrepasan al peso maximo de la mochila.
+\[f(x)=\sum_{i=1}^{N}h\left(g\left(x_{i}\right)\right)\]
+Donde:
+\[x_{i}\;\;es\;un\;objeto\;que\;puede\;almacenarse\;en\;la\;mochila\]
+\[g(x)\;\;es\;una\;funcion\;booleana\;la\;cual\;nos\;dice\;si\;x_{i}\;esta\;en\;la\;solucion\]
+\[h(x)\;\;es\;una\;funcion\;la\;cual\;devuelve\;el\;valor\;de\;beneficio\;por\;el\;objeto\;x_{i}\]
+De esta forma igual se cubre una segunda función la cual es:
+\[p(x)=\sum_{i=1}^{N}m\left(g(x_{i})\right)\;<=\;Peso\_maximo\]
+Donde:
+\[m(x)\;\;es\;una\;funcion\;la\;cual\;devuelve\;el\;peso\;que\;a\tilde{n}ade\;a\;la\;mochila\;por\;cada\;objeto\;x_{i}\]
+De tal forma que la suma de pesos para resolver este problema debe de ser menor igual al peso máximo que tiene la mochila de capacidad.\\
+Los estados iniciales de este problema son:
+\begin{itemize}
+  \item El conjunto de objetos que pueden pertenecer a la mochila
+  \item Una solución inicial la cual es valida para el peso maximo de la solucion
+  \item Segun el algoritmo de RMHC el best\_solution y new\_best es una cadena de bits las cuales si estan en 1 significara que el objeto en la mochila de acuerdo a la posición de cada 1 y 0
+  \item f\_best y f\_new son los valores de beneficio que pueden ser agregados a la nueva solucion de acuerdo a la modificación de objetos en el paso de mutación.
+\end{itemize}
+
+En el diseño de la solución se solicita los siguientes datos:
+\begin{itemize}
+  \item Peso máximo de la mochila
+  \item Limite de iteraciones
+  \item Indice de la configuración del archivo el cual contiene la estructura de (peso,beneficio)
+\end{itemize}
+\textit{Ejemplo:}
+\begin{center}
+  \includegraphics[scale=0.5]{imgsRMCH/knapsack.png}\\
+  \textit{Figura 1 Primera parte del programa}\\
+  \includegraphics[scale=0.5]{imgsRMCH/knapsack1.png}\\
+  \textit{Figura 2 Parte de la ejecución a partir de la implementación}
+\end{center}
+
 \subsection{Travel Salesman Problem}
-En este problema podemos pensar en que nuestro espacio va a ser generado a traves de los vertices vecinos de nuestro nodo inicial seleccionado aleatoriamente, por ello la funcion a solucionar es la minimización de $f((x_{0},x_{1},\cdots,x_{n})$ donde cada $x_{i}$ es el nodo del grafo y con la existencia de que cada nodo tiene vecinos representados de la forma $x{i,j}$, con función $g(x_{i,j})$ donde esta devuelve el costo de trasladarse del nodo "a" al nodo "b", por lo cual en este algoritmo podremos comparar primeramente el costo del nodo al que "a" se compara con el costo de "b" por lo que después se añade aun conjunto de soluciones al final de que la iteración y la comparación fue realizada exitosamente.
-\subsection{Obtencion de minimos de la función f(x)}
+La función que buscamos es la minimización de costo total del problema representado como:
+\[f(x)=\sum_{i=1}^{N}g\left(h\left(x_{i}\right)\right)\]
+Donde:
+\[x_{i}\;\;es\;una\;arista\;de\;un\;vertice\;v_{j}\;que\;va\;a\;v_{k}\]
+\[h(x)\;\;es\;una\;funcion\;que\;considera\;o\;no\;el\;trayecto\;v_{j}\;a\;v_{k}\;de\;x_{i}\]
+\[g(x)\;\;es\;una\;funcion\;que\;devuelve\;el\;valor\;de\;costo\;de\;x_{i}\]
+Los estados de este problema son los siguientes:
+\begin{itemize}
+  \item Una solución random valida de recorrido $v_{i}$ hasta $v_{j}$ de tal forma que entre desos dos existen al menos N vertices que sumados en sus costos nos dan una respuesta.
+  \item Limite de iteraciones
+  \item Indice de la configuración de formato ($vertice_{i}$ , $costo$ , $vertice_{j}$)
+\end{itemize}
+\subsection{Obtención de minimos de la función f(x)}
 Función:
 \[f(x)=\sum_{i=1}^{D}x_{i}^2\;\;\;\;con\;\;\;\;x_{i}\in[-10,10]\]
-Si bien sabemos que en esta función el encontrar minimos locales de cada $x_{i}$ se ve cuando la función en ese $x_{i}=0$ por lo cual esa es una ayuda pero el problema radica en el aumentar en $D$ dimensiones, por lo cual la entrada es el especificar la $D$ dimensiones en la función, después se determinara un numero maximo de iteraciones y de minimos locales, por lo cual seleccionaremos un $x_{i}$ aleatoriamente y apartir de el afectaremos a un segundo $x_{j}$ por la mutación aleatoria del primer valor comparando cual de esos dos valores es mejor evaluar debido al acceso más sencillo en memoria, después de ello asignaremos cualquier valor entre $[-10,10]$ a las demas variables para que ahi podamos asignar un punto en todas las coordenadas y este lo añadiremos a la lista de soluciones $lista_espacio_D$ en la cual podremos mostrar al final la cantidad de valores minimos que obtengamos del programa
+Para el calculo de minimos es necesario buscar inicialmente una solución random de $M$ puntos en los cuales no se garantiza que en algun $x_{i}$ sea igual a cero, por lo que es necesario apartir de esta respuesta se puede comenzar a modificar para que exista un valor aproximado de $M$ puntos minimos de acuerdo al maximo numero de iteraciones.\\
+Los estados de este problema son:
+\begin{itemize}
+  \item Solución random de puntos $(x_{1},x_{2},\cdots,x_{D})$ de tal forma en que no todos los puntos son minimos, por lo cual consideraremos un mínimo de la función cuando algún $x_{i}=0$.
+  \item Limite de iteraciones
+  \item Lista de puntos a la solución random
+\end{itemize}
+$I_{Im}$ = ​${{g}}{Im}u^{5}z(V - E{Im})$
 \end{document}
