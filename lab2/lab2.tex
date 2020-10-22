@@ -51,11 +51,11 @@
 
 \lstset{style=mystyle}
 
-\title{Actividad No. 7\\ Solución de problemas mediante Recocido Simulado}
+\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad No. 7\\ Solución de problemas mediante Recocido Simulado\\Curso impartido por: Dra Yenny Villuendas Rey}
 
 \author{Adrian González Pardo}
 
-\date{\today}
+\date{21 de octubre de 2020}
 
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
@@ -83,7 +83,7 @@ La diferencia más notable entre estos dos algoritmos, es notablemente que el RM
 \begin{enumerate}
   \item Agosto de 2020. Diseño del controlador de regulación automática de voltaje usando SA hibrido con algoritmos de optimización de Forrajeo de mantarraya. \underline{\href{https://www.sciencedirect.com/science/article/pii/S2090447920301416}{Paper}}
   \item Enero de 2020. Una nueva técnica híbrida de programación genética basada en SA para predecir la capacidad de carga máxima de las pilas. \underline{\href{https://link.springer.com/article/10.1007/s00366-019-00932-9}{Paper}}
-  \item Optimización de SA evolutivo multiobjetivo para el equilibrado de la línea de desmontaje multirrobótico de modelo mixto con tiempo de procesamiento de intervalo. \underline{\href{https://www.tandfonline.com/doi/abs/10.1080/00207543.2019.1602290}{Paper}}
+  \item Junio de 2018. Optimización de SA evolutivo multiobjetivo para el equilibrado de la línea de desmontaje multirrobótico de modelo mixto con tiempo de procesamiento de intervalo. \underline{\href{https://www.tandfonline.com/doi/abs/10.1080/00207543.2019.1602290}{Paper}}
 \end{enumerate}
 \section{Aplicaciones SA}
 \subsection{Knapsack}
@@ -97,7 +97,7 @@ Donde:\\
 \(\displaystyle h(x)\;es\;una\;funci\acute{o}n\;la\;cual\;devuelve\;el\;beneficio\;total\;de\;los\;objetos\;x_{i}\;en\;la\;mochila\)\\\vspace{0.25cm}
 \(\displaystyle p(x)\;es\;una\;funci\acute{o}n\;la\;cual\;devuelve\;el\;peso\;total\;de\;los\;objetos\;x_{i}\;en\;la\;mochila\)\\\vspace{0.25cm}
 En el cual el algoritmo de SA busca iterar sobre cada contenido o casilla del vector $X^{I}$ de tal forma que se obtiene una solución y sobre esta se busca encontrar una mejor solución.\\
-Por lo cual el test objetivo del algoritmo es encontrar el optimo global sin que este pueda caer en el optimo global.
+Por lo cual el test objetivo del algoritmo es encontrar el optimo global sin que este pueda caer en el optimo local o en otra zona.
 \subsection{Travel Salesman Problem TSP}
 Modelación Matemática\\
 Sea la función
@@ -112,5 +112,23 @@ Donde:\\
 De tal forma que este algoritmo de SA busca iterar sobre el contenido de una solución cualquiera y sobre cada vertice que este modifique el algoritmo buscara realizar una operación de intercambio de la forma $x_{i,j}$ cambia con $x_{j,i}$ de tal forma que el movimiento sea valido y este modifique la solución.\\
 El test objetivo de esta solucion es encontrar una solución de minimización de costo de tal forma que la solución recorra todos los nodos.
 \subsection{Función de Minimización en D dimensiones}
+Modelación Matemática\\
+Sea la función
+\[f(x)=\sum_{i=1}^{N}x_{i}^{2}\]
+Donde:\\
+\(\displaystyle x_{i}\in\mathbb{R}\)\\\vspace{0.25cm}Descrito en los intervalos \(\displaystyle x_{i}\in[-10,10]\)\\\vspace{0.25cm}
+Donde sabemos que los puntos minimos de cada $x_{i}$ los encontramos cuando el valor asignado a el es $x_{i}=0$ por lo tanto el ir variando los valores para que el programa se acerque hacia $0$\\
+De tal manera que el algoritmo de SA seleccionara 1 indice en el cual se le asignara un valor a $x_{i}$.\\
+En el test objetivo es encontrar 1 punto aproximado en el que la función se aproxime a $0$ o en el que al menos una coordenada $x_{i}\sim 0$
+\section{Ejecución a mano.}
+\subsection{Knapsack}
+\includegraphics[scale=0.135]{imgs/k-1.jpg}\\
+\includegraphics[scale=0.135]{imgs/k-2.jpg}
+\subsection{TSP}
+\includegraphics[scale=0.135]{imgs/tsp-1.jpg}\\
+\includegraphics[scale=0.135]{imgs/tsp-2.jpg}
+\subsection{Función de Minimización en D dimensiones}
+\includegraphics[scale=0.135]{imgs/min-1.jpg}\\
+\includegraphics[scale=0.135]{imgs/min-2.jpg}
 
 \end{document}
