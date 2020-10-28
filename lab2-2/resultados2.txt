@@ -1,0 +1,839 @@
+Iteracion 0 de funcion Alpine
+Tiempo de ejecucion: 11,36 ms
+Mejor respuesta: 27,08
+Respuesta del algoritmo 27,08
+Temperatura: 0,51
+Iteracion de imax: 2
+
+Iteracion 0 de funcion Dixon
+Tiempo de ejecucion: 15,65 ms
+Mejor respuesta: 402,44
+Respuesta del algoritmo 402,44
+Temperatura: 0,02
+Iteracion de imax: 2
+
+Iteracion 0 de funcion Quintic
+Tiempo de ejecucion: 16,47 ms
+Mejor respuesta: 20501,44
+Respuesta del algoritmo 20501,44
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 0 de funcion Schwefel
+Tiempo de ejecucion: 4,94 ms
+Mejor respuesta: 883504231,25
+Respuesta del algoritmo 883504231,25
+Temperatura: 0,02
+Iteracion de imax: 2
+
+Iteracion 0 de funcion Streched
+Tiempo de ejecucion: 11,56 ms
+Mejor respuesta: 19,22
+Respuesta del algoritmo 19,22
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 0 de funcion Sum Squares
+Tiempo de ejecucion: 4,29 ms
+Mejor respuesta: 2696,20
+Respuesta del algoritmo 2696,20
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 1 de funcion Alpine
+Tiempo de ejecucion: 9,90 ms
+Mejor respuesta: 30,32
+Respuesta del algoritmo 30,32
+Temperatura: 0,33
+Iteracion de imax: 2
+
+Iteracion 1 de funcion Dixon
+Tiempo de ejecucion: 11,58 ms
+Mejor respuesta: 1422,87
+Respuesta del algoritmo 1422,87
+Temperatura: 87,75
+Iteracion de imax: 2
+
+Iteracion 1 de funcion Quintic
+Tiempo de ejecucion: 18,50 ms
+Mejor respuesta: 653,56
+Respuesta del algoritmo 661,90
+Temperatura: 23,72
+Iteracion de imax: 2
+
+Iteracion 1 de funcion Schwefel
+Tiempo de ejecucion: 3,88 ms
+Mejor respuesta: 1556,21
+Respuesta del algoritmo 1556,21
+Temperatura: 66,79
+Iteracion de imax: 2
+
+Iteracion 1 de funcion Streched
+Tiempo de ejecucion: 12,08 ms
+Mejor respuesta: 16,05
+Respuesta del algoritmo 16,05
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 1 de funcion Sum Squares
+Tiempo de ejecucion: 7,00 ms
+Mejor respuesta: 1173,75
+Respuesta del algoritmo 1173,75
+Temperatura: 20,65
+Iteracion de imax: 2
+
+Iteracion 2 de funcion Alpine
+Tiempo de ejecucion: 4,76 ms
+Mejor respuesta: 22,86
+Respuesta del algoritmo 22,86
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 2 de funcion Dixon
+Tiempo de ejecucion: 8,33 ms
+Mejor respuesta: 581,78
+Respuesta del algoritmo 581,78
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 2 de funcion Quintic
+Tiempo de ejecucion: 18,64 ms
+Mejor respuesta: 197,51
+Respuesta del algoritmo 197,51
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 2 de funcion Schwefel
+Tiempo de ejecucion: 3,55 ms
+Mejor respuesta: 1866035,48
+Respuesta del algoritmo 1866035,48
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 2 de funcion Streched
+Tiempo de ejecucion: 19,01 ms
+Mejor respuesta: 13,78
+Respuesta del algoritmo 13,78
+Temperatura: 0,04
+Iteracion de imax: 2
+
+Iteracion 2 de funcion Sum Squares
+Tiempo de ejecucion: 9,40 ms
+Mejor respuesta: 1556,11
+Respuesta del algoritmo 1556,11
+Temperatura: 2,15
+Iteracion de imax: 2
+
+Iteracion 3 de funcion Alpine
+Tiempo de ejecucion: 4,43 ms
+Mejor respuesta: 17,79
+Respuesta del algoritmo 17,79
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 3 de funcion Dixon
+Tiempo de ejecucion: 9,32 ms
+Mejor respuesta: 512,00
+Respuesta del algoritmo 512,00
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 3 de funcion Quintic
+Tiempo de ejecucion: 17,54 ms
+Mejor respuesta: 7334,13
+Respuesta del algoritmo 7334,13
+Temperatura: 0,07
+Iteracion de imax: 2
+
+Iteracion 3 de funcion Schwefel
+Tiempo de ejecucion: 3,99 ms
+Mejor respuesta: 467006378,36
+Respuesta del algoritmo 467006418,66
+Temperatura: 90,60
+Iteracion de imax: 2
+
+Iteracion 3 de funcion Streched
+Tiempo de ejecucion: 15,97 ms
+Mejor respuesta: 11,26
+Respuesta del algoritmo 11,26
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 3 de funcion Sum Squares
+Tiempo de ejecucion: 5,42 ms
+Mejor respuesta: 2475,77
+Respuesta del algoritmo 2475,77
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 4 de funcion Alpine
+Tiempo de ejecucion: 9,87 ms
+Mejor respuesta: 17,45
+Respuesta del algoritmo 17,45
+Temperatura: 0,01
+Iteracion de imax: 2
+
+Iteracion 4 de funcion Dixon
+Tiempo de ejecucion: 5,27 ms
+Mejor respuesta: 1071,12
+Respuesta del algoritmo 1071,12
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 4 de funcion Quintic
+Tiempo de ejecucion: 15,00 ms
+Mejor respuesta: 21733,00
+Respuesta del algoritmo 21733,00
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 4 de funcion Schwefel
+Tiempo de ejecucion: 3,60 ms
+Mejor respuesta: 530927878,25
+Respuesta del algoritmo 530927878,25
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 4 de funcion Streched
+Tiempo de ejecucion: 19,62 ms
+Mejor respuesta: 14,39
+Respuesta del algoritmo 14,39
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 4 de funcion Sum Squares
+Tiempo de ejecucion: 5,97 ms
+Mejor respuesta: 711,18
+Respuesta del algoritmo 728,23
+Temperatura: 22,44
+Iteracion de imax: 2
+
+Iteracion 5 de funcion Alpine
+Tiempo de ejecucion: 6,92 ms
+Mejor respuesta: 95,94
+Respuesta del algoritmo 97,67
+Temperatura: 78,07
+Iteracion de imax: 2
+
+Iteracion 5 de funcion Dixon
+Tiempo de ejecucion: 12,54 ms
+Mejor respuesta: 580,47
+Respuesta del algoritmo 580,47
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 5 de funcion Quintic
+Tiempo de ejecucion: 11,34 ms
+Mejor respuesta: 813,90
+Respuesta del algoritmo 813,90
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 5 de funcion Schwefel
+Tiempo de ejecucion: 3,87 ms
+Mejor respuesta: 16918,10
+Respuesta del algoritmo 16918,10
+Temperatura: 1,41
+Iteracion de imax: 2
+
+Iteracion 5 de funcion Streched
+Tiempo de ejecucion: 21,74 ms
+Mejor respuesta: 10,22
+Respuesta del algoritmo 10,22
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 5 de funcion Sum Squares
+Tiempo de ejecucion: 6,76 ms
+Mejor respuesta: 1418,90
+Respuesta del algoritmo 1418,90
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 6 de funcion Alpine
+Tiempo de ejecucion: 6,11 ms
+Mejor respuesta: 13,41
+Respuesta del algoritmo 13,41
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 6 de funcion Dixon
+Tiempo de ejecucion: 12,17 ms
+Mejor respuesta: 1113,96
+Respuesta del algoritmo 1113,96
+Temperatura: 0,60
+Iteracion de imax: 2
+
+Iteracion 6 de funcion Quintic
+Tiempo de ejecucion: 16,74 ms
+Mejor respuesta: 67648,97
+Respuesta del algoritmo 67648,97
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 6 de funcion Schwefel
+Tiempo de ejecucion: 3,59 ms
+Mejor respuesta: 3587136220,20
+Respuesta del algoritmo 3587136220,20
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 6 de funcion Streched
+Tiempo de ejecucion: 15,51 ms
+Mejor respuesta: 13,11
+Respuesta del algoritmo 13,11
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 6 de funcion Sum Squares
+Tiempo de ejecucion: 5,46 ms
+Mejor respuesta: 2864,30
+Respuesta del algoritmo 2864,30
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 7 de funcion Alpine
+Tiempo de ejecucion: 8,37 ms
+Mejor respuesta: 11,10
+Respuesta del algoritmo 11,10
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 7 de funcion Dixon
+Tiempo de ejecucion: 5,65 ms
+Mejor respuesta: 1044,37
+Respuesta del algoritmo 1044,37
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 7 de funcion Quintic
+Tiempo de ejecucion: 15,32 ms
+Mejor respuesta: 581,09
+Respuesta del algoritmo 581,09
+Temperatura: 61,88
+Iteracion de imax: 2
+
+Iteracion 7 de funcion Schwefel
+Tiempo de ejecucion: 5,51 ms
+Mejor respuesta: 47289,11
+Respuesta del algoritmo 47289,11
+Temperatura: 17,63
+Iteracion de imax: 2
+
+Iteracion 7 de funcion Streched
+Tiempo de ejecucion: 13,74 ms
+Mejor respuesta: 14,77
+Respuesta del algoritmo 14,77
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 7 de funcion Sum Squares
+Tiempo de ejecucion: 7,63 ms
+Mejor respuesta: 1941,78
+Respuesta del algoritmo 1941,78
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 8 de funcion Alpine
+Tiempo de ejecucion: 10,81 ms
+Mejor respuesta: 39,39
+Respuesta del algoritmo 42,74
+Temperatura: 1,47
+Iteracion de imax: 2
+
+Iteracion 8 de funcion Dixon
+Tiempo de ejecucion: 11,05 ms
+Mejor respuesta: 932,14
+Respuesta del algoritmo 932,14
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 8 de funcion Quintic
+Tiempo de ejecucion: 17,45 ms
+Mejor respuesta: 1776,00
+Respuesta del algoritmo 1776,00
+Temperatura: 0,33
+Iteracion de imax: 2
+
+Iteracion 8 de funcion Schwefel
+Tiempo de ejecucion: 2,62 ms
+Mejor respuesta: 23774996,79
+Respuesta del algoritmo 23774996,79
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 8 de funcion Streched
+Tiempo de ejecucion: 19,89 ms
+Mejor respuesta: 14,92
+Respuesta del algoritmo 14,92
+Temperatura: 0,01
+Iteracion de imax: 2
+
+Iteracion 8 de funcion Sum Squares
+Tiempo de ejecucion: 6,73 ms
+Mejor respuesta: 518,70
+Respuesta del algoritmo 518,70
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 9 de funcion Alpine
+Tiempo de ejecucion: 8,08 ms
+Mejor respuesta: 14,78
+Respuesta del algoritmo 14,81
+Temperatura: 0,02
+Iteracion de imax: 2
+
+Iteracion 9 de funcion Dixon
+Tiempo de ejecucion: 10,59 ms
+Mejor respuesta: 1338,31
+Respuesta del algoritmo 1338,31
+Temperatura: 0,09
+Iteracion de imax: 2
+
+Iteracion 9 de funcion Quintic
+Tiempo de ejecucion: 11,50 ms
+Mejor respuesta: 1192,75
+Respuesta del algoritmo 1192,75
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 9 de funcion Schwefel
+Tiempo de ejecucion: 6,18 ms
+Mejor respuesta: 1127149,62
+Respuesta del algoritmo 1127152,51
+Temperatura: 132,64
+Iteracion de imax: 2
+
+Iteracion 9 de funcion Streched
+Tiempo de ejecucion: 13,83 ms
+Mejor respuesta: 15,43
+Respuesta del algoritmo 15,43
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 9 de funcion Sum Squares
+Tiempo de ejecucion: 3,36 ms
+Mejor respuesta: 2932,91
+Respuesta del algoritmo 2932,91
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 10 de funcion Alpine
+Tiempo de ejecucion: 7,51 ms
+Mejor respuesta: 27,75
+Respuesta del algoritmo 29,00
+Temperatura: 0,39
+Iteracion de imax: 2
+
+Iteracion 10 de funcion Dixon
+Tiempo de ejecucion: 13,04 ms
+Mejor respuesta: 1342,52
+Respuesta del algoritmo 1342,52
+Temperatura: 26,67
+Iteracion de imax: 2
+
+Iteracion 10 de funcion Quintic
+Tiempo de ejecucion: 15,02 ms
+Mejor respuesta: 847,85
+Respuesta del algoritmo 847,85
+Temperatura: 65,49
+Iteracion de imax: 2
+
+Iteracion 10 de funcion Schwefel
+Tiempo de ejecucion: 4,40 ms
+Mejor respuesta: 5671352415,83
+Respuesta del algoritmo 5671352415,83
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 10 de funcion Streched
+Tiempo de ejecucion: 12,35 ms
+Mejor respuesta: 13,27
+Respuesta del algoritmo 13,27
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 10 de funcion Sum Squares
+Tiempo de ejecucion: 9,99 ms
+Mejor respuesta: 1593,17
+Respuesta del algoritmo 1593,17
+Temperatura: 1,42
+Iteracion de imax: 2
+
+Iteracion 11 de funcion Alpine
+Tiempo de ejecucion: 5,29 ms
+Mejor respuesta: 14,07
+Respuesta del algoritmo 14,07
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 11 de funcion Dixon
+Tiempo de ejecucion: 10,85 ms
+Mejor respuesta: 759,05
+Respuesta del algoritmo 759,05
+Temperatura: 25,37
+Iteracion de imax: 2
+
+Iteracion 11 de funcion Quintic
+Tiempo de ejecucion: 9,37 ms
+Mejor respuesta: 33283,51
+Respuesta del algoritmo 33283,51
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 11 de funcion Schwefel
+Tiempo de ejecucion: 6,59 ms
+Mejor respuesta: 313190,93
+Respuesta del algoritmo 313190,93
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 11 de funcion Streched
+Tiempo de ejecucion: 16,61 ms
+Mejor respuesta: 9,46
+Respuesta del algoritmo 9,46
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 11 de funcion Sum Squares
+Tiempo de ejecucion: 5,78 ms
+Mejor respuesta: 1329,02
+Respuesta del algoritmo 1329,02
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 12 de funcion Alpine
+Tiempo de ejecucion: 3,79 ms
+Mejor respuesta: 18,93
+Respuesta del algoritmo 18,93
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 12 de funcion Dixon
+Tiempo de ejecucion: 10,73 ms
+Mejor respuesta: 1395,79
+Respuesta del algoritmo 1395,79
+Temperatura: 74,40
+Iteracion de imax: 2
+
+Iteracion 12 de funcion Quintic
+Tiempo de ejecucion: 19,33 ms
+Mejor respuesta: 5474,13
+Respuesta del algoritmo 5474,13
+Temperatura: 0,39
+Iteracion de imax: 2
+
+Iteracion 12 de funcion Schwefel
+Tiempo de ejecucion: 3,05 ms
+Mejor respuesta: 953049,12
+Respuesta del algoritmo 953049,12
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 12 de funcion Streched
+Tiempo de ejecucion: 18,26 ms
+Mejor respuesta: 37,43
+Respuesta del algoritmo 38,14
+Temperatura: 6,22
+Iteracion de imax: 2
+
+Iteracion 12 de funcion Sum Squares
+Tiempo de ejecucion: 11,14 ms
+Mejor respuesta: 890,41
+Respuesta del algoritmo 890,41
+Temperatura: 3,32
+Iteracion de imax: 2
+
+Iteracion 13 de funcion Alpine
+Tiempo de ejecucion: 7,12 ms
+Mejor respuesta: 38,22
+Respuesta del algoritmo 38,22
+Temperatura: 0,88
+Iteracion de imax: 2
+
+Iteracion 13 de funcion Dixon
+Tiempo de ejecucion: 8,14 ms
+Mejor respuesta: 796,46
+Respuesta del algoritmo 796,46
+Temperatura: 8,46
+Iteracion de imax: 2
+
+Iteracion 13 de funcion Quintic
+Tiempo de ejecucion: 16,80 ms
+Mejor respuesta: 48043,53
+Respuesta del algoritmo 48043,53
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 13 de funcion Schwefel
+Tiempo de ejecucion: 2,63 ms
+Mejor respuesta: 197268,68
+Respuesta del algoritmo 197268,68
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 13 de funcion Streched
+Tiempo de ejecucion: 18,09 ms
+Mejor respuesta: 14,67
+Respuesta del algoritmo 14,67
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 13 de funcion Sum Squares
+Tiempo de ejecucion: 9,53 ms
+Mejor respuesta: 597,50
+Respuesta del algoritmo 597,50
+Temperatura: 5,08
+Iteracion de imax: 2
+
+Iteracion 14 de funcion Alpine
+Tiempo de ejecucion: 8,51 ms
+Mejor respuesta: 26,95
+Respuesta del algoritmo 26,95
+Temperatura: 0,29
+Iteracion de imax: 2
+
+Iteracion 14 de funcion Dixon
+Tiempo de ejecucion: 8,30 ms
+Mejor respuesta: 806,67
+Respuesta del algoritmo 806,67
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 14 de funcion Quintic
+Tiempo de ejecucion: 11,98 ms
+Mejor respuesta: 55262,90
+Respuesta del algoritmo 55262,90
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 14 de funcion Schwefel
+Tiempo de ejecucion: 3,65 ms
+Mejor respuesta: 919823,14
+Respuesta del algoritmo 919823,14
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 14 de funcion Streched
+Tiempo de ejecucion: 10,42 ms
+Mejor respuesta: 11,57
+Respuesta del algoritmo 11,57
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 14 de funcion Sum Squares
+Tiempo de ejecucion: 6,68 ms
+Mejor respuesta: 2635,92
+Respuesta del algoritmo 2635,92
+Temperatura: 0,08
+Iteracion de imax: 2
+
+Iteracion 15 de funcion Alpine
+Tiempo de ejecucion: 6,04 ms
+Mejor respuesta: 22,80
+Respuesta del algoritmo 22,80
+Temperatura: 0,15
+Iteracion de imax: 2
+
+Iteracion 15 de funcion Dixon
+Tiempo de ejecucion: 13,66 ms
+Mejor respuesta: 670,67
+Respuesta del algoritmo 670,67
+Temperatura: 0,05
+Iteracion de imax: 2
+
+Iteracion 15 de funcion Quintic
+Tiempo de ejecucion: 15,73 ms
+Mejor respuesta: 53976,26
+Respuesta del algoritmo 53976,26
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 15 de funcion Schwefel
+Tiempo de ejecucion: 3,94 ms
+Mejor respuesta: 4339,66
+Respuesta del algoritmo 4339,66
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 15 de funcion Streched
+Tiempo de ejecucion: 26,76 ms
+Mejor respuesta: 18,85
+Respuesta del algoritmo 18,85
+Temperatura: 0,17
+Iteracion de imax: 2
+
+Iteracion 15 de funcion Sum Squares
+Tiempo de ejecucion: 6,75 ms
+Mejor respuesta: 1454,25
+Respuesta del algoritmo 1454,25
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 16 de funcion Alpine
+Tiempo de ejecucion: 5,46 ms
+Mejor respuesta: 20,65
+Respuesta del algoritmo 20,65
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 16 de funcion Dixon
+Tiempo de ejecucion: 8,18 ms
+Mejor respuesta: 867,17
+Respuesta del algoritmo 867,17
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 16 de funcion Quintic
+Tiempo de ejecucion: 16,26 ms
+Mejor respuesta: 625,76
+Respuesta del algoritmo 625,76
+Temperatura: 6,86
+Iteracion de imax: 2
+
+Iteracion 16 de funcion Schwefel
+Tiempo de ejecucion: 5,17 ms
+Mejor respuesta: 218,73
+Respuesta del algoritmo 220,01
+Temperatura: 6,08
+Iteracion de imax: 2
+
+Iteracion 16 de funcion Streched
+Tiempo de ejecucion: 13,14 ms
+Mejor respuesta: 18,26
+Respuesta del algoritmo 18,26
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 16 de funcion Sum Squares
+Tiempo de ejecucion: 6,65 ms
+Mejor respuesta: 608,32
+Respuesta del algoritmo 608,32
+Temperatura: 3,67
+Iteracion de imax: 2
+
+Iteracion 17 de funcion Alpine
+Tiempo de ejecucion: 3,86 ms
+Mejor respuesta: 19,45
+Respuesta del algoritmo 19,45
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 17 de funcion Dixon
+Tiempo de ejecucion: 7,09 ms
+Mejor respuesta: 1074,96
+Respuesta del algoritmo 1074,96
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 17 de funcion Quintic
+Tiempo de ejecucion: 14,70 ms
+Mejor respuesta: 599,88
+Respuesta del algoritmo 599,88
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 17 de funcion Schwefel
+Tiempo de ejecucion: 4,20 ms
+Mejor respuesta: 10682712,83
+Respuesta del algoritmo 10682712,83
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 17 de funcion Streched
+Tiempo de ejecucion: 21,95 ms
+Mejor respuesta: 34,00
+Respuesta del algoritmo 34,55
+Temperatura: 1,72
+Iteracion de imax: 2
+
+Iteracion 17 de funcion Sum Squares
+Tiempo de ejecucion: 4,77 ms
+Mejor respuesta: 862,81
+Respuesta del algoritmo 862,81
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 18 de funcion Alpine
+Tiempo de ejecucion: 8,35 ms
+Mejor respuesta: 27,94
+Respuesta del algoritmo 27,94
+Temperatura: 0,07
+Iteracion de imax: 2
+
+Iteracion 18 de funcion Dixon
+Tiempo de ejecucion: 7,56 ms
+Mejor respuesta: 1455,58
+Respuesta del algoritmo 1455,58
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 18 de funcion Quintic
+Tiempo de ejecucion: 10,87 ms
+Mejor respuesta: 364,34
+Respuesta del algoritmo 364,34
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 18 de funcion Schwefel
+Tiempo de ejecucion: 7,53 ms
+Mejor respuesta: 298065,93
+Respuesta del algoritmo 298065,93
+Temperatura: 0,10
+Iteracion de imax: 2
+
+Iteracion 18 de funcion Streched
+Tiempo de ejecucion: 20,28 ms
+Mejor respuesta: 39,06
+Respuesta del algoritmo 39,06
+Temperatura: 65,37
+Iteracion de imax: 2
+
+Iteracion 18 de funcion Sum Squares
+Tiempo de ejecucion: 11,58 ms
+Mejor respuesta: 922,91
+Respuesta del algoritmo 922,91
+Temperatura: 1,16
+Iteracion de imax: 2
+
+Iteracion 19 de funcion Alpine
+Tiempo de ejecucion: 8,89 ms
+Mejor respuesta: 82,69
+Respuesta del algoritmo 84,89
+Temperatura: 129,20
+Iteracion de imax: 2
+
+Iteracion 19 de funcion Dixon
+Tiempo de ejecucion: 9,99 ms
+Mejor respuesta: 558,09
+Respuesta del algoritmo 558,09
+Temperatura: 0,04
+Iteracion de imax: 2
+
+Iteracion 19 de funcion Quintic
+Tiempo de ejecucion: 18,48 ms
+Mejor respuesta: 337,28
+Respuesta del algoritmo 337,28
+Temperatura: 0,26
+Iteracion de imax: 2
+
+Iteracion 19 de funcion Schwefel
+Tiempo de ejecucion: 3,17 ms
+Mejor respuesta: 26209,64
+Respuesta del algoritmo 26209,64
+Temperatura: 0,01
+Iteracion de imax: 3
+
+Iteracion 19 de funcion Streched
+Tiempo de ejecucion: 17,79 ms
+Mejor respuesta: 26,25
+Respuesta del algoritmo 27,04
+Temperatura: 1,27
+Iteracion de imax: 2
+
+Iteracion 19 de funcion Sum Squares
+Tiempo de ejecucion: 8,83 ms
+Mejor respuesta: 3391,21
+Respuesta del algoritmo 3391,21
+Temperatura: 0,01
+Iteracion de imax: 3
