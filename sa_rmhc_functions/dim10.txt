@@ -1,0 +1,2160 @@
+Iteracion 1 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,33 ms
+	Sol_al: 25,9589783
+	Iteracion_donde_se_encontro_un_minimo: 470
+	Sol_final_algoritmo: 21,7842570
+SA Algorithm
+	Tiempo de ejecucion: 3,06 ms
+	Sol_al: 35,2807523
+	Alpha: 0,9516558
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 83,9450465
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 37,0875143
+	Sol_mejor: 34,9216447
+
+Iteracion 1 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,16 ms
+	Sol_al: 2262,5347259
+	Iteracion_donde_se_encontro_un_minimo: 169
+	Sol_final_algoritmo: 1933,3414542
+SA Algorithm
+	Tiempo de ejecucion: 5,90 ms
+	Sol_al: 2575,0300170
+	Alpha: 0,9297189
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 26,1566331
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 97,2386573
+	Sol_mejor: 97,2386573
+
+Iteracion 1 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,97 ms
+	Sol_al: 192210,2358082
+	Iteracion_donde_se_encontro_un_minimo: 43
+	Sol_final_algoritmo: 71202,9811555
+SA Algorithm
+	Tiempo de ejecucion: 5,50 ms
+	Sol_al: 96404,1810950
+	Alpha: 0,9627273
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 149,6798853
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 9362,7936186
+	Sol_mejor: 9362,7936186
+
+Iteracion 1 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,65 ms
+	Sol_al: 11408904149,8708897
+	Iteracion_donde_se_encontro_un_minimo: 14
+	Sol_final_algoritmo: 3303066158,7734938
+SA Algorithm
+	Tiempo de ejecucion: 3,28 ms
+	Sol_al: 1227891178,4826002
+	Alpha: 0,8904690
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,0264961
+	Iteracion_donde_se_encontro_un_minimo: 494
+	Sol_final_algoritmo: 12,9434160
+	Sol_mejor: 12,9434160
+
+Iteracion 1 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 7,95 ms
+	Sol_al: 18,6757939
+	Iteracion_donde_se_encontro_un_minimo: 288
+	Sol_final_algoritmo: 15,5806947
+SA Algorithm
+	Tiempo de ejecucion: 9,46 ms
+	Sol_al: 15,4201468
+	Alpha: 0,9432125
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 53,7621401
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 7,9508896
+	Sol_mejor: 7,9508896
+
+Iteracion 1 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,43 ms
+	Sol_al: 2018,6196272
+	Iteracion_donde_se_encontro_un_minimo: 329
+	Sol_final_algoritmo: 1434,8597850
+SA Algorithm
+	Tiempo de ejecucion: 2,74 ms
+	Sol_al: 1402,4020143
+	Alpha: 0,9722878
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 245,3254343
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 713,2108193
+	Sol_mejor: 615,7077918
+
+Iteracion 2 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,08 ms
+	Sol_al: 30,3981822
+	Iteracion_donde_se_encontro_un_minimo: 183
+	Sol_final_algoritmo: 29,2594502
+SA Algorithm
+	Tiempo de ejecucion: 2,73 ms
+	Sol_al: 34,4990293
+	Alpha: 0,9207256
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 16,0883572
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 32,8754724
+	Sol_mejor: 29,4708561
+
+Iteracion 2 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,71 ms
+	Sol_al: 2055,9687877
+	Iteracion_donde_se_encontro_un_minimo: 324
+	Sol_final_algoritmo: 1748,9241475
+SA Algorithm
+	Tiempo de ejecucion: 4,66 ms
+	Sol_al: 2490,1182146
+	Alpha: 0,9810113
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 383,4432743
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 1110,1417977
+	Sol_mejor: 1096,6357070
+
+Iteracion 2 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,98 ms
+	Sol_al: 120463,8574962
+	Iteracion_donde_se_encontro_un_minimo: 9
+	Sol_final_algoritmo: 85139,2258811
+SA Algorithm
+	Tiempo de ejecucion: 5,19 ms
+	Sol_al: 182022,1808989
+	Alpha: 0,8815505
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 1,8296190
+	Iteracion_donde_se_encontro_un_minimo: 483
+	Sol_final_algoritmo: 820,8847106
+	Sol_mejor: 820,8847106
+
+Iteracion 2 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,49 ms
+	Sol_al: 8634080179,0039597
+	Iteracion_donde_se_encontro_un_minimo: 16
+	Sol_final_algoritmo: 5086058082,5584373
+SA Algorithm
+	Tiempo de ejecucion: 2,99 ms
+	Sol_al: 10542967641,3337250
+	Alpha: 0,9540907
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 95,3854524
+	Iteracion_donde_se_encontro_un_minimo: 454
+	Sol_final_algoritmo: 657147,2890712
+	Sol_mejor: 657138,8903929
+
+Iteracion 2 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,64 ms
+	Sol_al: 15,5863055
+	Iteracion_donde_se_encontro_un_minimo: 28
+	Sol_final_algoritmo: 14,2648977
+SA Algorithm
+	Tiempo de ejecucion: 5,89 ms
+	Sol_al: 12,6595866
+	Alpha: 0,9113475
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 9,6427175
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 9,3217764
+	Sol_mejor: 8,6576596
+
+Iteracion 2 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,38 ms
+	Sol_al: 1404,4480806
+	Iteracion_donde_se_encontro_un_minimo: 172
+	Sol_final_algoritmo: 1123,2035179
+SA Algorithm
+	Tiempo de ejecucion: 4,18 ms
+	Sol_al: 1788,5488442
+	Alpha: 0,9029188
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 6,0594879
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 80,7049007
+	Sol_mejor: 80,7049007
+
+Iteracion 3 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,45 ms
+	Sol_al: 42,5181927
+	Iteracion_donde_se_encontro_un_minimo: 428
+	Sol_final_algoritmo: 36,9142030
+SA Algorithm
+	Tiempo de ejecucion: 2,93 ms
+	Sol_al: 38,5682465
+	Alpha: 0,9094640
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 8,6951203
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 32,1632780
+	Sol_mejor: 32,1632780
+
+Iteracion 3 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,80 ms
+	Sol_al: 1992,7697018
+	Iteracion_donde_se_encontro_un_minimo: 289
+	Sol_final_algoritmo: 1094,1890662
+SA Algorithm
+	Tiempo de ejecucion: 3,24 ms
+	Sol_al: 1898,4925912
+	Alpha: 0,9050541
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 6,8191082
+	Iteracion_donde_se_encontro_un_minimo: 492
+	Sol_final_algoritmo: 31,8849816
+	Sol_mejor: 31,3159799
+
+Iteracion 3 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,43 ms
+	Sol_al: 219613,6443185
+	Iteracion_donde_se_encontro_un_minimo: 207
+	Sol_final_algoritmo: 117024,9766162
+SA Algorithm
+	Tiempo de ejecucion: 5,29 ms
+	Sol_al: 331701,3846843
+	Alpha: 0,9133804
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 10,7791180
+	Iteracion_donde_se_encontro_un_minimo: 490
+	Sol_final_algoritmo: 5453,9387073
+	Sol_mejor: 5452,5615417
+
+Iteracion 3 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,55 ms
+	Sol_al: 7977404556,5204296
+	Iteracion_donde_se_encontro_un_minimo: 19
+	Sol_final_algoritmo: 7977404555,1701536
+SA Algorithm
+	Tiempo de ejecucion: 2,02 ms
+	Sol_al: 8101393175,8350010
+	Alpha: 0,9491733
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 73,6676010
+	Iteracion_donde_se_encontro_un_minimo: 476
+	Sol_final_algoritmo: 1814397461,1344965
+	Sol_mejor: 1814397457,8789806
+
+Iteracion 3 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,92 ms
+	Sol_al: 17,9252097
+	Iteracion_donde_se_encontro_un_minimo: 280
+	Sol_final_algoritmo: 15,5625413
+SA Algorithm
+	Tiempo de ejecucion: 7,12 ms
+	Sol_al: 10,9965821
+	Alpha: 0,8905159
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,0344857
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 16,3407299
+	Sol_mejor: 16,3407299
+
+Iteracion 3 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,30 ms
+	Sol_al: 1556,1587664
+	Iteracion_donde_se_encontro_un_minimo: 270
+	Sol_final_algoritmo: 1453,0132036
+SA Algorithm
+	Tiempo de ejecucion: 2,78 ms
+	Sol_al: 1769,9735917
+	Alpha: 0,9625264
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 148,1266262
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 1588,9057204
+	Sol_mejor: 1531,3320944
+
+Iteracion 4 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,49 ms
+	Sol_al: 38,8881195
+	Iteracion_donde_se_encontro_un_minimo: 399
+	Sol_final_algoritmo: 31,8005814
+SA Algorithm
+	Tiempo de ejecucion: 3,22 ms
+	Sol_al: 30,4407129
+	Alpha: 0,9063179
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 7,3118401
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 37,2326575
+	Sol_mejor: 36,4735184
+
+Iteracion 4 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,77 ms
+	Sol_al: 2355,0288230
+	Iteracion_donde_se_encontro_un_minimo: 426
+	Sol_final_algoritmo: 2327,3344511
+SA Algorithm
+	Tiempo de ejecucion: 3,56 ms
+	Sol_al: 2781,5062695
+	Alpha: 0,9580149
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 117,1153281
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 621,0203556
+	Sol_mejor: 548,0924249
+
+Iteracion 4 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,94 ms
+	Sol_al: 212674,4126749
+	Iteracion_donde_se_encontro_un_minimo: 420
+	Sol_final_algoritmo: 136158,5591064
+SA Algorithm
+	Tiempo de ejecucion: 6,46 ms
+	Sol_al: 326073,8289292
+	Alpha: 0,9234587
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 18,6583889
+	Iteracion_donde_se_encontro_un_minimo: 475
+	Sol_final_algoritmo: 1523,3935326
+	Sol_mejor: 1504,9812106
+
+Iteracion 4 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,69 ms
+	Sol_al: 121287936,6605594
+	Iteracion_donde_se_encontro_un_minimo: 39
+	Sol_final_algoritmo: 121287269,0338946
+SA Algorithm
+	Tiempo de ejecucion: 3,36 ms
+	Sol_al: 16768682070,7882233
+	Alpha: 0,8982441
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 4,6743132
+	Iteracion_donde_se_encontro_un_minimo: 493
+	Sol_final_algoritmo: 143197742,2725616
+	Sol_mejor: 143197742,2725616
+
+Iteracion 4 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,16 ms
+	Sol_al: 12,4915404
+	Iteracion_donde_se_encontro_un_minimo: 7
+	Sol_final_algoritmo: 10,0521141
+SA Algorithm
+	Tiempo de ejecucion: 7,01 ms
+	Sol_al: 13,7217644
+	Alpha: 0,8987046
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 4,7956634
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 5,1652320
+	Sol_mejor: 5,1652320
+
+Iteracion 4 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,39 ms
+	Sol_al: 2405,1752132
+	Iteracion_donde_se_encontro_un_minimo: 85
+	Sol_final_algoritmo: 1162,7230521
+SA Algorithm
+	Tiempo de ejecucion: 2,73 ms
+	Sol_al: 1390,2052530
+	Alpha: 0,9116694
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 9,8145238
+	Iteracion_donde_se_encontro_un_minimo: 492
+	Sol_final_algoritmo: 70,6044259
+	Sol_mejor: 70,6044259
+
+Iteracion 5 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,22 ms
+	Sol_al: 20,7580158
+	Iteracion_donde_se_encontro_un_minimo: 350
+	Sol_final_algoritmo: 18,3885984
+SA Algorithm
+	Tiempo de ejecucion: 2,88 ms
+	Sol_al: 31,2059096
+	Alpha: 0,9262185
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 21,6606718
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 36,2980459
+	Sol_mejor: 32,5560452
+
+Iteracion 5 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 3,66 ms
+	Sol_al: 2487,7502164
+	Iteracion_donde_se_encontro_un_minimo: 459
+	Sol_final_algoritmo: 2188,3383321
+SA Algorithm
+	Tiempo de ejecucion: 3,60 ms
+	Sol_al: 2639,1577577
+	Alpha: 0,9037617
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 6,3488647
+	Iteracion_donde_se_encontro_un_minimo: 473
+	Sol_final_algoritmo: 55,6590282
+	Sol_mejor: 55,6455665
+
+Iteracion 5 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,81 ms
+	Sol_al: 134296,0043462
+	Iteracion_donde_se_encontro_un_minimo: 162
+	Sol_final_algoritmo: 72409,4126934
+SA Algorithm
+	Tiempo de ejecucion: 5,48 ms
+	Sol_al: 298399,1792864
+	Alpha: 0,9304375
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 27,1869181
+	Iteracion_donde_se_encontro_un_minimo: 488
+	Sol_final_algoritmo: 857,0136829
+	Sol_mejor: 842,5582030
+
+Iteracion 5 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,63 ms
+	Sol_al: 14993892959,9637566
+	Iteracion_donde_se_encontro_un_minimo: 21
+	Sol_final_algoritmo: 12510600564,1331406
+SA Algorithm
+	Tiempo de ejecucion: 2,28 ms
+	Sol_al: 9221445250,0076790
+	Alpha: 0,9471961
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 66,3735675
+	Iteracion_donde_se_encontro_un_minimo: 491
+	Sol_final_algoritmo: 1719577,3712504
+	Sol_mejor: 1719577,3712504
+
+Iteracion 5 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,55 ms
+	Sol_al: 10,6828661
+	Iteracion_donde_se_encontro_un_minimo: 449
+	Sol_final_algoritmo: 10,0015713
+SA Algorithm
+	Tiempo de ejecucion: 5,89 ms
+	Sol_al: 20,0100592
+	Alpha: 0,8975030
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 4,4853375
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 10,4648215
+	Sol_mejor: 10,4648215
+
+Iteracion 5 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 3,55 ms
+	Sol_al: 2812,5494808
+	Iteracion_donde_se_encontro_un_minimo: 223
+	Sol_final_algoritmo: 2310,4855756
+SA Algorithm
+	Tiempo de ejecucion: 3,18 ms
+	Sol_al: 2360,4528450
+	Alpha: 0,9764597
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 303,8900657
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 1248,9893440
+	Sol_mejor: 1248,9893440
+
+Iteracion 6 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,22 ms
+	Sol_al: 24,3359596
+	Iteracion_donde_se_encontro_un_minimo: 207
+	Sol_final_algoritmo: 20,0042453
+SA Algorithm
+	Tiempo de ejecucion: 3,05 ms
+	Sol_al: 42,5969344
+	Alpha: 0,9117814
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 9,8749830
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 22,4966037
+	Sol_mejor: 22,4966037
+
+Iteracion 6 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,69 ms
+	Sol_al: 2745,8481525
+	Iteracion_donde_se_encontro_un_minimo: 316
+	Sol_final_algoritmo: 2714,6096418
+SA Algorithm
+	Tiempo de ejecucion: 3,87 ms
+	Sol_al: 1509,5687854
+	Alpha: 0,9182397
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 14,0540780
+	Iteracion_donde_se_encontro_un_minimo: 492
+	Sol_final_algoritmo: 166,8366340
+	Sol_mejor: 166,8366340
+
+Iteracion 6 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,72 ms
+	Sol_al: 162716,5392438
+	Iteracion_donde_se_encontro_un_minimo: 481
+	Sol_final_algoritmo: 162536,6734126
+SA Algorithm
+	Tiempo de ejecucion: 5,13 ms
+	Sol_al: 150044,6663430
+	Alpha: 0,9209983
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 16,3282791
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 2865,1079868
+	Sol_mejor: 2865,1079868
+
+Iteracion 6 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,52 ms
+	Sol_al: 8746202905,9150906
+	Iteracion_donde_se_encontro_un_minimo: 30
+	Sol_final_algoritmo: 163518216,1883069
+SA Algorithm
+	Tiempo de ejecucion: 1,94 ms
+	Sol_al: 13636399818,6274681
+	Alpha: 0,8964284
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 4,2245448
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 187,9203183
+	Sol_mejor: 187,9203183
+
+Iteracion 6 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 6,07 ms
+	Sol_al: 15,7349508
+	Iteracion_donde_se_encontro_un_minimo: 469
+	Sol_final_algoritmo: 9,5842838
+SA Algorithm
+	Tiempo de ejecucion: 5,89 ms
+	Sol_al: 13,5174001
+	Alpha: 0,9826384
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 416,5689987
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 8,4967772
+	Sol_mejor: 5,8397428
+
+Iteracion 6 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,25 ms
+	Sol_al: 784,0092687
+	Iteracion_donde_se_encontro_un_minimo: 38
+	Sol_final_algoritmo: 273,6278601
+SA Algorithm
+	Tiempo de ejecucion: 2,57 ms
+	Sol_al: 3568,0311153
+	Alpha: 0,9145589
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 11,4969820
+	Iteracion_donde_se_encontro_un_minimo: 481
+	Sol_final_algoritmo: 725,0905526
+	Sol_mejor: 720,3673433
+
+Iteracion 7 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,57 ms
+	Sol_al: 34,2151293
+	Iteracion_donde_se_encontro_un_minimo: 24
+	Sol_final_algoritmo: 34,1153085
+SA Algorithm
+	Tiempo de ejecucion: 2,80 ms
+	Sol_al: 28,2771026
+	Alpha: 0,9757197
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 292,5855566
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 25,4622366
+	Sol_mejor: 22,4790748
+
+Iteracion 7 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,87 ms
+	Sol_al: 2689,3443449
+	Iteracion_donde_se_encontro_un_minimo: 187
+	Sol_final_algoritmo: 1418,7345504
+SA Algorithm
+	Tiempo de ejecucion: 3,58 ms
+	Sol_al: 1850,6240436
+	Alpha: 0,9806835
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 377,0887153
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 1242,6926078
+	Sol_mejor: 1242,6926078
+
+Iteracion 7 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,02 ms
+	Sol_al: 3727,7382273
+	Iteracion_donde_se_encontro_un_minimo: 466
+	Sol_final_algoritmo: 466,2191672
+SA Algorithm
+	Tiempo de ejecucion: 6,70 ms
+	Sol_al: 57023,4345214
+	Alpha: 0,9432206
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 53,7854266
+	Iteracion_donde_se_encontro_un_minimo: 488
+	Sol_final_algoritmo: 312,1860447
+	Sol_mejor: 301,9533548
+
+Iteracion 7 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,71 ms
+	Sol_al: 2838594572,2610579
+	Iteracion_donde_se_encontro_un_minimo: 102
+	Sol_final_algoritmo: 65319132,3562696
+SA Algorithm
+	Tiempo de ejecucion: 1,96 ms
+	Sol_al: 625579341,3436723
+	Alpha: 0,8905594
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,0419054
+	Iteracion_donde_se_encontro_un_minimo: 495
+	Sol_final_algoritmo: 32396420,1436931
+	Sol_mejor: 32396420,1436931
+
+Iteracion 7 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,22 ms
+	Sol_al: 14,0184570
+	Iteracion_donde_se_encontro_un_minimo: 120
+	Sol_final_algoritmo: 12,1697846
+SA Algorithm
+	Tiempo de ejecucion: 6,31 ms
+	Sol_al: 13,5964778
+	Alpha: 0,8986605
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 4,7839101
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 14,8166601
+	Sol_mejor: 14,8166601
+
+Iteracion 7 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,21 ms
+	Sol_al: 2102,9923552
+	Iteracion_donde_se_encontro_un_minimo: 152
+	Sol_final_algoritmo: 1967,8205714
+SA Algorithm
+	Tiempo de ejecucion: 2,78 ms
+	Sol_al: 2814,6760964
+	Alpha: 0,9622754
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 146,2070420
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 1095,3866170
+	Sol_mejor: 1095,3866170
+
+Iteracion 8 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,11 ms
+	Sol_al: 42,1032497
+	Iteracion_donde_se_encontro_un_minimo: 204
+	Sol_final_algoritmo: 32,3581658
+SA Algorithm
+	Tiempo de ejecucion: 2,78 ms
+	Sol_al: 41,1161768
+	Alpha: 0,9471212
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 66,1117247
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 28,3279133
+	Sol_mejor: 28,3279133
+
+Iteracion 8 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 3,25 ms
+	Sol_al: 2747,2312893
+	Iteracion_donde_se_encontro_un_minimo: 200
+	Sol_final_algoritmo: 2473,9243744
+SA Algorithm
+	Tiempo de ejecucion: 4,20 ms
+	Sol_al: 1509,7703557
+	Alpha: 0,9647671
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 166,3889567
+	Iteracion_donde_se_encontro_un_minimo: 492
+	Sol_final_algoritmo: 1411,0196728
+	Sol_mejor: 1207,9590891
+
+Iteracion 8 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,72 ms
+	Sol_al: 329486,3469680
+	Iteracion_donde_se_encontro_un_minimo: 330
+	Sol_final_algoritmo: 322712,9271177
+SA Algorithm
+	Tiempo de ejecucion: 4,99 ms
+	Sol_al: 228344,1007352
+	Alpha: 0,8806618
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 1,7396327
+	Iteracion_donde_se_encontro_un_minimo: 495
+	Sol_final_algoritmo: 1306,6992002
+	Sol_mejor: 1306,6992002
+
+Iteracion 8 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,89 ms
+	Sol_al: 13349327349,6357746
+	Iteracion_donde_se_encontro_un_minimo: 25
+	Sol_final_algoritmo: 10183359213,0047493
+SA Algorithm
+	Tiempo de ejecucion: 2,12 ms
+	Sol_al: 3266834498,8833017
+	Alpha: 0,9075188
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 7,8123498
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 117650774,9224594
+	Sol_mejor: 117650774,9224594
+
+Iteracion 8 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,37 ms
+	Sol_al: 11,0840157
+	Iteracion_donde_se_encontro_un_minimo: 162
+	Sol_final_algoritmo: 10,8262598
+SA Algorithm
+	Tiempo de ejecucion: 6,00 ms
+	Sol_al: 16,1066594
+	Alpha: 0,9011519
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 5,4941313
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 15,7112881
+	Sol_mejor: 15,7112881
+
+Iteracion 8 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,19 ms
+	Sol_al: 1526,3876945
+	Iteracion_donde_se_encontro_un_minimo: 284
+	Sol_final_algoritmo: 555,0686851
+SA Algorithm
+	Tiempo de ejecucion: 4,29 ms
+	Sol_al: 1608,1120233
+	Alpha: 0,9257923
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 21,1679042
+	Iteracion_donde_se_encontro_un_minimo: 492
+	Sol_final_algoritmo: 77,8681799
+	Sol_mejor: 77,8681799
+
+Iteracion 9 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,44 ms
+	Sol_al: 18,2225702
+	Iteracion_donde_se_encontro_un_minimo: 12
+	Sol_final_algoritmo: 13,1217185
+SA Algorithm
+	Tiempo de ejecucion: 2,91 ms
+	Sol_al: 31,1938810
+	Alpha: 0,9513014
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 82,3959877
+	Iteracion_donde_se_encontro_un_minimo: 493
+	Sol_final_algoritmo: 41,8933960
+	Sol_mejor: 21,7213599
+
+Iteracion 9 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,70 ms
+	Sol_al: 1704,4795178
+	Iteracion_donde_se_encontro_un_minimo: 313
+	Sol_final_algoritmo: 1170,4514813
+SA Algorithm
+	Tiempo de ejecucion: 3,62 ms
+	Sol_al: 2230,8300168
+	Alpha: 0,9725545
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 248,7128152
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 778,6973363
+	Sol_mejor: 778,6973363
+
+Iteracion 9 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,05 ms
+	Sol_al: 161536,2574381
+	Iteracion_donde_se_encontro_un_minimo: 99
+	Sol_final_algoritmo: 156769,3728702
+SA Algorithm
+	Tiempo de ejecucion: 5,43 ms
+	Sol_al: 160183,2950252
+	Alpha: 0,9552657
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 101,4401903
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 45885,1882452
+	Sol_mejor: 45885,1882452
+
+Iteracion 9 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,49 ms
+	Sol_al: 13169276611,6070023
+	Iteracion_donde_se_encontro_un_minimo: 65
+	Sol_final_algoritmo: 13083808347,0795708
+SA Algorithm
+	Tiempo de ejecucion: 1,92 ms
+	Sol_al: 10934222710,4364338
+	Alpha: 0,9368173
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 38,2600196
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 8713676,8585027
+	Sol_mejor: 8713676,8585027
+
+Iteracion 9 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,83 ms
+	Sol_al: 21,3297773
+	Iteracion_donde_se_encontro_un_minimo: 89
+	Sol_final_algoritmo: 10,5123463
+SA Algorithm
+	Tiempo de ejecucion: 6,75 ms
+	Sol_al: 18,1697707
+	Alpha: 0,9024978
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 5,9197929
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 12,1203621
+	Sol_mejor: 12,1203621
+
+Iteracion 9 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,32 ms
+	Sol_al: 1047,6106944
+	Iteracion_donde_se_encontro_un_minimo: 253
+	Sol_final_algoritmo: 559,1808302
+SA Algorithm
+	Tiempo de ejecucion: 2,65 ms
+	Sol_al: 1804,3966331
+	Alpha: 0,9355313
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 35,7203680
+	Iteracion_donde_se_encontro_un_minimo: 494
+	Sol_final_algoritmo: 163,6607270
+	Sol_mejor: 152,9684140
+
+Iteracion 10 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,37 ms
+	Sol_al: 31,0022800
+	Iteracion_donde_se_encontro_un_minimo: 457
+	Sol_final_algoritmo: 26,9245490
+SA Algorithm
+	Tiempo de ejecucion: 3,42 ms
+	Sol_al: 28,1519868
+	Alpha: 0,9393343
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 43,7530788
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 32,0306164
+	Sol_mejor: 28,6673161
+
+Iteracion 10 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,84 ms
+	Sol_al: 2123,1787383
+	Iteracion_donde_se_encontro_un_minimo: 46
+	Sol_final_algoritmo: 1936,5079577
+SA Algorithm
+	Tiempo de ejecucion: 3,51 ms
+	Sol_al: 1143,0355555
+	Alpha: 0,9522962
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 86,8167401
+	Iteracion_donde_se_encontro_un_minimo: 495
+	Sol_final_algoritmo: 562,3665869
+	Sol_mejor: 369,1158680
+
+Iteracion 10 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,66 ms
+	Sol_al: 146497,2393780
+	Iteracion_donde_se_encontro_un_minimo: 54
+	Sol_final_algoritmo: 102033,8103992
+SA Algorithm
+	Tiempo de ejecucion: 6,15 ms
+	Sol_al: 286610,7427093
+	Alpha: 0,8871440
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 2,5101815
+	Iteracion_donde_se_encontro_un_minimo: 477
+	Sol_final_algoritmo: 51,9130441
+	Sol_mejor: 51,6795881
+
+Iteracion 10 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,74 ms
+	Sol_al: 9550404502,2793331
+	Iteracion_donde_se_encontro_un_minimo: 74
+	Sol_final_algoritmo: 44037384,5663375
+SA Algorithm
+	Tiempo de ejecucion: 2,20 ms
+	Sol_al: 22367573669,2088966
+	Alpha: 0,9374562
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 39,5866212
+	Iteracion_donde_se_encontro_un_minimo: 491
+	Sol_final_algoritmo: 49970822,8737226
+	Sol_mejor: 49970814,9324278
+
+Iteracion 10 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,10 ms
+	Sol_al: 15,3848217
+	Iteracion_donde_se_encontro_un_minimo: 136
+	Sol_final_algoritmo: 12,0919174
+SA Algorithm
+	Tiempo de ejecucion: 6,25 ms
+	Sol_al: 15,6739505
+	Alpha: 0,9449864
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 59,0578215
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 13,0185500
+	Sol_mejor: 13,0185500
+
+Iteracion 10 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,24 ms
+	Sol_al: 2021,6498137
+	Iteracion_donde_se_encontro_un_minimo: 377
+	Sol_final_algoritmo: 1639,6383920
+SA Algorithm
+	Tiempo de ejecucion: 2,65 ms
+	Sol_al: 2678,1036708
+	Alpha: 0,9891042
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 578,2329736
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 2141,4054870
+	Sol_mejor: 2141,4054870
+
+Iteracion 11 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,07 ms
+	Sol_al: 34,6391153
+	Iteracion_donde_se_encontro_un_minimo: 245
+	Sol_final_algoritmo: 31,5138948
+SA Algorithm
+	Tiempo de ejecucion: 2,84 ms
+	Sol_al: 26,0911425
+	Alpha: 0,9678062
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 194,7247116
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 29,3267621
+	Sol_mejor: 29,3267621
+
+Iteracion 11 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,69 ms
+	Sol_al: 2626,9255262
+	Iteracion_donde_se_encontro_un_minimo: 282
+	Sol_final_algoritmo: 1158,1238802
+SA Algorithm
+	Tiempo de ejecucion: 3,58 ms
+	Sol_al: 2013,3745387
+	Alpha: 0,8933920
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,5653566
+	Iteracion_donde_se_encontro_un_minimo: 470
+	Sol_final_algoritmo: 34,1966574
+	Sol_mejor: 28,9032879
+
+Iteracion 11 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,96 ms
+	Sol_al: 196675,8418695
+	Iteracion_donde_se_encontro_un_minimo: 61
+	Sol_final_algoritmo: 134978,9086978
+SA Algorithm
+	Tiempo de ejecucion: 5,27 ms
+	Sol_al: 183190,2469052
+	Alpha: 0,9365000
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 37,6173806
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 154,8872232
+	Sol_mejor: 154,8872232
+
+Iteracion 11 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,74 ms
+	Sol_al: 13193059518,0830612
+	Iteracion_donde_se_encontro_un_minimo: 129
+	Sol_final_algoritmo: 3232918533,1437893
+SA Algorithm
+	Tiempo de ejecucion: 2,02 ms
+	Sol_al: 3763131075,7038040
+	Alpha: 0,9284621
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 24,4460428
+	Iteracion_donde_se_encontro_un_minimo: 472
+	Sol_final_algoritmo: 66,7885729
+	Sol_mejor: 66,7885729
+
+Iteracion 11 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,64 ms
+	Sol_al: 10,5312091
+	Iteracion_donde_se_encontro_un_minimo: 387
+	Sol_final_algoritmo: 8,8138234
+SA Algorithm
+	Tiempo de ejecucion: 6,00 ms
+	Sol_al: 11,4600897
+	Alpha: 0,9488518
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 72,4300743
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 20,9248133
+	Sol_mejor: 20,9248133
+
+Iteracion 11 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,28 ms
+	Sol_al: 2683,6738909
+	Iteracion_donde_se_encontro_un_minimo: 274
+	Sol_final_algoritmo: 2583,8748843
+SA Algorithm
+	Tiempo de ejecucion: 2,70 ms
+	Sol_al: 1509,1240445
+	Alpha: 0,9554812
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 102,5906681
+	Iteracion_donde_se_encontro_un_minimo: 495
+	Sol_final_algoritmo: 840,4613155
+	Sol_mejor: 501,3930099
+
+Iteracion 12 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 3,06 ms
+	Sol_al: 22,8081730
+	Iteracion_donde_se_encontro_un_minimo: 322
+	Sol_final_algoritmo: 21,1026224
+SA Algorithm
+	Tiempo de ejecucion: 3,47 ms
+	Sol_al: 34,9671719
+	Alpha: 0,9675399
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 192,0628176
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 42,4054841
+	Sol_mejor: 42,4054841
+
+Iteracion 12 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,84 ms
+	Sol_al: 1732,3657759
+	Iteracion_donde_se_encontro_un_minimo: 360
+	Sol_final_algoritmo: 1728,3491423
+SA Algorithm
+	Tiempo de ejecucion: 3,56 ms
+	Sol_al: 2176,5718455
+	Alpha: 0,9160619
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 12,4807407
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 104,4141314
+	Sol_mejor: 104,4141314
+
+Iteracion 12 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,29 ms
+	Sol_al: 63201,3036492
+	Iteracion_donde_se_encontro_un_minimo: 53
+	Sol_final_algoritmo: 34317,8829932
+SA Algorithm
+	Tiempo de ejecucion: 5,08 ms
+	Sol_al: 214617,7521862
+	Alpha: 0,8940833
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,7059439
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 11823,7298432
+	Sol_mejor: 11823,7298432
+
+Iteracion 12 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,51 ms
+	Sol_al: 10238045605,8916359
+	Iteracion_donde_se_encontro_un_minimo: 50
+	Sol_final_algoritmo: 10238045604,9812508
+SA Algorithm
+	Tiempo de ejecucion: 1,90 ms
+	Sol_al: 19714571708,4793358
+	Alpha: 0,9869746
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 519,1574886
+	Iteracion_donde_se_encontro_un_minimo: 477
+	Sol_final_algoritmo: 1036161302,4800613
+	Sol_mejor: 1036160428,5768427
+
+Iteracion 12 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,18 ms
+	Sol_al: 11,4175461
+	Iteracion_donde_se_encontro_un_minimo: 347
+	Sol_final_algoritmo: 8,2361498
+SA Algorithm
+	Tiempo de ejecucion: 7,55 ms
+	Sol_al: 12,1355092
+	Alpha: 0,8935713
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,6013102
+	Iteracion_donde_se_encontro_un_minimo: 494
+	Sol_final_algoritmo: 15,3505130
+	Sol_mejor: 10,2178382
+
+Iteracion 12 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,29 ms
+	Sol_al: 2128,8272275
+	Iteracion_donde_se_encontro_un_minimo: 20
+	Sol_final_algoritmo: 2046,2818857
+SA Algorithm
+	Tiempo de ejecucion: 2,69 ms
+	Sol_al: 1947,2052803
+	Alpha: 0,8869983
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 2,4896523
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 38,5951876
+	Sol_mejor: 38,5951876
+
+Iteracion 13 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,14 ms
+	Sol_al: 38,0186831
+	Iteracion_donde_se_encontro_un_minimo: 439
+	Sol_final_algoritmo: 26,6779375
+SA Algorithm
+	Tiempo de ejecucion: 2,88 ms
+	Sol_al: 20,5543777
+	Alpha: 0,9270970
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 22,7121618
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 31,2043840
+	Sol_mejor: 28,3155573
+
+Iteracion 13 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 3,52 ms
+	Sol_al: 1426,7472665
+	Iteracion_donde_se_encontro_un_minimo: 160
+	Sol_final_algoritmo: 1292,5433213
+SA Algorithm
+	Tiempo de ejecucion: 3,27 ms
+	Sol_al: 3170,5973263
+	Alpha: 0,8898911
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 2,9298285
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 29,7133842
+	Sol_mejor: 29,7133842
+
+Iteracion 13 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,66 ms
+	Sol_al: 120349,9052947
+	Iteracion_donde_se_encontro_un_minimo: 148
+	Sol_final_algoritmo: 62153,1139487
+SA Algorithm
+	Tiempo de ejecucion: 5,40 ms
+	Sol_al: 98970,3178731
+	Alpha: 0,9168976
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 13,0629953
+	Iteracion_donde_se_encontro_un_minimo: 494
+	Sol_final_algoritmo: 9372,8076606
+	Sol_mejor: 9372,8076606
+
+Iteracion 13 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,14 ms
+	Sol_al: 13247727317,6816368
+	Iteracion_donde_se_encontro_un_minimo: 30
+	Sol_final_algoritmo: 733250761,4324018
+SA Algorithm
+	Tiempo de ejecucion: 2,25 ms
+	Sol_al: 16244845645,0147705
+	Alpha: 0,9459504
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 62,1467231
+	Iteracion_donde_se_encontro_un_minimo: 472
+	Sol_final_algoritmo: 49605,6580524
+	Sol_mejor: 49574,2788688
+
+Iteracion 13 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,22 ms
+	Sol_al: 14,6161002
+	Iteracion_donde_se_encontro_un_minimo: 124
+	Sol_final_algoritmo: 13,4517877
+SA Algorithm
+	Tiempo de ejecucion: 5,77 ms
+	Sol_al: 14,5730432
+	Alpha: 0,9422639
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 51,1242646
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 15,7944021
+	Sol_mejor: 9,4744930
+
+Iteracion 13 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,55 ms
+	Sol_al: 1171,1958650
+	Iteracion_donde_se_encontro_un_minimo: 480
+	Sol_final_algoritmo: 1114,3122463
+SA Algorithm
+	Tiempo de ejecucion: 2,74 ms
+	Sol_al: 2580,5247937
+	Alpha: 0,9209328
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 16,2703681
+	Iteracion_donde_se_encontro_un_minimo: 493
+	Sol_final_algoritmo: 914,4349338
+	Sol_mejor: 899,6227323
+
+Iteracion 14 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,19 ms
+	Sol_al: 41,1468397
+	Iteracion_donde_se_encontro_un_minimo: 386
+	Sol_final_algoritmo: 37,0119571
+SA Algorithm
+	Tiempo de ejecucion: 2,86 ms
+	Sol_al: 27,8468262
+	Alpha: 0,9267749
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 22,3210170
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 25,8918295
+	Sol_mejor: 24,3360221
+
+Iteracion 14 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 3,02 ms
+	Sol_al: 1386,3853829
+	Iteracion_donde_se_encontro_un_minimo: 240
+	Sol_final_algoritmo: 1170,3677267
+SA Algorithm
+	Tiempo de ejecucion: 3,30 ms
+	Sol_al: 1951,4875922
+	Alpha: 0,8800017
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 1,6756246
+	Iteracion_donde_se_encontro_un_minimo: 481
+	Sol_final_algoritmo: 32,1579547
+	Sol_mejor: 31,2125084
+
+Iteracion 14 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,80 ms
+	Sol_al: 202457,1007016
+	Iteracion_donde_se_encontro_un_minimo: 14
+	Sol_final_algoritmo: 131451,6352470
+SA Algorithm
+	Tiempo de ejecucion: 5,40 ms
+	Sol_al: 37079,7180375
+	Alpha: 0,9544249
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 97,0707885
+	Iteracion_donde_se_encontro_un_minimo: 476
+	Sol_final_algoritmo: 130,0085764
+	Sol_mejor: 84,9881875
+
+Iteracion 14 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,60 ms
+	Sol_al: 8768469612,4246464
+	Iteracion_donde_se_encontro_un_minimo: 37
+	Sol_final_algoritmo: 6886906692,3526192
+SA Algorithm
+	Tiempo de ejecucion: 1,83 ms
+	Sol_al: 25919519527,8162727
+	Alpha: 0,9349573
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 34,6409370
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 2,7413848
+	Sol_mejor: 2,7339075
+
+Iteracion 14 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,58 ms
+	Sol_al: 18,4838256
+	Iteracion_donde_se_encontro_un_minimo: 276
+	Sol_final_algoritmo: 9,4063935
+SA Algorithm
+	Tiempo de ejecucion: 6,03 ms
+	Sol_al: 16,9893481
+	Alpha: 0,8985630
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 4,7580231
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 15,6476621
+	Sol_mejor: 15,6476621
+
+Iteracion 14 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,28 ms
+	Sol_al: 2231,8310428
+	Iteracion_donde_se_encontro_un_minimo: 119
+	Sol_final_algoritmo: 797,3948238
+SA Algorithm
+	Tiempo de ejecucion: 2,72 ms
+	Sol_al: 1047,6473353
+	Alpha: 0,8974919
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 4,4825705
+	Iteracion_donde_se_encontro_un_minimo: 488
+	Sol_final_algoritmo: 363,8027696
+	Sol_mejor: 363,8027696
+
+Iteracion 15 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,19 ms
+	Sol_al: 35,1300281
+	Iteracion_donde_se_encontro_un_minimo: 204
+	Sol_final_algoritmo: 22,1922456
+SA Algorithm
+	Tiempo de ejecucion: 3,56 ms
+	Sol_al: 34,4496832
+	Alpha: 0,9073804
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 7,7530082
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 17,4901409
+	Sol_mejor: 17,4901409
+
+Iteracion 15 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 3,62 ms
+	Sol_al: 3083,0678701
+	Iteracion_donde_se_encontro_un_minimo: 238
+	Sol_final_algoritmo: 1663,4632675
+SA Algorithm
+	Tiempo de ejecucion: 3,43 ms
+	Sol_al: 1152,1165490
+	Alpha: 0,9641547
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 161,1892151
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 687,1509461
+	Sol_mejor: 687,1509461
+
+Iteracion 15 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,73 ms
+	Sol_al: 205471,7783712
+	Iteracion_donde_se_encontro_un_minimo: 280
+	Sol_final_algoritmo: 202726,8954577
+SA Algorithm
+	Tiempo de ejecucion: 5,76 ms
+	Sol_al: 58683,8438491
+	Alpha: 0,9420761
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 50,6174358
+	Iteracion_donde_se_encontro_un_minimo: 490
+	Sol_final_algoritmo: 169,9253028
+	Sol_mejor: 160,0502893
+
+Iteracion 15 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,75 ms
+	Sol_al: 15317907256,1607780
+	Iteracion_donde_se_encontro_un_minimo: 3
+	Sol_final_algoritmo: 14547717056,8984604
+SA Algorithm
+	Tiempo de ejecucion: 1,93 ms
+	Sol_al: 10795708862,9214821
+	Alpha: 0,9489358
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 72,7513334
+	Iteracion_donde_se_encontro_un_minimo: 428
+	Sol_final_algoritmo: 68924325,8568975
+	Sol_mejor: 68924316,2413790
+
+Iteracion 15 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,09 ms
+	Sol_al: 19,8227953
+	Iteracion_donde_se_encontro_un_minimo: 305
+	Sol_final_algoritmo: 11,7864890
+SA Algorithm
+	Tiempo de ejecucion: 6,27 ms
+	Sol_al: 12,8399849
+	Alpha: 0,9015913
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 5,6297035
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 10,3295320
+	Sol_mejor: 9,5198553
+
+Iteracion 15 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,69 ms
+	Sol_al: 1791,9617223
+	Iteracion_donde_se_encontro_un_minimo: 369
+	Sol_final_algoritmo: 1786,4937915
+SA Algorithm
+	Tiempo de ejecucion: 2,89 ms
+	Sol_al: 975,0927448
+	Alpha: 0,8927866
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,4465300
+	Iteracion_donde_se_encontro_un_minimo: 482
+	Sol_final_algoritmo: 30,4821818
+	Sol_mejor: 30,1758799
+
+Iteracion 16 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,06 ms
+	Sol_al: 32,5298747
+	Iteracion_donde_se_encontro_un_minimo: 139
+	Sol_final_algoritmo: 22,4565364
+SA Algorithm
+	Tiempo de ejecucion: 2,72 ms
+	Sol_al: 23,1878831
+	Alpha: 0,9683577
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 200,3506047
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 13,9609502
+	Sol_mejor: 13,9609502
+
+Iteracion 16 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,83 ms
+	Sol_al: 1926,3634708
+	Iteracion_donde_se_encontro_un_minimo: 102
+	Sol_final_algoritmo: 1676,9279372
+SA Algorithm
+	Tiempo de ejecucion: 3,79 ms
+	Sol_al: 1878,9154145
+	Alpha: 0,9362230
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 37,0652059
+	Iteracion_donde_se_encontro_un_minimo: 493
+	Sol_final_algoritmo: 183,2720861
+	Sol_mejor: 183,2720861
+
+Iteracion 16 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,78 ms
+	Sol_al: 66882,1118070
+	Iteracion_donde_se_encontro_un_minimo: 132
+	Sol_final_algoritmo: 48104,2959816
+SA Algorithm
+	Tiempo de ejecucion: 5,19 ms
+	Sol_al: 149652,1584679
+	Alpha: 0,8832398
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 2,0134026
+	Iteracion_donde_se_encontro_un_minimo: 492
+	Sol_final_algoritmo: 27924,9414802
+	Sol_mejor: 27924,9414802
+
+Iteracion 16 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,89 ms
+	Sol_al: 11051662806,3680229
+	Iteracion_donde_se_encontro_un_minimo: 41
+	Sol_final_algoritmo: 11051652489,9824066
+SA Algorithm
+	Tiempo de ejecucion: 1,93 ms
+	Sol_al: 24790727719,1859818
+	Alpha: 0,9151932
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 11,9024978
+	Iteracion_donde_se_encontro_un_minimo: 474
+	Sol_final_algoritmo: 18,5792533
+	Sol_mejor: 18,5792533
+
+Iteracion 16 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 6,31 ms
+	Sol_al: 19,7266294
+	Iteracion_donde_se_encontro_un_minimo: 245
+	Sol_final_algoritmo: 15,3491913
+SA Algorithm
+	Tiempo de ejecucion: 5,73 ms
+	Sol_al: 18,2662049
+	Alpha: 0,8829728
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 1,9832007
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 8,3349971
+	Sol_mejor: 8,3003329
+
+Iteracion 16 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,18 ms
+	Sol_al: 1076,2729283
+	Iteracion_donde_se_encontro_un_minimo: 240
+	Sol_final_algoritmo: 1059,0803834
+SA Algorithm
+	Tiempo de ejecucion: 3,16 ms
+	Sol_al: 1205,5976323
+	Alpha: 0,8809638
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 1,7697103
+	Iteracion_donde_se_encontro_un_minimo: 493
+	Sol_final_algoritmo: 55,0197455
+	Sol_mejor: 55,0197455
+
+Iteracion 17 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,51 ms
+	Sol_al: 33,0374618
+	Iteracion_donde_se_encontro_un_minimo: 381
+	Sol_final_algoritmo: 27,0396292
+SA Algorithm
+	Tiempo de ejecucion: 2,86 ms
+	Sol_al: 32,0868302
+	Alpha: 0,9831229
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 426,9641207
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 22,8682463
+	Sol_mejor: 16,7013623
+
+Iteracion 17 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,82 ms
+	Sol_al: 928,3139630
+	Iteracion_donde_se_encontro_un_minimo: 30
+	Sol_final_algoritmo: 921,9383846
+SA Algorithm
+	Tiempo de ejecucion: 3,30 ms
+	Sol_al: 1195,7458352
+	Alpha: 0,9261763
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 21,6114250
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 50,6603616
+	Sol_mejor: 50,6603616
+
+Iteracion 17 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,92 ms
+	Sol_al: 260651,6695970
+	Iteracion_donde_se_encontro_un_minimo: 297
+	Sol_final_algoritmo: 196981,4331936
+SA Algorithm
+	Tiempo de ejecucion: 6,23 ms
+	Sol_al: 406168,4016226
+	Alpha: 0,9716581
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 237,5057683
+	Iteracion_donde_se_encontro_un_minimo: 492
+	Sol_final_algoritmo: 54222,9497634
+	Sol_mejor: 54126,8723378
+
+Iteracion 17 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,65 ms
+	Sol_al: 10259828961,7586632
+	Iteracion_donde_se_encontro_un_minimo: 14
+	Sol_final_algoritmo: 4825943867,9863977
+SA Algorithm
+	Tiempo de ejecucion: 2,01 ms
+	Sol_al: 5948330613,8263397
+	Alpha: 0,9462405
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 63,1068498
+	Iteracion_donde_se_encontro_un_minimo: 488
+	Sol_final_algoritmo: 24136185,8922178
+	Sol_mejor: 24136185,8922178
+
+Iteracion 17 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,68 ms
+	Sol_al: 10,7044071
+	Iteracion_donde_se_encontro_un_minimo: 370
+	Sol_final_algoritmo: 6,5546261
+SA Algorithm
+	Tiempo de ejecucion: 6,11 ms
+	Sol_al: 17,3126778
+	Alpha: 0,8823492
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 1,9143602
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 10,6110821
+	Sol_mejor: 10,6110821
+
+Iteracion 17 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,15 ms
+	Sol_al: 1870,9031752
+	Iteracion_donde_se_encontro_un_minimo: 303
+	Sol_final_algoritmo: 1625,8628429
+SA Algorithm
+	Tiempo de ejecucion: 2,71 ms
+	Sol_al: 2089,9133541
+	Alpha: 0,9205574
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 15,9420290
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 396,2326831
+	Sol_mejor: 396,2326831
+
+Iteracion 18 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,32 ms
+	Sol_al: 42,1112853
+	Iteracion_donde_se_encontro_un_minimo: 12
+	Sol_final_algoritmo: 35,7635960
+SA Algorithm
+	Tiempo de ejecucion: 2,75 ms
+	Sol_al: 26,2516644
+	Alpha: 0,9562197
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 106,6309816
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 34,1631075
+	Sol_mejor: 34,1631075
+
+Iteracion 18 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,05 ms
+	Sol_al: 1325,0155154
+	Iteracion_donde_se_encontro_un_minimo: 404
+	Sol_final_algoritmo: 445,7675665
+SA Algorithm
+	Tiempo de ejecucion: 3,67 ms
+	Sol_al: 474,0825662
+	Alpha: 0,9440248
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 56,1267449
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 197,0008239
+	Sol_mejor: 167,3894685
+
+Iteracion 18 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,68 ms
+	Sol_al: 93735,0872399
+	Iteracion_donde_se_encontro_un_minimo: 317
+	Sol_final_algoritmo: 91466,6436278
+SA Algorithm
+	Tiempo de ejecucion: 5,39 ms
+	Sol_al: 285667,5831496
+	Alpha: 0,8921568
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,3270427
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 4648,7191512
+	Sol_mejor: 4648,7191512
+
+Iteracion 18 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,81 ms
+	Sol_al: 2648155732,8061051
+	Iteracion_donde_se_encontro_un_minimo: 8
+	Sol_final_algoritmo: 2601252171,5956492
+SA Algorithm
+	Tiempo de ejecucion: 1,98 ms
+	Sol_al: 6591308690,3800745
+	Alpha: 0,9188045
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 14,4929167
+	Iteracion_donde_se_encontro_un_minimo: 468
+	Sol_final_algoritmo: 798752,9471919
+	Sol_mejor: 798751,0259654
+
+Iteracion 18 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,11 ms
+	Sol_al: 12,1635679
+	Iteracion_donde_se_encontro_un_minimo: 395
+	Sol_final_algoritmo: 10,9071659
+SA Algorithm
+	Tiempo de ejecucion: 5,91 ms
+	Sol_al: 23,3031499
+	Alpha: 0,9677674
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 194,3338444
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 11,9590649
+	Sol_mejor: 9,3373208
+
+Iteracion 18 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,15 ms
+	Sol_al: 1385,4468178
+	Iteracion_donde_se_encontro_un_minimo: 418
+	Sol_final_algoritmo: 912,3570536
+SA Algorithm
+	Tiempo de ejecucion: 4,20 ms
+	Sol_al: 1410,1471128
+	Alpha: 0,9257396
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 21,1077993
+	Iteracion_donde_se_encontro_un_minimo: 494
+	Sol_final_algoritmo: 117,5141900
+	Sol_mejor: 116,9884951
+
+Iteracion 19 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,57 ms
+	Sol_al: 26,5773653
+	Iteracion_donde_se_encontro_un_minimo: 15
+	Sol_final_algoritmo: 21,8986095
+SA Algorithm
+	Tiempo de ejecucion: 2,87 ms
+	Sol_al: 36,0119497
+	Alpha: 0,8952054
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 3,9458052
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 21,3020023
+	Sol_mejor: 21,3020023
+
+Iteracion 19 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,67 ms
+	Sol_al: 2496,2769294
+	Iteracion_donde_se_encontro_un_minimo: 419
+	Sol_final_algoritmo: 2315,4673072
+SA Algorithm
+	Tiempo de ejecucion: 3,38 ms
+	Sol_al: 1997,8092876
+	Alpha: 0,9561037
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 105,9864778
+	Iteracion_donde_se_encontro_un_minimo: 494
+	Sol_final_algoritmo: 836,4548840
+	Sol_mejor: 662,8911560
+
+Iteracion 19 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,02 ms
+	Sol_al: 216068,9474030
+	Iteracion_donde_se_encontro_un_minimo: 54
+	Sol_final_algoritmo: 209586,9358140
+SA Algorithm
+	Tiempo de ejecucion: 5,17 ms
+	Sol_al: 255602,6510630
+	Alpha: 0,9680332
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 197,0213466
+	Iteracion_donde_se_encontro_un_minimo: 497
+	Sol_final_algoritmo: 73622,8843822
+	Sol_mejor: 73622,8843822
+
+Iteracion 19 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,59 ms
+	Sol_al: 11616113811,2208633
+	Iteracion_donde_se_encontro_un_minimo: 21
+	Sol_final_algoritmo: 11615847785,9825974
+SA Algorithm
+	Tiempo de ejecucion: 2,13 ms
+	Sol_al: 2486513218,2189503
+	Alpha: 0,9178169
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 13,7341428
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 113449,1900086
+	Sol_mejor: 113440,0401055
+
+Iteracion 19 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 6,22 ms
+	Sol_al: 16,3186487
+	Iteracion_donde_se_encontro_un_minimo: 257
+	Sol_final_algoritmo: 15,9321176
+SA Algorithm
+	Tiempo de ejecucion: 6,27 ms
+	Sol_al: 16,3682319
+	Alpha: 0,9803019
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 369,8214741
+	Iteracion_donde_se_encontro_un_minimo: 498
+	Sol_final_algoritmo: 15,3048200
+	Sol_mejor: 14,6779575
+
+Iteracion 19 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,08 ms
+	Sol_al: 2518,7737457
+	Iteracion_donde_se_encontro_un_minimo: 68
+	Sol_final_algoritmo: 1725,2958427
+SA Algorithm
+	Tiempo de ejecucion: 2,59 ms
+	Sol_al: 923,8360277
+	Alpha: 0,9011198
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 5,4843812
+	Iteracion_donde_se_encontro_un_minimo: 490
+	Sol_final_algoritmo: 74,6221358
+	Sol_mejor: 74,6221358
+
+Iteracion 20 Function: Alpine
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,56 ms
+	Sol_al: 30,2578546
+	Iteracion_donde_se_encontro_un_minimo: 485
+	Sol_final_algoritmo: 21,6269443
+SA Algorithm
+	Tiempo de ejecucion: 3,17 ms
+	Sol_al: 32,0050206
+	Alpha: 0,9000701
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 5,1738745
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 29,5531009
+	Sol_mejor: 26,9220198
+
+Iteracion 20 Function: Dixon
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,80 ms
+	Sol_al: 728,0313692
+	Iteracion_donde_se_encontro_un_minimo: 330
+	Sol_final_algoritmo: 528,6153748
+SA Algorithm
+	Tiempo de ejecucion: 3,32 ms
+	Sol_al: 2104,4858747
+	Alpha: 0,8831801
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 2,0066137
+	Iteracion_donde_se_encontro_un_minimo: 496
+	Sol_final_algoritmo: 41,7519788
+	Sol_mejor: 41,7519788
+
+Iteracion 20 Function: Quintic
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 4,70 ms
+	Sol_al: 476973,9082906
+	Iteracion_donde_se_encontro_un_minimo: 11
+	Sol_final_algoritmo: 215097,7486263
+SA Algorithm
+	Tiempo de ejecucion: 6,40 ms
+	Sol_al: 115812,7633561
+	Alpha: 0,9869307
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 518,0030312
+	Iteracion_donde_se_encontro_un_minimo: 491
+	Sol_final_algoritmo: 38472,6761061
+	Sol_mejor: 38467,2065674
+
+Iteracion 20 Function: Schwefel
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 1,75 ms
+	Sol_al: 24431231478,5868530
+	Iteracion_donde_se_encontro_un_minimo: 47
+	Sol_final_algoritmo: 24387489897,4625549
+SA Algorithm
+	Tiempo de ejecucion: 2,15 ms
+	Sol_al: 8867746143,7047253
+	Alpha: 0,8806502
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 1,7384879
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 168,6098351
+	Sol_mejor: 168,6098351
+
+Iteracion 20 Function: Streched
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 5,11 ms
+	Sol_al: 19,7005357
+	Iteracion_donde_se_encontro_un_minimo: 347
+	Sol_final_algoritmo: 12,3913901
+SA Algorithm
+	Tiempo de ejecucion: 6,55 ms
+	Sol_al: 16,9416049
+	Alpha: 0,9185387
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 14,2847851
+	Iteracion_donde_se_encontro_un_minimo: 499
+	Sol_final_algoritmo: 10,3725583
+	Sol_mejor: 10,3725583
+
+Iteracion 20 Function: Sum Squares
+	Dimension: 10
+RMHC Algorithm
+	Tiempo de ejecucion: 2,10 ms
+	Sol_al: 2101,8016870
+	Iteracion_donde_se_encontro_un_minimo: 435
+	Sol_final_algoritmo: 2060,8855147
+SA Algorithm
+	Tiempo de ejecucion: 2,73 ms
+	Sol_al: 935,2846343
+	Alpha: 0,8902752
+	T_max: 1000
+	T_min: 0,0001
+	T_final: 2,9937321
+	Iteracion_donde_se_encontro_un_minimo: 477
+	Sol_final_algoritmo: 356,9563965
+	Sol_mejor: 351,7389473
+
