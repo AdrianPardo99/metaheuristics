@@ -1,0 +1,1084 @@
+Formato de solucion RMHC
+Sol_al	Iteracion_donde_se_encontro_un_minimo	Sol_final_algoritmo
+Formato de solucion SA
+Sol_al	Alpha	T_max	T_min	T_final	Iteracion_donde_se_encontro_un_minimo	Sol_final_algoritmo	Sol_mejor
+Iteracion 1 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,82 ms
+	58,4022186	51	47,6352830
+SA Algorithm
+	Tiempo de ejecucion: 5,96 ms
+	98,2472953	0,8973088	1000	0,0001	158,4938964	499	83,0274031	83,0274031
+
+Iteracion 1 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,46 ms
+	18960,5171065	75	17394,0173246
+SA Algorithm
+	Tiempo de ejecucion: 7,74 ms
+	15927,4122220	0,8875729	1000	0,0001	131,6645684	499	3054,1608028	3054,1608028
+
+Iteracion 1 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,10 ms
+	530239,1850382	27	455736,5463688
+SA Algorithm
+	Tiempo de ejecucion: 12,65 ms
+	595958,1479506	0,9241399	1000	0,0001	261,5420579	493	4080,9274752	4077,4382271
+
+Iteracion 1 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,89 ms
+	31926967917,6537819	29	20104710677,2078896
+SA Algorithm
+	Tiempo de ejecucion: 3,49 ms
+	23320435900,1622314	0,8836340	1000	0,0001	122,0761572	484	583901,8079359	583821,6136038
+
+Iteracion 1 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,59 ms
+	43,7973573	145	37,7988999
+SA Algorithm
+	Tiempo de ejecucion: 15,07 ms
+	58,7086838	0,9461088	1000	0,0001	389,9407603	497	52,5087029	47,9380703
+
+Iteracion 1 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,60 ms
+	13213,5429649	133	12837,9897477
+SA Algorithm
+	Tiempo de ejecucion: 5,28 ms
+	16469,0767319	0,9094149	1000	0,0001	199,0469021	499	4282,3167984	4282,3167984
+
+Iteracion 2 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,51 ms
+	101,0148810	49	90,6049909
+SA Algorithm
+	Tiempo de ejecucion: 5,76 ms
+	95,7417024	0,9066139	1000	0,0001	188,8775993	498	98,9218127	94,5643517
+
+Iteracion 2 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,40 ms
+	18237,0170336	193	17312,1973929
+SA Algorithm
+	Tiempo de ejecucion: 7,50 ms
+	16457,6451806	0,9894830	1000	0,0001	835,4908671	497	5567,0522194	5108,2543482
+
+Iteracion 2 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,95 ms
+	554564,0850911	320	537290,6608769
+SA Algorithm
+	Tiempo de ejecucion: 12,54 ms
+	445074,4538490	0,9015969	1000	0,0001	171,8742928	499	2095,0710852	2095,0710852
+
+Iteracion 2 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,94 ms
+	26431965474,0298920	16	26431925039,9376144
+SA Algorithm
+	Tiempo de ejecucion: 3,66 ms
+	47857408366,2624054	0,9226643	1000	0,0001	254,5323735	493	145242,5212158	145242,5212040
+
+Iteracion 2 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,66 ms
+	49,8785432	76	34,6579771
+SA Algorithm
+	Tiempo de ejecucion: 14,90 ms
+	48,4157714	0,9339976	1000	0,0001	313,2406062	499	45,4365687	45,4365687
+
+Iteracion 2 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,52 ms
+	16661,4395289	320	14437,9221317
+SA Algorithm
+	Tiempo de ejecucion: 5,34 ms
+	17625,2580509	0,9077856	1000	0,0001	193,0704882	497	6083,9916283	6051,8688120
+
+Iteracion 3 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,51 ms
+	110,7816969	279	100,0073542
+SA Algorithm
+	Tiempo de ejecucion: 5,71 ms
+	94,0527530	0,9401470	1000	0,0001	350,2096380	497	112,4999176	107,3693987
+
+Iteracion 3 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,76 ms
+	17657,4594693	421	17418,8288080
+SA Algorithm
+	Tiempo de ejecucion: 12,35 ms
+	10771,7272097	0,8832424	1000	0,0001	121,1598771	492	1985,9111786	1797,5803569
+
+Iteracion 3 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 17,65 ms
+	530590,3481433	102	511573,8255251
+SA Algorithm
+	Tiempo de ejecucion: 13,23 ms
+	446699,0858464	0,8916743	1000	0,0001	142,3987528	497	1123,8917193	1123,8917193
+
+Iteracion 3 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,00 ms
+	17859648178,2567673	96	12646986835,2615471
+SA Algorithm
+	Tiempo de ejecucion: 3,46 ms
+	30090066852,5629768	0,9384118	1000	0,0001	339,3820470	497	2163,0875299	2163,0875299
+
+Iteracion 3 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,52 ms
+	42,1377641	150	35,2100094
+SA Algorithm
+	Tiempo de ejecucion: 15,14 ms
+	49,3161784	0,9738387	1000	0,0001	637,2049325	498	47,5087265	46,8955521
+
+Iteracion 3 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,44 ms
+	18085,6697071	124	16049,0884363
+SA Algorithm
+	Tiempo de ejecucion: 5,45 ms
+	12988,2273407	0,9616590	1000	0,0001	514,4686696	499	10547,2242164	10547,2242164
+
+Iteracion 4 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,54 ms
+	99,5103796	299	87,7333365
+SA Algorithm
+	Tiempo de ejecucion: 5,78 ms
+	94,1844541	0,8819464	1000	0,0001	118,1728169	497	82,7807313	77,6424757
+
+Iteracion 4 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,53 ms
+	21924,2226211	394	18485,6207436
+SA Algorithm
+	Tiempo de ejecucion: 7,46 ms
+	16914,1147640	0,9471766	1000	0,0001	397,4899704	497	4117,6299815	4117,6299815
+
+Iteracion 4 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,75 ms
+	456747,4610172	66	308273,7956253
+SA Algorithm
+	Tiempo de ejecucion: 12,86 ms
+	891539,6529063	0,9739639	1000	0,0001	638,5998135	494	4541,0938206	4145,4036185
+
+Iteracion 4 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,01 ms
+	20926419436,8578262	41	19476366105,5128517
+SA Algorithm
+	Tiempo de ejecucion: 3,57 ms
+	35405194154,0693359	0,9897569	1000	0,0001	839,4311760	492	2228471,2464181	2228471,2464181
+
+Iteracion 4 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,65 ms
+	51,7006148	492	44,3121555
+SA Algorithm
+	Tiempo de ejecucion: 14,86 ms
+	49,8631210	0,9232922	1000	0,0001	257,4931514	496	62,5609186	53,0052302
+
+Iteracion 4 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,48 ms
+	17044,6727106	38	15626,0642756
+SA Algorithm
+	Tiempo de ejecucion: 5,50 ms
+	14684,3903898	0,9818789	1000	0,0001	732,7983413	499	8827,8150334	8827,8150334
+
+Iteracion 5 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,50 ms
+	82,6469091	14	72,3584603
+SA Algorithm
+	Tiempo de ejecucion: 5,72 ms
+	101,2245680	0,9660727	1000	0,0001	556,1181847	499	96,9601232	96,9601232
+
+Iteracion 5 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,44 ms
+	15213,1385541	187	14898,9218072
+SA Algorithm
+	Tiempo de ejecucion: 7,37 ms
+	22055,2001789	0,8937737	1000	0,0001	148,2069189	496	5000,3103152	5000,3103152
+
+Iteracion 5 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,84 ms
+	317737,4875775	339	287735,0148831
+SA Algorithm
+	Tiempo de ejecucion: 12,79 ms
+	207520,8397826	0,9827258	1000	0,0001	743,6180894	489	16963,1440393	13410,5955001
+
+Iteracion 5 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,04 ms
+	31397264929,5161743	10	24938847083,9289780
+SA Algorithm
+	Tiempo de ejecucion: 3,53 ms
+	24220374832,3957825	0,9348495	1000	0,0001	318,1330673	468	86566930,3276544	86566910,5181305
+
+Iteracion 5 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,79 ms
+	55,3295228	147	51,3179065
+SA Algorithm
+	Tiempo de ejecucion: 15,19 ms
+	26,9830841	0,9823380	1000	0,0001	738,6450409	498	37,9591614	37,7269068
+
+Iteracion 5 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,58 ms
+	15408,3483995	345	15222,0772508
+SA Algorithm
+	Tiempo de ejecucion: 5,46 ms
+	18441,0324513	0,9309058	1000	0,0001	296,0718603	499	5094,5816806	5094,5816806
+
+Iteracion 6 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,72 ms
+	79,7099101	119	72,6176407
+SA Algorithm
+	Tiempo de ejecucion: 5,79 ms
+	92,5782381	0,8891397	1000	0,0001	135,6718236	498	105,2901604	101,1655603
+
+Iteracion 6 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 7,34 ms
+	18495,7438471	198	17976,9472755
+SA Algorithm
+	Tiempo de ejecucion: 7,60 ms
+	16388,0500826	0,9044094	1000	0,0001	181,2201111	497	3604,3963035	3562,6356139
+
+Iteracion 6 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,46 ms
+	413046,1971082	233	317280,1920551
+SA Algorithm
+	Tiempo de ejecucion: 13,60 ms
+	639424,8087011	0,9393218	1000	0,0001	345,0202277	496	4125,4670061	3914,1424641
+
+Iteracion 6 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,16 ms
+	10197931823,4847851	27	10195559771,5402164
+SA Algorithm
+	Tiempo de ejecucion: 3,56 ms
+	27544535272,4114609	0,9219159	1000	0,0001	251,0452481	499	5653362,2607303	5653362,2607303
+
+Iteracion 6 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,89 ms
+	54,9204855	340	51,4852312
+SA Algorithm
+	Tiempo de ejecucion: 15,20 ms
+	47,0937386	0,9443382	1000	0,0001	377,7189405	499	45,3162200	45,3162200
+
+Iteracion 6 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,56 ms
+	17392,8780683	145	16464,8382620
+SA Algorithm
+	Tiempo de ejecucion: 5,57 ms
+	13425,0693525	0,9733275	1000	0,0001	631,5427530	499	6009,1793123	6009,1793123
+
+Iteracion 7 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,71 ms
+	78,4953522	442	60,6180643
+SA Algorithm
+	Tiempo de ejecucion: 5,98 ms
+	95,2859105	0,9810932	1000	0,0001	722,8941978	497	90,8814716	86,8743212
+
+Iteracion 7 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,62 ms
+	17294,8222377	477	14988,5210665
+SA Algorithm
+	Tiempo de ejecucion: 7,43 ms
+	18471,6859648	0,9765817	1000	0,0001	668,4149316	499	10503,3412705	10503,3412705
+
+Iteracion 7 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,04 ms
+	580474,1537371	193	537743,5123742
+SA Algorithm
+	Tiempo de ejecucion: 12,97 ms
+	725016,6787225	0,9392786	1000	0,0001	344,7510751	482	9712,8946573	9664,1918366
+
+Iteracion 7 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,92 ms
+	21615553013,6934967	225	16398532870,9292545
+SA Algorithm
+	Tiempo de ejecucion: 3,76 ms
+	27746899849,2604561	0,8836898	1000	0,0001	122,2073812	499	283586,9970373	283586,9970373
+
+Iteracion 7 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,94 ms
+	50,0474301	77	39,0879712
+SA Algorithm
+	Tiempo de ejecucion: 14,98 ms
+	46,3802081	0,8875343	1000	0,0001	131,5671665	497	57,9458861	48,8787963
+
+Iteracion 7 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,49 ms
+	14237,6603491	89	14102,7743610
+SA Algorithm
+	Tiempo de ejecucion: 5,54 ms
+	15639,8864370	0,8931071	1000	0,0001	146,3389179	489	2503,3668807	2451,2834840
+
+Iteracion 8 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,73 ms
+	102,1173603	487	86,0665090
+SA Algorithm
+	Tiempo de ejecucion: 6,18 ms
+	102,6491930	0,9188728	1000	0,0001	237,3242088	498	78,1074880	77,9823226
+
+Iteracion 8 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,39 ms
+	19435,2430290	483	19086,3443875
+SA Algorithm
+	Tiempo de ejecucion: 7,67 ms
+	17877,6394024	0,9569314	1000	0,0001	473,1227038	496	4632,5638673	4490,0759927
+
+Iteracion 8 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,04 ms
+	617472,2508230	96	596108,4832016
+SA Algorithm
+	Tiempo de ejecucion: 13,39 ms
+	556322,5374250	0,8848806	1000	0,0001	125,0373318	494	892,9661366	892,9661366
+
+Iteracion 8 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,10 ms
+	17688471824,9749184	37	13299006028,5851536
+SA Algorithm
+	Tiempo de ejecucion: 4,74 ms
+	26980938980,4868660	0,9057842	1000	0,0001	185,9606026	491	68076,8191203	67975,3918717
+
+Iteracion 8 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 20,08 ms
+	49,2591895	102	47,3001439
+SA Algorithm
+	Tiempo de ejecucion: 20,88 ms
+	41,7788537	0,9060165	1000	0,0001	186,7727344	499	48,6970918	48,6970918
+
+Iteracion 8 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 5,65 ms
+	14000,9822972	456	13930,0692977
+SA Algorithm
+	Tiempo de ejecucion: 7,84 ms
+	18034,3052806	0,8970753	1000	0,0001	157,7942498	495	5329,1601431	5181,2094584
+
+Iteracion 9 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,48 ms
+	75,1831348	295	60,8670289
+SA Algorithm
+	Tiempo de ejecucion: 6,57 ms
+	72,1689146	0,8969326	1000	0,0001	157,3682271	499	86,4214696	86,4214696
+
+Iteracion 9 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,78 ms
+	14389,8619779	27	13022,9408638
+SA Algorithm
+	Tiempo de ejecucion: 10,02 ms
+	9284,6848074	0,9756396	1000	0,0001	657,5374300	495	8531,8782936	7608,5881726
+
+Iteracion 9 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,29 ms
+	717255,5443858	333	350856,6074397
+SA Algorithm
+	Tiempo de ejecucion: 13,41 ms
+	474055,9979702	0,9564098	1000	0,0001	468,7576231	497	9772,5612196	9772,5612196
+
+Iteracion 9 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,95 ms
+	41609586312,1857605	66	32334989972,4774399
+SA Algorithm
+	Tiempo de ejecucion: 3,51 ms
+	30635426465,6538544	0,9618666	1000	0,0001	516,3601418	481	4122402502,9336605	4122402473,5789108
+
+Iteracion 9 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,67 ms
+	59,5373185	168	49,8568271
+SA Algorithm
+	Tiempo de ejecucion: 15,05 ms
+	46,6668425	0,8812771	1000	0,0001	116,6573663	498	41,8845599	37,1897646
+
+Iteracion 9 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,43 ms
+	19790,7623341	96	19606,8114585
+SA Algorithm
+	Tiempo de ejecucion: 5,39 ms
+	19984,6145102	0,9315495	1000	0,0001	299,5719610	499	5698,0042353	5698,0042353
+
+Iteracion 10 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,52 ms
+	97,6847293	111	93,8462687
+SA Algorithm
+	Tiempo de ejecucion: 5,84 ms
+	83,3754601	0,9361947	1000	0,0001	326,0054279	499	95,4342397	95,4342397
+
+Iteracion 10 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,46 ms
+	19087,4772143	382	16603,9012365
+SA Algorithm
+	Tiempo de ejecucion: 7,23 ms
+	19430,2939838	0,8878306	1000	0,0001	132,3158843	492	3219,7133314	2687,1022810
+
+Iteracion 10 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,22 ms
+	292802,5497328	61	243521,7388375
+SA Algorithm
+	Tiempo de ejecucion: 12,96 ms
+	593687,5357433	0,9595989	1000	0,0001	496,0499599	491	82979,6549897	82944,8582320
+
+Iteracion 10 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,98 ms
+	15501640614,0911331	192	15464575665,2336464
+SA Algorithm
+	Tiempo de ejecucion: 3,59 ms
+	26545481138,6335869	0,8914321	1000	0,0001	141,7427547	497	21739401,6965973	21739400,4439170
+
+Iteracion 10 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,76 ms
+	47,3811100	137	42,1066164
+SA Algorithm
+	Tiempo de ejecucion: 15,38 ms
+	44,1813663	0,9360514	1000	0,0001	325,1583652	499	47,5736866	47,5736866
+
+Iteracion 10 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,36 ms
+	13581,5685800	110	13415,3370078
+SA Algorithm
+	Tiempo de ejecucion: 5,55 ms
+	17343,0478627	0,9855859	1000	0,0001	781,2796608	499	4691,8216350	4691,8216350
+
+Iteracion 11 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,52 ms
+	99,4373643	64	96,8338366
+SA Algorithm
+	Tiempo de ejecucion: 5,83 ms
+	81,1679290	0,9534709	1000	0,0001	444,8634634	499	95,9148840	95,9148840
+
+Iteracion 11 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,58 ms
+	13237,4545187	317	12321,6081952
+SA Algorithm
+	Tiempo de ejecucion: 7,55 ms
+	19951,5366474	0,9099941	1000	0,0001	201,2130460	498	2616,1340198	2616,1340198
+
+Iteracion 11 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,97 ms
+	876423,5852128	246	820202,4285356
+SA Algorithm
+	Tiempo de ejecucion: 13,92 ms
+	270616,6496271	0,9422593	1000	0,0001	363,8289330	499	3089,4855993	3089,4855993
+
+Iteracion 11 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,14 ms
+	40953352033,9672928	48	40561600490,2266006
+SA Algorithm
+	Tiempo de ejecucion: 3,82 ms
+	27596564328,3168335	0,9852346	1000	0,0001	776,5585959	484	1004065417,1018798	1004065417,1018798
+
+Iteracion 11 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 14,75 ms
+	45,6359851	475	41,8679021
+SA Algorithm
+	Tiempo de ejecucion: 21,74 ms
+	50,4094175	0,9594019	1000	0,0001	494,3221124	498	48,0598890	45,8724271
+
+Iteracion 11 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 5,00 ms
+	19108,9313464	108	18616,3482230
+SA Algorithm
+	Tiempo de ejecucion: 7,82 ms
+	14586,2514108	0,9514470	1000	0,0001	429,0802429	499	7137,2023987	7137,2023987
+
+Iteracion 12 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,71 ms
+	60,0666532	479	49,4669507
+SA Algorithm
+	Tiempo de ejecucion: 5,96 ms
+	119,8440833	0,9041605	1000	0,0001	180,3740318	495	95,4297980	87,6252566
+
+Iteracion 12 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 7,73 ms
+	13151,5186897	248	13099,7690314
+SA Algorithm
+	Tiempo de ejecucion: 7,75 ms
+	18141,1527964	0,9377463	1000	0,0001	335,3136352	496	6553,0895078	5760,6348338
+
+Iteracion 12 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,71 ms
+	447775,6499242	412	381512,7583452
+SA Algorithm
+	Tiempo de ejecucion: 14,04 ms
+	696812,3917368	0,9718967	1000	0,0001	615,9444266	499	6278,7627979	6278,7627979
+
+Iteracion 12 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,01 ms
+	11257413065,5234261	133	9002955830,7469501
+SA Algorithm
+	Tiempo de ejecucion: 3,47 ms
+	36089347768,3863602	0,9020487	1000	0,0001	173,3444703	487	5214641936,3964920	5214641936,3964920
+
+Iteracion 12 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,95 ms
+	52,8759077	167	44,0677867
+SA Algorithm
+	Tiempo de ejecucion: 15,62 ms
+	45,1109106	0,8966051	1000	0,0001	156,3942842	495	58,5304132	47,2322140
+
+Iteracion 12 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,55 ms
+	15920,4711675	361	13664,6352669
+SA Algorithm
+	Tiempo de ejecucion: 5,62 ms
+	15790,1119290	0,9890821	1000	0,0001	829,7553244	498	9293,3512067	9293,3512067
+
+Iteracion 13 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,70 ms
+	103,3954268	124	90,1467641
+SA Algorithm
+	Tiempo de ejecucion: 5,88 ms
+	75,3569531	0,9738204	1000	0,0001	637,0023243	499	71,5459249	71,5459249
+
+Iteracion 13 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,75 ms
+	18794,0144505	69	18511,2436777
+SA Algorithm
+	Tiempo de ejecucion: 7,58 ms
+	19029,8031380	0,9861814	1000	0,0001	789,3428525	499	4286,5570893	4286,5570893
+
+Iteracion 13 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,32 ms
+	449231,5681555	382	172649,2191610
+SA Algorithm
+	Tiempo de ejecucion: 13,19 ms
+	633803,5125146	0,8876745	1000	0,0001	131,9209496	496	1301,6268992	1292,7611535
+
+Iteracion 13 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,16 ms
+	9318145663,3013821	28	9314697819,6369209
+SA Algorithm
+	Tiempo de ejecucion: 3,43 ms
+	22437472528,8128929	0,9550710	1000	0,0001	457,7262365	485	5146805700,0285177	5146805700,0217752
+
+Iteracion 13 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 14,34 ms
+	56,5093258	19	47,7321883
+SA Algorithm
+	Tiempo de ejecucion: 15,90 ms
+	57,1619227	0,9271400	1000	0,0001	276,3569510	498	47,9650575	45,0068571
+
+Iteracion 13 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,45 ms
+	14841,1600578	166	14775,3421901
+SA Algorithm
+	Tiempo de ejecucion: 5,69 ms
+	21027,2685411	0,9461796	1000	0,0001	390,4367399	497	5268,5154763	4870,3903915
+
+Iteracion 14 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,97 ms
+	93,8148255	315	74,3396912
+SA Algorithm
+	Tiempo de ejecucion: 11,92 ms
+	113,2487179	0,9090725	1000	0,0001	197,7766663	498	97,7055522	94,6015245
+
+Iteracion 14 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,94 ms
+	15303,1609799	134	12284,3294574
+SA Algorithm
+	Tiempo de ejecucion: 12,75 ms
+	17540,6362869	0,9590045	1000	0,0001	490,8526334	497	5435,9318695	5267,7743793
+
+Iteracion 14 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 18,08 ms
+	640379,9667029	72	504118,2240565
+SA Algorithm
+	Tiempo de ejecucion: 15,39 ms
+	766948,6046432	0,9110146	1000	0,0001	205,0834124	475	86773,0749546	86255,4646314
+
+Iteracion 14 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,28 ms
+	57266628994,3634033	44	33661538102,6502533
+SA Algorithm
+	Tiempo de ejecucion: 3,97 ms
+	34155828968,5797653	0,9156446	1000	0,0001	223,5412001	496	988,4203779	763,0179492
+
+Iteracion 14 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 20,38 ms
+	34,6094260	343	30,2496385
+SA Algorithm
+	Tiempo de ejecucion: 26,96 ms
+	54,1173976	0,9338151	1000	0,0001	312,2017684	499	49,8595013	49,8595013
+
+Iteracion 14 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,75 ms
+	11412,6938962	302	8999,5748663
+SA Algorithm
+	Tiempo de ejecucion: 5,52 ms
+	18415,0915435	0,9251618	1000	0,0001	266,5021986	498	6766,7453360	6590,8212913
+
+Iteracion 15 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,78 ms
+	109,6072955	270	75,6436259
+SA Algorithm
+	Tiempo de ejecucion: 6,20 ms
+	110,5288744	0,9362765	1000	0,0001	326,4903993	497	68,1430430	66,1305739
+
+Iteracion 15 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 7,08 ms
+	16170,9999082	360	15805,2210528
+SA Algorithm
+	Tiempo de ejecucion: 7,63 ms
+	17954,4269976	0,9376897	1000	0,0001	334,9696369	499	5995,7830953	5995,7830953
+
+Iteracion 15 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,84 ms
+	614907,4205218	59	605957,8717280
+SA Algorithm
+	Tiempo de ejecucion: 12,71 ms
+	656380,8859057	0,9029993	1000	0,0001	176,4760811	497	24206,9774815	24206,9774815
+
+Iteracion 15 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,86 ms
+	11879148383,0476151	48	11879017509,7095013
+SA Algorithm
+	Tiempo de ejecucion: 3,51 ms
+	26563658987,2434082	0,9337066	1000	0,0001	311,5852816	480	760614,6337976	760597,5170486
+
+Iteracion 15 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,58 ms
+	51,3901765	242	41,0020206
+SA Algorithm
+	Tiempo de ejecucion: 15,02 ms
+	46,6915005	0,8809271	1000	0,0001	115,8722122	495	57,9676481	51,9946897
+
+Iteracion 15 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,66 ms
+	21036,4126376	77	20944,0147702
+SA Algorithm
+	Tiempo de ejecucion: 5,55 ms
+	11740,3218803	0,9180921	1000	0,0001	233,9196055	497	4814,7723957	4814,7723957
+
+Iteracion 16 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,71 ms
+	72,9562833	116	62,5685907
+SA Algorithm
+	Tiempo de ejecucion: 5,88 ms
+	97,1181521	0,9747489	1000	0,0001	647,4064785	499	85,3460859	85,3460859
+
+Iteracion 16 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,64 ms
+	16974,0309045	237	16200,8842756
+SA Algorithm
+	Tiempo de ejecucion: 7,57 ms
+	11873,1464068	0,9301899	1000	0,0001	292,2249758	496	3879,1999749	3879,1999749
+
+Iteracion 16 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,78 ms
+	497763,0381516	358	336444,8248576
+SA Algorithm
+	Tiempo de ejecucion: 12,59 ms
+	586497,2140747	0,9639288	1000	0,0001	535,5058822	499	62008,8631712	62008,8631712
+
+Iteracion 16 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,08 ms
+	20064208372,2988777	88	8272943956,1206303
+SA Algorithm
+	Tiempo de ejecucion: 3,53 ms
+	23713770863,7508698	0,9017476	1000	0,0001	172,3634286	479	145238677,3551420	145238474,4632227
+
+Iteracion 16 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,61 ms
+	59,4513260	388	56,4925898
+SA Algorithm
+	Tiempo de ejecucion: 14,94 ms
+	38,4575535	0,9801063	1000	0,0001	710,6306163	499	35,6713840	35,6713840
+
+Iteracion 16 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,42 ms
+	13295,4438326	116	13247,4945302
+SA Algorithm
+	Tiempo de ejecucion: 5,25 ms
+	18286,7544693	0,9090057	1000	0,0001	197,5295995	493	5795,4518240	5238,5042159
+
+Iteracion 17 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,97 ms
+	96,9855172	150	69,6514788
+SA Algorithm
+	Tiempo de ejecucion: 9,78 ms
+	82,9235746	0,8981685	1000	0,0001	161,0953952	498	87,9713164	87,2324257
+
+Iteracion 17 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,90 ms
+	11461,7412570	435	9669,0799917
+SA Algorithm
+	Tiempo de ejecucion: 11,36 ms
+	12629,8172942	0,9682492	1000	0,0001	577,8048456	498	9403,0554093	9403,0554093
+
+Iteracion 17 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,97 ms
+	483934,0342842	428	295259,8356629
+SA Algorithm
+	Tiempo de ejecucion: 13,73 ms
+	329289,9613804	0,9086934	1000	0,0001	196,3792690	494	4776,2761537	4514,7866589
+
+Iteracion 17 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 3,29 ms
+	26028787546,2594414	13	22935461158,0638504
+SA Algorithm
+	Tiempo de ejecucion: 3,91 ms
+	29501180318,6937714	0,8951286	1000	0,0001	152,0729505	496	303188,9039537	303188,9039537
+
+Iteracion 17 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 19,13 ms
+	42,9791619	246	33,8016492
+SA Algorithm
+	Tiempo de ejecucion: 14,91 ms
+	50,1204550	0,9079925	1000	0,0001	193,8198050	498	48,4587111	47,5156007
+
+Iteracion 17 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,61 ms
+	15911,0617004	434	14757,7713603
+SA Algorithm
+	Tiempo de ejecucion: 5,32 ms
+	18868,1105370	0,8839461	1000	0,0001	122,8112366	496	4846,9186353	4846,9186353
+
+Iteracion 18 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,55 ms
+	76,9081168	362	61,7322592
+SA Algorithm
+	Tiempo de ejecucion: 5,83 ms
+	99,5678010	0,8918333	1000	0,0001	142,8311361	499	88,2129912	88,2129912
+
+Iteracion 18 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,47 ms
+	12917,9930489	210	12719,7341417
+SA Algorithm
+	Tiempo de ejecucion: 7,46 ms
+	12844,4168422	0,9601651	1000	0,0001	501,0494175	495	6135,5562731	5803,6068415
+
+Iteracion 18 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,83 ms
+	735200,4716525	375	534618,1617482
+SA Algorithm
+	Tiempo de ejecucion: 12,73 ms
+	332059,1627097	0,9258010	1000	0,0001	269,6495348	489	2458,7951700	2222,6033435
+
+Iteracion 18 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,86 ms
+	25144982523,8765259	18	19677867717,8085938
+SA Algorithm
+	Tiempo de ejecucion: 3,43 ms
+	21235580418,7958298	0,9695798	1000	0,0001	591,4531238	492	116816536,9403442	116816341,9353479
+
+Iteracion 18 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,58 ms
+	36,4628437	457	33,2379377
+SA Algorithm
+	Tiempo de ejecucion: 15,00 ms
+	46,7301629	0,9072314	1000	0,0001	191,0765882	499	39,6396151	39,6396151
+
+Iteracion 18 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,46 ms
+	20263,2912521	24	19246,4391069
+SA Algorithm
+	Tiempo de ejecucion: 5,47 ms
+	14253,7082471	0,9896398	1000	0,0001	837,7447155	498	6726,5866983	6726,5866983
+
+Iteracion 19 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,57 ms
+	91,4148668	432	69,2482270
+SA Algorithm
+	Tiempo de ejecucion: 5,80 ms
+	98,2078318	0,9587317	1000	0,0001	488,4844327	497	108,1453330	104,1359725
+
+Iteracion 19 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 6,62 ms
+	20420,5086980	53	19353,4799603
+SA Algorithm
+	Tiempo de ejecucion: 7,55 ms
+	16165,7424314	0,9395260	1000	0,0001	346,2979176	494	6138,0360819	6061,1957689
+
+Iteracion 19 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 11,83 ms
+	586335,6153737	89	574898,4541673
+SA Algorithm
+	Tiempo de ejecucion: 12,54 ms
+	376954,8392172	0,9605686	1000	0,0001	504,6411773	480	8756,5605387	7704,0745329
+
+Iteracion 19 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,95 ms
+	15173767681,8652077	25	5548452894,3067379
+SA Algorithm
+	Tiempo de ejecucion: 3,44 ms
+	13727867649,3957691	0,9691726	1000	0,0001	587,2442950	489	2102,1121169	1880,5913343
+
+Iteracion 19 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 13,47 ms
+	54,7183395	311	49,6884390
+SA Algorithm
+	Tiempo de ejecucion: 22,33 ms
+	42,2000674	0,9335853	1000	0,0001	310,8981257	499	54,0347283	54,0347283
+
+Iteracion 19 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 8,52 ms
+	13237,6676927	91	13234,9792993
+SA Algorithm
+	Tiempo de ejecucion: 9,91 ms
+	17695,9400005	0,8832364	1000	0,0001	121,1456892	496	4229,5385448	4229,5385448
+
+Iteracion 20 Function: Alpine
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 8,52 ms
+	80,6526554	343	66,0456074
+SA Algorithm
+	Tiempo de ejecucion: 7,18 ms
+	86,9744378	0,8855690	1000	0,0001	126,7012509	499	95,3547334	95,3547334
+
+Iteracion 20 Function: Dixon
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 7,26 ms
+	15445,1639550	211	15021,1555724
+SA Algorithm
+	Tiempo de ejecucion: 7,90 ms
+	18766,0275049	0,8989071	1000	0,0001	163,3621506	499	2225,6470893	2225,6470893
+
+Iteracion 20 Function: Quintic
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 12,66 ms
+	441202,4364033	467	417596,6053299
+SA Algorithm
+	Tiempo de ejecucion: 13,14 ms
+	717651,2919815	0,9154341	1000	0,0001	222,6695247	497	465,5830539	465,5830539
+
+Iteracion 20 Function: Schwefel
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 2,95 ms
+	45195162500,3519897	15	37555990429,0625000
+SA Algorithm
+	Tiempo de ejecucion: 3,55 ms
+	17807354568,0875778	0,9077303	1000	0,0001	192,8706324	491	10879,9313873	10752,5793561
+
+Iteracion 20 Function: Streched
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 14,48 ms
+	46,1633590	329	40,7022378
+SA Algorithm
+	Tiempo de ejecucion: 18,72 ms
+	43,0937390	0,9535292	1000	0,0001	445,3256063	498	43,3959934	40,2816180
+
+Iteracion 20 Function: Sum Squares
+	Dimension: 30
+RMHC Algorithm
+	Tiempo de ejecucion: 4,48 ms
+	14673,8424453	325	13315,9947835
+SA Algorithm
+	Tiempo de ejecucion: 5,82 ms
+	15120,8415676	0,8815249	1000	0,0001	117,2162961	498	5707,3990839	5707,3990839
+

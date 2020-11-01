@@ -19,7 +19,7 @@ class Metaheuristic
     f_best=@lista_x.evaluar(index)
     i=0
     best_solution=rand(@lista_x.lista_xi.length)
-    lista_res.push("Sol_al: #{sprintf("%.7f",f_best)}")
+    lista_res.push("#{sprintf("%.7f",f_best)}")
     while  i<@max_iter
       locus=rand(best_solution-1)
       new_best=rand(locus..best_solution).to_i
@@ -38,8 +38,8 @@ class Metaheuristic
       end
       i+=1
     end
-    lista_res.push("Iteracion_donde_se_encontro_un_minimo: #{lista_iter[-1]}")
-    lista_res.push("Sol_final_algoritmo: #{sprintf("%.7f",f_best)}")
+    lista_res.push("#{lista_iter[-1]}")
+    lista_res.push("#{sprintf("%.7f",f_best)}")
     lista_res
   end
 
@@ -50,15 +50,15 @@ class Metaheuristic
     # Genera una solucion aleatoria en todos los puntos
     @lista_x.asigna_all
     e_old=@lista_x.evaluar(index)
-    lista_res.push("Sol_al: #{sprintf("%.7f",e_old)}")
+    lista_res.push("#{sprintf("%.7f",e_old)}")
     t=@max_temp
     t_min=0.0001
     @alpha=rand(0.88..0.99)
     j=0
     mejor=Punto.new(@dimension)
-    lista_res.push("Alpha: #{sprintf("%.7f",@alpha)}")
-    lista_res.push("T_max: #{@max_temp}")
-    lista_res.push("T_min: #{t_min}")
+    lista_res.push("#{sprintf("%.7f",@alpha)}")
+    lista_res.push("#{@max_temp}")
+    lista_res.push("#{t_min}")
 
     while t>t_min && j<@max_iter
       i=0
@@ -89,10 +89,10 @@ class Metaheuristic
       end
       t*=@alpha
     end
-    lista_res.push("T_final: #{sprintf("%.7f",t)}")
-    lista_res.push("Iteracion_donde_se_encontro_un_minimo: #{lista_iter[-1]}")
-    lista_res.push("Sol_final_algoritmo: #{sprintf("%.7f",@lista_x.evaluar(index))}")
-    lista_res.push("Sol_mejor: #{sprintf("%.7f",mejor.evaluar(index))}")
+    lista_res.push("#{sprintf("%.7f",t)}")
+    lista_res.push("#{lista_iter[-1]}")
+    lista_res.push("#{sprintf("%.7f",@lista_x.evaluar(index))}")
+    lista_res.push("#{sprintf("%.7f",mejor.evaluar(index))}")
     lista_res
   end
 end
