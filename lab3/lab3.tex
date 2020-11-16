@@ -1,0 +1,208 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\usepackage[document]{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=3
+}
+\def\fillandplacepagenumber{%
+ \par\pagestyle{empty}%
+ \vbox to 0pt{\vss}\vfill
+ \vbox to 0pt{\baselineskip0pt
+   \hbox to\linewidth{\hss}%
+   \baselineskip\footskip
+   \hbox to\linewidth{%
+     \hfil\thepage\hfil}\vss}}
+\lstset{style=mystyle}
+
+\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad No. 12\\ Solución de problemas mediante Algoritmos Genéticos GA\\Curso impartido por: Dra Yenny Villuendas Rey}
+
+\author{Adrian González Pardo}
+
+\date{\today}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+\maketitle
+\section{Ventajas y Desventajas de GA}
+\begin{center}
+  \begin{tabular}{|p{6cm}|p{6cm}|}
+    \hline
+    Ventajas & Desventajas \\
+    \hline
+    Permite realizar multiples busqueda de soluciones a los problemas & Puede que el metodo de mutación o cruza seleccionado puede que no ayude a encontrar una buena solución\\
+    \hline
+    Esta bioinspirado en la genética y en la selección natural (Darwinismo) & Puede que el que en la aplicación en alguna etapa del GA ya no avance \\
+    \hline
+    Es una heurística poblacional & Puede que genere bastante uso de recursos en memoria y procesamiento \\
+    \hline
+  \end{tabular}
+\end{center}
+\section{Genotipo vs Fenotipo}
+\textbf{Genotipo:} es una representación en cadenas de bits en la cual generalmente es trabajada para generar un nuevo individuo en el algoritmo.
+\\
+\textbf{Fenotipo:} es la representación que tiene la cadena de bits en el ambito del problema, es decir, la cadena de bits puede representar números reales $\mathbb{R}$, números enteros $\mathbb{Z}$, valores binarios $\{0,1\}$, indices de la solución a algún problema.
+\section{Operadores}
+\subsection{Mutación}
+\begin{enumerate}
+  \item Uniforme
+  \item Límite
+  \item No uniforme\\
+  Extras
+  \item Normal
+  \item Direccional
+\end{enumerate}
+\subsubsection{Mutación no uniforme}
+\begin{itemize}
+  \item La mutación debe ser muestreada al azar
+  \item La extensión de la mutación debería disminuir con el proceso de evolución del algoritmo.
+  \item Cuando se habla de disminuir la escala de búsqueda, debemos mencionar el famoso recocido simulado (SA), el cual es un algoritmo de búsqueda global basado en un método de búsqueda local, añadiendo que SA tiene una función de probabilidad de aceptación de una peor solución, partiendo de esa idea la probabilidad se determina por:
+  \[p_{t}(i\rightarrow j)=\left\{
+  \begin{aligned}
+    1,\quad f(i)\leq f(j)\\
+    \exp\left(\frac{f(i)-f(j)}{t}\right),\quad otro
+  \end{aligned}
+  \right.\]
+  Donde: \(\displaystyle t\)  es un parámetro de control llamado temperatura. Si $j$ no es peor que $i, j$ toma el lugar de $i$ con probabilidad $1$. De lo contrario, la probabilidad depende de qué tan malo sea $j$ y cuál sea la temperatura, tal como se hizo en la heurística SA.
+\end{itemize}
+\subsection{Cruzamiento}
+\begin{enumerate}
+  \item Simplex
+  \item Varios puntos (K-points)
+  \item Uniforme
+  \\Extra
+  \item Binario simulado
+  \item Distribución normal unimodal
+  \item Uniforme basado en pedidos
+  \item Ciclo
+\end{enumerate}
+\subsubsection{Cruzamiento de varios puntos}
+\begin{itemize}
+  \item Los cruces de un punto y dos puntos son los más simples y métodos de cruce más ampliamente aplicados. En el cruce de un punto, se selecciona un sitio de cruce al azar sobre la longitud de la cadena, y los alelos en un lado del sitio se intercambian entre los individuos.
+  \item En el cruce de dos puntos, se seleccionan al azar dos sitios de cruce. Los alelos entre los dos sitios se intercambian entre los dos individuos emparejados al azar.
+  \item El concepto de cruce de un punto puede extenderse a k-cruce de puntos, donde se utilizan k puntos de cruce, en lugar de solo uno o dos.
+  \\Ejemplo
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      P$_{0}$&0&0$|$&0&1&0&0\\\hline
+      P$_{1}$&1&0$|$&1&1&1&1\\\hline
+    \end{tabular}
+    \(\displaystyle\rightarrow\)
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      C$_{0}$&0&0$|$&1&1&1&1\\\hline
+      C$_{1}$&1&0$|$&0&1&0&0\\\hline
+    \end{tabular}
+    \\\textit{Cruce de 1 punto}\\\vspace{1cm}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      P$_{0}$&0&0$|$&0&1$|$&0&0\\\hline
+      P$_{1}$&1&0$|$&1&1$|$&1&1\\\hline
+    \end{tabular}
+    \(\displaystyle\rightarrow\)
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      C$_{0}$&1&0$|$&0&1$|$&1&1\\\hline
+      C$_{1}$&0&0$|$&1&1$|$&0&0\\\hline
+    \end{tabular}
+    \\\textit{Cruce de 2 puntos}\\
+  \end{center}
+\end{itemize}
+\clearpage
+\subsection{Selección}
+\begin{enumerate}
+  \item Torneo (TS)
+  \item Proporcional (PS)
+  \item Muestreo Aleatorio Universal (URS)
+  \\Extras
+  \item Emparejamiento Variado Inverso (NAM)
+  \item Ruleta
+\end{enumerate}
+\subsection{Selección por Torneo }
+\begin{itemize}
+  \item En la selección del torneo, los cromosomas s se eligen al azar (con o sin reemplazo) y entran en un torneo uno contra el otro.
+  \item El individuo más apto del grupo de k cromosomas gana el torneo y es seleccionado como padre.
+  \item El valor más utilizado de s es 2.
+  \item Con este esquema de selección, se requieren n torneos para elegir n individuos.
+\end{itemize}
+\section{Impacto en convergencia de poblaciones con GA}
+De acuerdo al tamaño de nuestra solución en este caso pensemos en una función multivariable de $N$ dimensiones cuyos fenotipos de cada $x_{i}$ son reales $x_{i}\in\mathbb{R}$ buscamos el obtener los puntos mínimos para cada $x_{i}$ por ello podemos abordar el problema de tal forma en que el computar la solución no sea demasiado costosa en procesamiento y en memoria, por ello pensando en que si $\forall x_{i}$ se encuentra el punto mínimo en $x_{i}=0$ podemos hacer que nuestro algoritmo actué por índice sin modificación con otro índice, mientras que si cada $x_{i}$ tiene un punto mínimo en un punto en el que si se evalúa la función de tal forma que $x_{i}\neq x_{j}$ y esos valores están en su valor mínimo podremos implementar el algoritmo de tal forma que en el cruce de datos se intercambien los valores de $x_{i}$ y $x_{j}$ de modo que en la mutación se aproxime a los valores mínimos de cada punto.\\
+Por ello dependiendo del tamaño de la población es el como podremos implementar distintos diseños o híbridos del algoritmo con otra heurística de modo que lleguemos a la optimización deseada.
+\section{Aplicaciones GA}
+\subsection{Knapsack}
+Modelación Matemática\\
+Sean dos funciones
+\[f(x)=\sum_{i=1}^{N}x^{'}_{i}h(x_{i})\]
+\[g(x)=\sum_{i=1}^{N}x^{'}_{i}p(x_{i})\;\leq\;peso\_m\acute{a}ximo\]
+Donde:\\
+\(\displaystyle X\;es\;un\;vector\;de\;la\;forma\;X=[x_{1},x_{2},\cdots,x_{N}]\)\\\vspace{0.25cm}
+\(\displaystyle X^{'}\;es\;un\;vector\;el\;cual\;es\;parecido\;a\;X\;pero\;sus\;valores\;son\;binarios\;x_{i}^{'}\in\{0,1\}\)\\\vspace{0.25cm}
+\(\displaystyle h(x_{i})\;es\;una\;funci\acute{o}n\;la\;cual\;devuelve\;el\;beneficio\;total\;de\;los\;objetos\;x_{i}\;en\;la\;mochila\)\\\vspace{0.25cm}
+\(\displaystyle p(x_{i})\;es\;una\;funci\acute{o}n\;la\;cual\;devuelve\;el\;peso\;total\;de\;los\;objetos\;x_{i}\;en\;la\;mochila\)\\\vspace{0.25cm}
+De modo que para los operadores GA en este problema el genotipo puede ser la cadena de bits de modo que el fenotipo que representa de la cadena es la representación de un valor binario de si el objeto es incluido o no es incluido en la solución.
+\subsection{Travel Salesman Problem (TSP)}
+Modelación Matemática\\
+Sea la función
+\[f(x)=\sum_{i=1}^{N}x_{i} \cdot g\left(y_{x_{i},i}\right)\]
+Donde:\\
+\(\displaystyle Y\;es\;una\;matriz\;de\;NxN\;la\;cual\;trabajara\;para\;obtener\;el\;costo\;con\;la\;funci\acute{o}n\;g(x)\)\\\vspace{0.25cm}
+\(\displaystyle X\;es\;un\;vector\;de\;dimensi\acute{o}n\;N\;el\;cual\;contiene\;el\;\acute{i}ndice\;del\;v\acute{e}rtice\;al\;cual\;pasa\;de\;i\;a\;j\)\\\vspace{0.25cm}
+\(\displaystyle g(y_{x_{i},i})\;es\;una\;funci\acute{o}n\;la\;cual\;devuelve\;el\;costo\;de\;ir\;de\;i\;hacia\;el\;contenido\;de\;x_{i}\)\\\vspace{0.25cm}
+De modo en que nuestro GA puede ser implementado con un fenotipo entero el cual representa la ciudad n hacia que vértice se conecta posteriormente.\\\vspace{0.25cm}
+\textit{Ejemplo de arreglo $X$: }\(\displaystyle x=[2,3,1,0]\) de modo que sabemos que nuestro grafo tiene $4$ aristas y pensando en que todos están conectados partiremos de la siguiente manera $(0\rightarrow 2),\;(2\rightarrow 1),\;(1\rightarrow 3),\;(3\rightarrow 0)$ de tal forma que el formato en como realiza el movimiento de un vértice a otro es $(i\rightarrow j)$ siendo el valor de $j$ el que sera evaluado en la matriz $Y$ para obtener su costo.
+\subsection{Función de Minimización en D dimensiones}
+Modelación Matemática\\
+Sea la función
+\[f(x)=\sum_{i=1}^{D}x_{i}^{2}\]
+Donde:\\
+\(\displaystyle x_{i}\in\mathbb{R}\)\\\vspace{0.25cm}Descrito en los intervalos \(\displaystyle x_{i}\in[-10,10]\)\\\vspace{0.25cm}
+Donde sabemos que los puntos mínimos de cada $x_{i}$ los encontramos cuando el valor asignado a el es $x_{i}=0$ por lo tanto el ir variando los valores para que el programa se acerque hacia $0$\\\vspace{0.25cm}
+Por lo tanto para este GA podemos implementarlo con un fenotipo de valor real que vaya del intervalo indicado.
+
+\end{document}
