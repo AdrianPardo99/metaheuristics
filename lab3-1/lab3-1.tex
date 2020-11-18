@@ -1,0 +1,120 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\usepackage[document]{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=3
+}
+\def\fillandplacepagenumber{%
+ \par\pagestyle{empty}%
+ \vbox to 0pt{\vss}\vfill
+ \vbox to 0pt{\baselineskip0pt
+   \hbox to\linewidth{\hss}%
+   \baselineskip\footskip
+   \hbox to\linewidth{%
+     \hfil\thepage\hfil}\vss}}
+\lstset{style=mystyle}
+
+\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad No. 13\\ Solución de problemas mediante Algoritmos Genéticos GA\\Curso impartido por: Dra Yenny Villuendas Rey}
+
+\author{Adrian González Pardo}
+
+\date{\today}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+\maketitle
+\section{Ventajas y Desventajas de GA}
+\begin{center}
+  \begin{tabular}{|p{6cm}|p{6cm}|}
+    \hline
+    Ventajas & Desventajas \\
+    \hline
+    Permite realizar multiples busqueda de soluciones a los problemas & Puede que el metodo de mutación o cruza seleccionado puede que no ayude a encontrar una buena solución\\
+    \hline
+    Esta bioinspirado en la genética y en la selección natural (Darwinismo) & Puede que el que en la aplicación en alguna etapa del GA ya no avance \\
+    \hline
+    Es una heurística poblacional & Puede que genere bastante uso de recursos en memoria y procesamiento \\
+    \hline
+    Es posible el trabajar soluciones de formas paralelizables o distribuidas&Puede ser dificil de implementar\\
+    \hline
+  \end{tabular}
+\end{center}
+\section{Genotipo vs Fenotipo}
+\textbf{Genotipo:} es una representación en cadenas de bits en la cual generalmente es trabajada para generar un nuevo individuo en el algoritmo.
+\\
+\textbf{Fenotipo:} es la representación que tiene la cadena de bits en el ambito del problema, es decir, la cadena de bits puede representar números reales $\mathbb{R}$, números enteros $\mathbb{Z}$, valores binarios $\{0,1\}$, indices de la solución a algún problema.
+\section{Modelo Generacional vs Estacionario}
+\subsection{Semejanzas}
+\begin{itemize}
+  \item Ambos generan en cada iteración nuevas respuesta a analizar
+  \item Ambos remplazan a la generación anterior (Con precaución de como son seleccionados y de como trabajan en la siguiente iteración).
+  \item Ambos realizan conceptualmente las mismas operaciones (Solo que de diferente manera a la hora de selección y cruza).
+\end{itemize}
+\subsection{Diferencias}
+\begin{itemize}
+  \item El modelo generacional crea una nueva población completa, mientra que el modelo estacionario escoje dos partes de la población de acuerdo al muestreo que realice y sobre ellos aplica los operadores genéticos.
+  \item El modelo generacional remplaza completamente a la anterior generación, mientras que el modelo estacionario remplaza a nos $N$ cromosas con los $N$ descendientes de la población inicial.
+  \item El modelo generacional tiene un remplazo aleatorio, mientras que el modelo estacionario remplaza a los $N$ peores.
+  \item El modelo generacional teorícamente realiza una excesiva exploración lo cual no garantiza que tenga una convergencia en un optimo local (Explora espacialmente las regiones de solución), el modelo estacionario realiza una excesiva explotación lo cual converge en un optimo local (Busca mejorar al mejor individuo).
+\end{itemize}
+\section{Operadores de selección}
+\subsection{Muestreo Aleatorio}
+
+\subsection{Torneo}
+
+\subsection{Proporcional}
+
+\subsection{Por Ruleta}
+
+\subsection{Por Emparejamiento Variado Inverso (NAM)}
+
+
+
+
+\end{document}
