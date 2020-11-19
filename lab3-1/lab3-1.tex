@@ -104,17 +104,46 @@
   \item El modelo generacional teorícamente realiza una excesiva exploración lo cual no garantiza que tenga una convergencia en un optimo local (Explora espacialmente las regiones de solución), el modelo estacionario realiza una excesiva explotación lo cual converge en un optimo local (Busca mejorar al mejor individuo).
 \end{itemize}
 \section{Operadores de selección}
-\subsection{Muestreo Aleatorio}
+\subsection{Muestreo Aleatorio Universal (SUS)}
+El modelo de selección se trata de seleccionar varios elementos de acuerdo al tamaño de la población $N$ dado que se obtiene una circunferencia donde existen varias flechas de selección dadas por \(\displaystyle \frac{2\pi}{N}\) donde se busca girar todas las flechas uniformemente de tal manera que el giro y la selección se determina por \(\displaystyle \left[rand\;\times\;\left(\frac{2\pi}{N}\right)\right]\) donde \(\displaystyle rand\sim U(0,1)\), el cual al ser una parte universal elimina el sesgo probabilistico a la hora de seleccionar los elementos.
 
 \subsection{Torneo}
+Este modelo se trata de ir realizando un $k$ número de arreglos permutados de forma aleatoria de tamaño $N$ que es el tamaño dimensional de la respuesta de tal modo en que se busca seleccionar el valor indice de aquellos datos que esten mejor evaluados en el torneo, gráficamente el torneo se ve de la siguiente manera:\\
+\(\displaystyle k=2\), entonces \(\displaystyle [0.5,1,4,0.1]\), la generación aleatoria, generaria lo siguiente por ejempo:\\
+\begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    2&1&4&3\\
+    \hline
+    4&2&3&1\\
+    \hline
+  \end{tabular}\\
+  \textit{Se accedera a los valores de cada subindice del arreglo en su valor y se evaluara el menor valor vía indices es decir de arriba hacia abajo para seleccionar al mejor.}\\
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    4&1&4&1\\
+    \hline
+  \end{tabular}
+\end{center}
 
 \subsection{Proporcional}
-
+Para este tipo de selección se usa la función
+\[p_{i}=\cfrac{f_{i}}{\sum_{j=1}^{N}f_{j}}\]
+Donde:\\
+\(\displaystyle p_i\) es la probabilidad de ser seleccionado \(\displaystyle p_{i}\)\\\vspace{0.25cm}
+\(\displaystyle f_{i}\) es la función de fitness para ese valor de \(\displaystyle i\)\\\vspace{0.25cm}
+Por tanto al obtener esto tendremos un pequeño sesgo probabilistico a la hora de seleccionar un área por tanto definiremos al error selectivo como:
+\[n_{i}=p_i\;\times\;N\;=\;\left\lfloor\;N\;\times\;\cfrac{f_{i}}{\sum_{j=1}^{N}f_{j}}\right\rfloor\]
+En esta ecuación nos podremos percatar de que redondeamos el error a un valor entero, lo que significa que cada individuo podría perderse cualquiera que sea su valor relativo de aptitud.
 \subsection{Por Ruleta}
+Para determinar este modelo se considera que la probabilidad para generar la circunferencia con ayuda de la ecuación \(\displaystyle p_{i}\) de la proporcional pero con la ayuda de la selección de 1 elemento a diferencia de como lo hace el Muestreo Universal que selecciona K elementos.
 
 \subsection{Por Emparejamiento Variado Inverso (NAM)}
-
-
+Un padre se escoge aleatoriamente, para el otro selecciona Nnam padres y escoge el más lejano al primer (\(\displaystyle Nnam=3,5,\cdots\)). Está orientado a generar diversidad.
+\section{Estructuras de datos necesarias para la implementación}
+Para obtener una mejor selección de nuestras soluciones es necesario hacer notar que muchas de estas soluciones son acompañadas del valor indice podemos pensar en un comportamiento de una cola circular de modo en que podamos realizar permutaciones y giros de acuerdo a como nos plasca, por otro lado tambien podemos pensar en hacer uso de arreglos de dimensión $k$ donde $k\leq N$ de modo en que podemos crear una cantidad de arreglos y permutarlos de forma aleatoria para implementar grantidad de nuevos elementos, al menos para lograr implementar una selección por torneo, mientras que por otro lado podemos el obtener la cola donde cada indice sea un valor a la solución total podemos pensar en que este nos ayuda a implementar las funciones de probabilidad de modo que podemos ahorrarnos bastante tiempo a la hora de realizar las evaluaciones.
+\section{Implementación}
+\lstinputlisting[language=Ruby]{seleccion.rb}
 
 
 \end{document}
