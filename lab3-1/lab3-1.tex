@@ -63,7 +63,7 @@
 
 \author{Adrian González Pardo}
 
-\date{\today}
+\date{18 de noviembre de 2020}
 
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
@@ -99,7 +99,7 @@
 \subsection{Diferencias}
 \begin{itemize}
   \item El modelo generacional crea una nueva población completa, mientra que el modelo estacionario escoje dos partes de la población de acuerdo al muestreo que realice y sobre ellos aplica los operadores genéticos.
-  \item El modelo generacional remplaza completamente a la anterior generación, mientras que el modelo estacionario remplaza a nos $N$ cromosas con los $N$ descendientes de la población inicial.
+  \item El modelo generacional remplaza completamente a la anterior generación, mientras que el modelo estacionario remplaza a los $M$ cromosas con los $N$ descendientes de la población inicial $M\leq N$.
   \item El modelo generacional tiene un remplazo aleatorio, mientras que el modelo estacionario remplaza a los $N$ peores.
   \item El modelo generacional teorícamente realiza una excesiva exploración lo cual no garantiza que tenga una convergencia en un optimo local (Explora espacialmente las regiones de solución), el modelo estacionario realiza una excesiva explotación lo cual converge en un optimo local (Busca mejorar al mejor individuo).
 \end{itemize}
