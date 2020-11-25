@@ -1,13 +1,14 @@
 #!/usr/bin/env ruby
 
 class Seleccion
-  attr_accessor :array
+  attr_accessor :array,:table
   def initialize(array=[])
     """
       @array  ->  es el arreglo el cual contiene las evaluaciones de la funcion
                   a optimizar o es el arreglo de elementos para evaluar
     """
     @array=array
+    @table={}
   end
 
   def sum_fitness()
@@ -39,7 +40,7 @@ class Seleccion
   def torneo(max_min=0)
     """
       @array  ->  son los valores de fitness de distintos valores a
-                  ser evaluados por lo que en esta sección compiten
+                  ser evaluados por lo que en esta seccion compiten
     """
     k=rand(2..@array.length)
     puts "Valor de cuantas iteraciones #{k}"
@@ -62,13 +63,22 @@ class Seleccion
         end
       }
     }
-    mejor
+    @table={}
+    mejor.each{|i|
+      if table.key?(i)
+        table[i]+=1
+      else
+        table[i]=1
+      end
+    }
+    @table=@table.sort_by {|k, v| -v}
+    @table[0][0]
   end
 
-  def ruleta()
+  def proporcional()
     """
       @array  ->  en esta intervienen los fitness evaluados para ver cuales
-                  elementos son considerados para su selección
+                  elementos son considerados para su seleccion
                   (por la forma que tienen) es mejor que sea para una
                   maximizacion
     """
@@ -77,44 +87,56 @@ class Seleccion
     @array.length.times{|i|
       pi.push(@array[i].to_f/sum_t)
     }
-    puts "Parte ruleta de cada pi #{pi.to_s}"
-    puts "Intervalos de la ruleta: "
+    #print "Parte proporcional de cada pi ["
+    #pi.each{|i|
+    #  print " #{sprintf("%.4f",i)} "
+    #}
+    #puts "]"
+    puts "Intervalos de la seleccion proporcional:"
     sum=0
     pi.each{|i|
-      puts "\t\t[#{sum} a #{sum+i}]"
+      puts "\t\t[#{sprintf("%.4f",sum)} a #{sprintf("%.4f",sum+i)}]"
       sum+=i
     }
-    puts ""
-    piece=2*Math::PI/sum_fitness
-    arrow_init=rand(0.0..1.0)*piece
-    puts "Tamanio de la separacion de las flechas: #{piece}"
-    puts "Inicio en la ruleta #{arrow_init}"
+    arrow_init=rand(0.0..1.0)
+    puts "Elemento seleccionado #{arrow_init}"
     mejor_respuesta=[]
-    @array.length.times{|i|
-      sum_acumulada=0
-      pi.length.times{|j|
-        sum_acumulada+=pi[j]
-        if sum_acumulada>=arrow_init
-          mejor_respuesta.push(j)
-          break
-        end
-      }
-      arrow_init+=piece
-      if arrow_init>1
-        arrow_init-=1
+    sum_acumulada=0
+    pi.length.times{|j|
+      sum_acumulada+=pi[j]
+      if sum_acumulada>=arrow_init
+        return j
       end
     }
-    return mejor_respuesta
   end
 
-  def nam()
+
+  def ruleta()
     """
-      @array  ->  es el arreglo de valores de cada solución por lo
-                  que es necesario sacar las distancias de cada uno para
-                  entregar dos valores cuya distancia sea la mejor
+      @array  ->  en esta cada elemento tiene la misma probabilidad de ser seleccionados
     """
-    puts "Arreglo:\n\t#{array.to_s}"
-    table={}
+    pi=[]
+    piece=1.0/@array.length
+    puts "Tamanio de la separacion de las piezas: #{sprintf("%.4f",piece)}"
+    puts "Intervalos de la ruleta"
+    @array.length.times{|i|
+      pi.push(piece)
+      puts "\t\t[#{sprintf("%.4f",piece*i)},#{sprintf("%.4f",piece*(i+1))}]"
+    }
+    arrow_init=rand(0.0..1.0)
+    puts "Elemento seleccionado #{arrow_init}"
+
+    sum_acumulada=0
+    pi.length.times{|j|
+      sum_acumulada+=pi[j]
+      if sum_acumulada>=arrow_init
+        return j
+      end
+    }
+  end
+
+  def table_cost()
+    # Modificacion de llenar matriz de distancia por costo computacional
     for i in 0..(@array.length-1)
       for j in (i+1)..(@array.length-1)
         arreglo1=@array[i]
@@ -124,9 +146,19 @@ class Seleccion
         for l in 0..(arreglo1.length-1)
           sum+=(arreglo2[l]-arreglo1[l]).abs
         end
-        table["#{i},#{j}"]=sum
+        @table["#{i},#{j}"]=sum
       end
     end
+  end
+
+  def nam()
+    """
+      @array  ->  es el arreglo de valores de cada solucion por lo
+                  que es necesario sacar las distancias de cada uno para
+                  entregar dos valores cuya distancia sea la mejor
+    """
+    puts "Arreglo:\n\t#{@array.to_s}"
+
     valores_d=[]
     puts "Tabla de distancias\n\t#{table.to_s}"
     for i in 0..(table.length-1)
@@ -147,13 +179,21 @@ end
 
 array_fitness=[2,5,6,1,4,10]
 puts "Fitness function\t#{array_fitness.to_s}"
-s=Seleccion.new(array_fitness)
-mejor_torneo=s.torneo
-puts "\nArreglo torneo\t#{mejor_torneo}\n\n"
 
-sus=s.ruleta()
-puts "\nMejor por ruleta\t#{sus.to_s}\n\n"
+s=Seleccion.new(array_fitness)
+
+mejor_torneo=s.torneo
+puts "\nElemento seleccionado del torneo\t#{mejor_torneo}\n\n"
+
+ruleta=s.ruleta()
+puts "\nMejor elemento por ruleta\t#{ruleta.to_s}\n\n"
+
+prop=s.proporcional
+puts "\nMejor elemento por proporcional\t#{prop}\n\n"
+
 array_fitness=[ [2,5,6,1,4,10], [6,7,1,4,5,6], [10,10,10,10,10,10] ]
 s.array=array_fitness
+s.table={}
+s.table_cost()
 na=s.nam()
-puts "Indices seleccionados\t#{na.to_s}"
+puts "Padres seleccionados\t#{na.to_s}"
