@@ -1,0 +1,226 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\usepackage[document]{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=3
+}
+\def\fillandplacepagenumber{%
+ \par\pagestyle{empty}%
+ \vbox to 0pt{\vss}\vfill
+ \vbox to 0pt{\baselineskip0pt
+   \hbox to\linewidth{\hss}%
+   \baselineskip\footskip
+   \hbox to\linewidth{%
+     \hfil\thepage\hfil}\vss}}
+\lstset{style=mystyle}
+
+\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad No. 14\\ Operadores de cruzamiento en Algoritmos Genéticos\\Curso impartido por: Dra Yenny Villuendas Rey}
+
+\author{Adrian González Pardo}
+
+\date{\today}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+\maketitle
+\section{Ventajas y Desventajas de GA}
+\begin{center}
+  \begin{tabular}{|p{6cm}|p{6cm}|}
+    \hline
+    Ventajas & Desventajas \\
+    \hline
+    Permite realizar multiples busqueda de soluciones a los problemas & Puede que el metodo de mutación o cruza seleccionado puede que no ayude a encontrar una buena solución\\
+    \hline
+    Esta bioinspirado en la genética y en la selección natural (Darwinismo) & Puede que el que en la aplicación en alguna etapa del GA ya no avance \\
+    \hline
+    Es una heurística poblacional & Puede que genere bastante uso de recursos en memoria y procesamiento \\
+    \hline
+    Es posible el trabajar soluciones de formas paralelizables o distribuidas&Puede ser dificil de implementar\\
+    \hline
+  \end{tabular}
+\end{center}
+\section{Genotipo vs Fenotipo}
+\textbf{Genotipo:} es una representación en cadenas de bits en la cual generalmente es trabajada para generar un nuevo individuo en el algoritmo.
+\\
+\textbf{Fenotipo:} es la representación que tiene la cadena de bits en el ambito del problema, es decir, la cadena de bits puede representar números reales $\mathbb{R}$, números enteros $\mathbb{Z}$, valores binarios $\{0,1\}$, indices de la solución a algún problema.
+\section{Modelo Generacional vs Estacionario}
+\subsection{Semejanzas}
+\begin{itemize}
+  \item Ambos generan en cada iteración nuevas respuesta a analizar
+  \item Ambos remplazan a la generación anterior (Con precaución de como son seleccionados y de como trabajan en la siguiente iteración).
+  \item Ambos realizan conceptualmente las mismas operaciones (Solo que de diferente manera a la hora de selección y cruza).
+\end{itemize}
+\subsection{Diferencias}
+\begin{itemize}
+  \item El modelo generacional crea una nueva población completa, mientra que el modelo estacionario escoje dos partes de la población de acuerdo al muestreo que realice y sobre ellos aplica los operadores genéticos.
+  \item El modelo generacional remplaza completamente a la anterior generación, mientras que el modelo estacionario remplaza a los $M$ cromosas con los $N$ descendientes de la población inicial $M\leq N$.
+  \item El modelo generacional tiene un remplazo aleatorio, mientras que el modelo estacionario remplaza a los $N$ peores.
+  \item El modelo generacional teorícamente realiza una excesiva exploración lo cual no garantiza que tenga una convergencia en un optimo local (Explora espacialmente las regiones de solución), el modelo estacionario realiza una excesiva explotación lo cual converge en un optimo local (Busca mejorar al mejor individuo).
+\end{itemize}
+\section{Operadores de Cruzamiento}
+\subsection{Un punto corte}
+Es una forma de intercambiar información entre dos padres. Esta forma de cruce se selecciona un punto aleatorio que va desde $1$ hasta $N-1$ como un número aleatorio donde $N-1$ es la longitud del cromosoma, apartir del número aleatorio obtenido es donde se realizara el cruzamiento de datos por lo que se obtendra lo siguiente:
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \color{green}0&\color{green}0&\color{green}0&\color{green}1&\color{blue}1&\color{blue}0&\color{blue}1&\color{blue}1\\
+    \hline
+    \color{red}1&\color{red}0&\color{red}1&\color{red}0&\color{yellow}0&\color{yellow}1&\color{yellow}1&\color{yellow}0\\
+    \hline
+  \end{tabular}
+  \textbf{Pasan a:}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \color{green}0&\color{green}0&\color{green}0&\color{green}1&\color{yellow}0&\color{yellow}1&\color{yellow}1&\color{yellow}0\\
+    \hline
+    \color{red}1&\color{red}0&\color{red}1&\color{red}0&\color{blue}1&\color{blue}0&\color{blue}1&\color{blue}1\\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsection{Dos puntos de corte}
+Parecido al algoritmo de un punto de corte pero en este se seleccionan dos puntos aleatorios de corte de forma que se los cortes van de $[1,a],[a,b],[b,N-1]$, quedando un ejemplo de la siguiente forma:
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \color{green}0&\color{green}0&\color{green}0&\color{green}1&\color{blue}1&\color{blue}0&\color{green}1&\color{green}1\\
+    \hline
+    \color{red}1&\color{red}0&\color{red}1&\color{red}0&\color{yellow}0&\color{yellow}1&\color{red}1&\color{red}0\\
+    \hline
+  \end{tabular}
+  \textbf{Pasan a:}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \color{green}0&\color{green}0&\color{green}0&\color{green}1&\color{yellow}0&\color{yellow}1&\color{green}1&\color{green}1\\
+    \hline
+    \color{red}1&\color{red}0&\color{red}1&\color{red}0&\color{blue}1&\color{blue}0&\color{red}1&\color{red}0\\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsection{Uniforme}
+Este tipo de cruzamiento se realiza bajo un vector con valores de probabilidad, destacando que cada elemento del arreglo tiene una probabilidad de cruza del $0.5$ por lo que generaran valores aleatorios en el vector de tal manera que si $v_{i}\geq 0.5$ este indice realiza la cruza de datos de ese indice.\\Un ejemplo de ello seria el siguiente:
+\textbf{Se genera un vector con los siguientes datos}
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    0.55 & 0.03 & 0.67 & 0.77 & 0.30 & 0.25 & 0.99 & 0.78 \\
+    \hline
+  \end{tabular}
+  \\\vspace{0.25cm}
+  \textbf{Teniendo los siguientes padres:}\\
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \color{blue}0&\color{blue}0&\color{blue}0&\color{blue}1&\color{blue}1&\color{blue}0&\color{blue}1&\color{blue}1\\
+    \hline
+    \color{red}1&\color{red}0&\color{red}1&\color{red}0&\color{red}0&\color{red}1&\color{red}1&\color{red}0\\
+    \hline
+  \end{tabular}
+  \textbf{Entonces:}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \color{red}1 & \color{blue}0 & \color{red}1 & \color{red}0  & \color{blue}1 & \color{blue}0 & \color{red}1&\color{red}0\\
+    \hline
+    \color{blue}0 & \color{red}0 & \color{blue}0 & \color{blue}1  & \color{red}0 & \color{red}1 & \color{blue}1&\color{blue}1\\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsection{Aritmético}
+Para este tipo de algoritmo es necesario pensar en que nuestros dos vectores padres son valores reales los cuales van a ser cruzados a traves de un valor aleatorio $\alpha\in[0,1]$ de modo que actuaran como valores escalares para nuestros vectores, de tal forma que existe un segundo valor $\beta=1-\alpha$ formando la siguiente ecuación para realizar la cruza:\\\vspace{0.25cm}
+Sean los vectores \\
+\[\displaystyle X^{1}={x_0^{1},x_1^{1},\cdots,x_N^{1}}\] \[\displaystyle X^{2}={x_0^{2},x_1^{2},\cdots,x_N^{2}}\]
+\[y=\alpha x^{1}+\beta x^{2}\]
+
+\subsection{BL$X-\alpha$}
+Si bien el metodo de cruzamiento aritmético es un modelo lineal no siempre se conservan todos los genes, de modo que existe el algoritmo cruzamiento por mezcla el cual  amplia el rango de cruce aritmético  Para el gen $x^1_i$ y $x^2_i$, suponga que $x^1_i< x^2_i$ i sin pérdida de generalidad; su gen descendiente es:
+\[y_{i}=rand\left[\left(x^{1}_{i}-\alpha\left(x^{2}_{i}-x^{1}_{i}\right)\right), \left(x^{2}_{i}-\alpha\left(x^{1}_{i}-x^{2}_{i}\right)\right)\right]\]
+Donde:\\
+$rand(a,b)$ es una función para generar un número aleatorio uniformemente distribuido en el rango(a,b), $\alpha$ es un parámetro definido por el usuario que controla la extensión de la expansión.\\
+\textit{Nota: el autor recomiendo el uso de $\alpha=0.5$ para cualquier caso.}
+
+\subsection{Simulated Binary Crossover (SBX)}
+Gracias a Deb y Agrawal que encontraron que la descendencia del cruce de un solo punto tiene el mismo centroide que el de los padres. Luego sugirieron un cruzamiento binario simulado (SBX) para simular esta propiedad en un cruce de código real.\\
+Definieron un término llamado factor de propagación $\beta_{i}$ para el gen $i$ del código real de la siguiente manera:
+\[\beta_{i}=\left|\frac{c_{i}^{1}-c_{i}^{2}}{p_{i}^{1}-p_{i}^{2}}\right|\]
+Donde:
+\\
+\(\displaystyle c_{i}^{1}\) y \(\displaystyle c_{i}^{2}\) son el gen $i$ de los hijos y \(\displaystyle p_{i}^1\) y \(\displaystyle p_{i}^2\) son el gen de los padres.\\\vspace{0.25cm}
+Si $\beta_{i}<1$, el operador se denomina cruce de contratación.\\\vspace{0.25cm}
+Si $\beta_{i}>1$, el operador se denomina cruce de expansión.\\\vspace{0.25cm}
+Si $\beta_{i}=1$, el operador se denomina cruce estacionario.\\\vspace{0.25cm}
+Para simular la propiedad de compartir centroide del cruce de un solo punto para el código numérico binario, es deseable que la descendencia sea simétrica al centroide de los dos padres.\\
+Para el cruce de código real tenga una alta probabilidad de ser un cruce estacionario y una baja probabilidad de ser un cruce de contracción y un cruce de expansión para cada variable. Apartir de esto se define a $\beta_{i}$ como un valor aleatorio de la siguiente manera:
+\[p\left(\beta_{i}\right)=\left\{
+\begin{aligned}
+  0.5(n+1)\beta^{n}_{i},\quad\beta_{i}\leq 1\\
+  \frac{0.5(n+1)}{\beta^{n+2}_{i}},\quad\beta_{i}>1
+\end{aligned}
+\right.\]
+Donde:\\
+\(\displaystyle n\) es el parametro de control.\\
+Entonces para generar el valor aleatorio de \(\displaystyle\beta_{i}\) podemos guiarnos de un parametro aleatorio \(\displaystyle u_{i}\in[0,1]\) de modo en que nos apoyamos de la siguiente formula
+\[\beta_{i}=\left\{
+  \begin{aligned}
+    \left(2u_{i}\right)^{\frac{1}{n+1}},\quad u_{i}\leq 0.5\\
+    \left(2\left(1-u_{i}\right)\right)^{-\frac{1}{n+1}},\quad u_{i}>0.5
+  \end{aligned}
+\right.\]
+Finalmente para encontrar los valores \(\displaystyle c_{i}^1\) y \(\displaystyle c_{i}^2\) obtendremos la siguiente formula.
+\[c_{i}^{1}=0.5\left(p_{i}^{1}+p_{i}^{2}\right)+0.5\beta_{i}\left(p_{i}^{1}-p_{i}^{2}\right)\]
+\[c_{i}^{2}=0.5\left(p_{i}^{1}+p_{i}^{2}\right)+0.5\beta_{i}\left(p_{i}^{2}-p_{i}^{1}\right)\]
+\clearpage
+\section{Estructuras de datos necesarias para la implementación}
+Para la implementación de cualquiera de estos algoritmos simplemente nos podemos apoyar del arreglo de valores que nos devuelve la función que estamos trabajando y optimizando, de modo que podamos trabajar libremente con cada uno de los datos que deseamos cruzar, de modo en que se realicen vía indice evitando tener complicación con el tipo de dato que estemos manejando.
+\section{Implementación}
+\lstinputlisting[language=Ruby]{crossover.rb}
+
+
+
+\end{document}
