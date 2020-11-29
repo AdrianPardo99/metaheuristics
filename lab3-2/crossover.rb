@@ -78,6 +78,38 @@ class Crossover
     }
   end
 
+  def order_crossover()
+    """
+      k ->  Es un valor aleatorio para el intercambio de genes de p1
+      m ->  Es otro valor aleatorio para el intercambio de genes de p1
+      l ->  Like k p2
+      n ->  Line m p2
+    """
+    @child1=[]
+    @child2=[]
+    k=rand(@parent1.length)
+    m=rand(@parent1.length)
+    l=rand(@parent2.length)
+    n=rand(@parent2.length)
+    puts "Valores de intercambio\n\tk<->m\t&\tl<->n\n\t#{k}<->#{m}\t&\t#{l}<->#{n}"
+    @parent1.each_with_index{|i,j|
+      if j==k
+        @child1.push(@parent1[m])
+      elsif j==m
+        @child1.push(@parent1[k])
+      else
+        @child1.push(@parent1[j])
+      end
+      if j==l
+        @child2.push(@parent2[n])
+      elsif j==n
+        @child2.push(@parent2[l])
+      else
+        @child2.push(@parent2[j])
+      end
+    }
+  end
+
 end
 
 array1=[0,1,1,0,1]
@@ -93,5 +125,9 @@ puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
     "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}\n\n"+
     "Metodo single crossover"
 c.single_crossover()
+puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
+    "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}"
+
+c.order_crossover()
 puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
     "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}"
