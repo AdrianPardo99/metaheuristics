@@ -118,36 +118,62 @@ class Crossover
     puts "Cortes en #{arr_g.to_s}"
   end
 
-  def order_crossover()
+  def order_crossover(t_ventana=1)
     """
-      k ->  Es un valor aleatorio para el intercambio de genes de p1
-      m ->  Es otro valor aleatorio para el intercambio de genes de p1
-      l ->  Like k p2
-      n ->  Line m p2
+      ventana ->  Es el indice donde iniciara a realizar la ventana (indice)
+                  y este acompletara los datos con lo que se obtenga tanto
+                  de la la consulta de datos en los hijos como del contenido de
+                  los padres
     """
+    ventana=rand((@parent1.length-t_ventana)).to_i
+    puts "\tCruza por orden Ventana en #{ventana}\n\tTamanio array "+
+      "#{@parent1.length}, con ventana de tamanio #{t_ventana}"
     @child1=[]
     @child2=[]
-    k=rand(@parent1.length)
-    m=rand(@parent1.length)
-    l=rand(@parent2.length)
-    n=rand(@parent2.length)
-    puts "Valores de intercambio\n\tk<->m\t&\tl<->n\n\t#{k}<->#{m}\t&\t#{l}<->#{n}"
-    @parent1.each_with_index{|i,j|
-      if j==k
-        @child1.push(@parent1[m])
-      elsif j==m
-        @child1.push(@parent1[k])
+    t=0
+    @parent1.length.times{|i|
+      if i>=ventana && t<t_ventana
+        @child1.push(@parent1[i])
+        @child2.push(@parent2[i])
+        t+=1
       else
-        @child1.push(@parent1[j])
-      end
-      if j==l
-        @child2.push(@parent2[n])
-      elsif j==n
-        @child2.push(@parent2[l])
-      else
-        @child2.push(@parent2[j])
+        @child1.push(nil)
+        @child2.push(nil)
       end
     }
+    t=0
+    t1=0
+    t_ventana.times{|i|
+      @parent1.length.times{|i|
+        if @child1[i].nil?
+          if !@child1.include?(@child2[ventana+t]) && !@child2[ventana+t].nil?
+            @child1[i]=@child2[ventana+t]
+            t+=1
+          end
+        end
+        if @child2[i].nil?
+          if !@child2.include?(@child1[ventana+t1]) && !@child1[ventana+t1].nil?
+            @child2[i]=@child1[ventana+t1]
+            t1+=1
+          end
+        end
+      }
+    }
+    @parent1.length.times{|i|
+      @parent1.length.times{|j|
+        if @child1[i].nil? && !@child1.include?(@parent2[j])
+          @child1[i]=@parent2[j]
+          break
+        end
+      }
+      @parent2.length.times{|j|
+        if @child2[i].nil? && !@child2.include?(@parent1[j])
+          @child2[i]=@parent1[j]
+          break
+        end
+      }
+    }
+
   end
 
 end
@@ -167,11 +193,10 @@ puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
 c.single_crossover()
 puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
     "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}"
-
-c.order_crossover()
-puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
-    "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}"
-
-c.n_point_crossover(3)
+array1=[0,1,2,3,4,5]
+array2=[5,1,3,2,4,0]
+c.parent1=array1
+c.parent2=array2
+c.order_crossover(2)
 puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
     "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}"
