@@ -13,6 +13,23 @@ class Crossover
     @child2=[]
   end
 
+  def gen_permutacion()
+    permutacion=[]
+    (@parent1.length).times{|i|
+      permutacion.push(i)
+    }
+
+    (@parent1.length).times{
+      cambia=rand(@parent1.length-1)
+      cambia1=rand(@parent1.length-1)
+      val0=permutacion[cambia]
+      val1=permutacion[cambia1]
+      permutacion[cambia1]=val0
+      permutacion[cambia]=val1
+    }
+    permutacion
+  end
+
   def uniforme()
     """
       array_p ->  Es el vector que contiene los valores probabilisticos de
@@ -78,6 +95,29 @@ class Crossover
     }
   end
 
+  def n_point_crossover(k=2)
+    arr=gen_permutacion
+    arr_g=[]
+    k.times{|v|arr_g.push(arr[v])}
+    arr_g=arr_g.sort
+    k1=0
+    @child1=[]
+    @child2=[]
+    @parent1.length.times{|i|
+      if arr_g[k1]==i
+        k1+=1
+      end
+      if k1%2==0
+        @child1.push(@parent1[i])
+        @child2.push(@parent2[i])
+      else
+        @child1.push(@parent2[i])
+        @child2.push(@parent1[i])
+      end
+    }
+    puts "Cortes en #{arr_g.to_s}"
+  end
+
   def order_crossover()
     """
       k ->  Es un valor aleatorio para el intercambio de genes de p1
@@ -112,8 +152,8 @@ class Crossover
 
 end
 
-array1=[0,1,1,0,1]
-array2=[1,0,2,0,0]
+array1=[0,1,1,3,1]
+array2=[1,0,2,4,0]
 c=Crossover.new(array1,array2)
 puts "Cruza uniforme"
 c.uniforme()
@@ -129,5 +169,9 @@ puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
     "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}"
 
 c.order_crossover()
+puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
+    "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}"
+
+c.n_point_crossover(3)
 puts "Padre 1:\t#{array1.to_s}\nPadre 2:\t#{array2.to_s}\n\n"+
     "Hijo c1:\t#{c.child1.to_s}\nHijo c2:\t#{c.child2.to_s}"
