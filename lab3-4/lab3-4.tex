@@ -1,0 +1,118 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\usepackage[document]{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=3
+}
+\def\fillandplacepagenumber{%
+ \par\pagestyle{empty}%
+ \vbox to 0pt{\vss}\vfill
+ \vbox to 0pt{\baselineskip0pt
+   \hbox to\linewidth{\hss}%
+   \baselineskip\footskip
+   \hbox to\linewidth{%
+     \hfil\thepage\hfil}\vss}}
+\lstset{style=mystyle}
+
+\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad No. 15\\Estrategias de remplazo en Algoritmos Genéticos\\Curso impartido por: Dra Yenny Villuendas Rey}
+
+\author{Adrian González Pardo}
+
+\date{\today}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+\maketitle
+\section{Ventajas y Desventajas de GA}
+\begin{center}
+  \begin{tabular}{|p{6cm}|p{6cm}|}
+    \hline
+    Ventajas & Desventajas \\
+    \hline
+    Permite realizar multiples busqueda de soluciones a los problemas & Puede que el metodo de mutación o cruza seleccionado puede que no ayude a encontrar una buena solución\\
+    \hline
+    Esta bioinspirado en la genética y en la selección natural (Darwinismo) & Puede que el que en la aplicación en alguna etapa del GA ya no avance \\
+    \hline
+    Es una heurística poblacional & Puede que genere bastante uso de recursos en memoria y procesamiento \\
+    \hline
+    Es posible el trabajar soluciones de formas paralelizables o distribuidas&Puede ser dificil de implementar\\
+    \hline
+  \end{tabular}
+\end{center}
+\section{Modelo Generacional vs Estacionario}
+\subsection{Semejanzas}
+\begin{itemize}
+  \item Ambos generan en cada iteración nuevas respuesta a analizar
+  \item Ambos remplazan a la generación anterior (Con precaución de como son seleccionados y de como trabajan en la siguiente iteración).
+  \item Ambos realizan conceptualmente las mismas operaciones (Solo que de diferente manera a la hora de selección y cruza).
+\end{itemize}
+\subsection{Diferencias}
+\begin{itemize}
+  \item El modelo generacional crea una nueva población completa, mientra que el modelo estacionario escoje dos partes de la población de acuerdo al muestreo que realice y sobre ellos aplica los operadores genéticos.
+  \item El modelo generacional remplaza completamente a la anterior generación, mientras que el modelo estacionario remplaza a los $M$ cromosomas con los $N$ descendientes de la población inicial $M\leq N$.
+  \item El modelo generacional tiene un remplazo aleatorio, mientras que el modelo estacionario remplaza a los $N$ peores.
+  \item El modelo generacional teorícamente realiza una excesiva exploración lo cual no garantiza que tenga una convergencia en un optimo local (Explora espacialmente las regiones de solución), el modelo estacionario realiza una excesiva explotación lo cual converge en un optimo local (Busca mejorar al mejor individuo).
+\end{itemize}
+\section{Operadores de Remplazo}
+\subsection{Aleatorio}
+Como su nombre lo dice este tipo de operador esta basado en una selección aleatoria entre los padres e hijos, de tal forma en que se obtienen dos nuevos elementos seleccionados del problema de modo en que este tipo de selección puede no considerar el mejor fitness de los padres y los hijos.
+\subsection{Elitista}
+A diferencia del de arriba este aumente el costo computacional de modo en que busca encontrar los mejores cromosomas para pasar a la siguiente iteración del algoritmo, este operador genera una mayor presión entre la selectividad de los siguientes dos cromosomas.
+\subsection{Crowding determinístico}
+Para este tipo de operador se selecciona a un hijo que sea más parecido al padre de modo en que mantiene una diversidad de remplazo.
+\subsection{Torneo restringido entre semejantes}
+Este tipo de operador de acuerdo a un vector generado $w=[w_{0},w_{1},\cdots,w_{N}]$ de modo en que se buscan los cromosomas que tengan una mejor semejanza al vector $w$.
+\section{Estructuras de datos necesarias para la implementación}
+Para este tipo de operadores es necesario que pensemos en una lista de arreglos o en el uso de arreglos por separado de modo en que tanto padres como hijos son comparados deacuerdo al modelo u operador seleccionado de modo en que es más sencillo obtener los datos que deseamos, en muchos casos dependera del operador de si pasamos los valores de estos o las funciones fitness evaluadas al momento de la realización de la implementación.
+\section{Implementación}
+\lstinputlisting[language=Ruby]{replacement.rb}
+
+
+
+\end{document}
