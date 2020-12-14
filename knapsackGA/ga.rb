@@ -5,7 +5,7 @@ require "./crossover.rb"
 require "./mutation.rb"
 require "./replacement.rb"
 class GA
-  attr_accessor :peso_max,:max_iteracion,:mochila
+  attr_accessor :peso_max,:max_iteracion
   def initialize(peso_max=0,max_iteracion=0)
     @peso_max=peso_max
     @max_iteracion=max_iteracion
