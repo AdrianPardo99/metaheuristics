@@ -81,21 +81,21 @@
     \hline
     Es una heurística poblacional & Puede que genere bastante uso de recursos en memoria y procesamiento \\
     \hline
-    Es posible el trabajar soluciones de formas paralelizables o distribuidas&Puede ser dificil de implementar\\
+    Es posible el trabajar soluciones de formas paralelizables o distribuidas&Puede ser difícil de implementar\\
     \hline
   \end{tabular}
 \end{center}
 \section{Genotipo vs Fenotipo}
 \textbf{Genotipo:} es una representación en cadenas de bits en la cual generalmente es trabajada para generar un nuevo individuo en el algoritmo.
 \\
-\textbf{Fenotipo:} es la representación que tiene la cadena de bits en el ambito del problema, es decir, la cadena de bits puede representar números reales $\mathbb{R}$, números enteros $\mathbb{Z}$, valores binarios $\{0,1\}$, indices de la solución a algún problema.
+\textbf{Fenotipo:} es la representación que tiene la cadena de bits en el ámbito del problema, es decir, la cadena de bits puede representar números reales $\mathbb{R}$, números enteros $\mathbb{Z}$, valores binarios $\{0,1\}$, índices de la solución a algún problema.
 
 \section{Operadores}
 \subsection{Mutación}
 \subsubsection{Aleatoria para fenotipo real}
-Para este tipo de mutación es necesario conocer la dimensión del arreglo, de modo en que para la mutación de este tipo podemos hacer dos metodos distintos hacer la modificación mediante una selección aleatoria en cualquier $x_{i}$ con valores aleatorios que van de $[min,max]$ y la otra que itera sobre cada $x_{i}$ bajo una función de probabilidad cuyo valor es pequeño y si se genera un valor aleatorio cuyo valor compite en la función de probabilidad y este es menor se generara el valor aleatorio en el intervalo del metodo anterior.
+Para este tipo de mutación es necesario conocer la dimensión del arreglo, de modo en que para la mutación de este tipo podemos hacer dos métodos distintos hacer la modificación mediante una selección aleatoria en cualquier $x_{i}$ con valores aleatorios que van de $[min,max]$ y la otra que itera sobre cada $x_{i}$ bajo una función de probabilidad cuyo valor es pequeño y si se genera un valor aleatorio cuyo valor compite en la función de probabilidad y este es menor se generara el valor aleatorio en el intervalo del método anterior.
 \subsubsection{Aleatoria para fenotipo binario}
-Para esta mutación se hara uso de un valor de probabilidad pequeño de modo en que se debe obtener un valor pequeño de tal modo que este significara que hay una modificación sobre cada bit particular $b_{i}={0,1}$ de tal forma en que se puede realizar esto con cada indice $b_{i}$ o se puede iterar sobre todos y cada uno de ellos
+Para esta mutación se hará uso de un valor de probabilidad pequeño de modo en que se debe obtener un valor pequeño de tal modo que este significara que hay una modificación sobre cada bit particular $b_{i}={0,1}$ de tal forma en que se puede realizar esto con cada índice $b_{i}$ o se puede iterar sobre todos y cada uno de ellos
 \subsubsection{Aleatorio para fenotipo de orden}
 Para este tipo de mutación al igual que los anteriores podemos apoyarnos del uso del valor de probabilidad para mutar sobre dos valores $p_{i}$ que intercambia lugar con $p_{j}$ de tal modo en que mediante esta permutación podremos generar una nueva solución, por otro lado se puede realizar esta permutación una sola ocasión o realizarla como si se iterara sobre cada elemento de la solución es decir $N$ veces
 \subsection{Cruzamiento}
@@ -120,7 +120,7 @@ Es una forma de intercambiar información entre dos padres. Esta forma de cruce 
 \end{center}
 
 \subsubsection{Uniforme}
-Este tipo de cruzamiento se realiza bajo un vector con valores de probabilidad, destacando que cada elemento del arreglo tiene una probabilidad de cruza del $0.5$ por lo que generaran valores aleatorios en el vector de tal manera que si $v_{i}\geq 0.5$ este indice realiza la cruza de datos de ese indice.\\Un ejemplo de ello seria el siguiente:
+Este tipo de cruzamiento se realiza bajo un vector con valores de probabilidad, destacando que cada elemento del arreglo tiene una probabilidad de cruza del $0.5$ por lo que generaran valores aleatorios en el vector de tal manera que si $v_{i}\geq 0.5$ este índice realiza la cruza de datos de ese índice.\\Un ejemplo de ello seria el siguiente:
 \textbf{Se genera un vector con los siguientes datos}
 \begin{center}
   \begin{tabular}{|c|c|c|c|c|c|c|c|}
@@ -147,14 +147,14 @@ Este tipo de cruzamiento se realiza bajo un vector con valores de probabilidad, 
   \end{tabular}
 \end{center}
 \subsubsection{Aritmético}
-Para este tipo de algoritmo es necesario pensar en que nuestros dos vectores padres son valores reales los cuales van a ser cruzados a traves de un valor aleatorio $\alpha\in[0,1]$ de modo que actuaran como valores escalares para nuestros vectores, de tal forma que existe un segundo valor $\beta=1-\alpha$ formando la siguiente ecuación para realizar la cruza:\\\vspace{0.25cm}
+Para este tipo de algoritmo es necesario pensar en que nuestros dos vectores padres son valores reales los cuales van a ser cruzados a través de un valor aleatorio $\alpha\in[0,1]$ de modo que actuaran como valores escalares para nuestros vectores, de tal forma que existe un segundo valor $\beta=1-\alpha$ formando la siguiente ecuación para realizar la cruza:\\\vspace{0.25cm}
 Sean los vectores \\
 \[\displaystyle X^{1}={x_0^{1},x_1^{1},\cdots,x_N^{1}}\] \[\displaystyle X^{2}={x_0^{2},x_1^{2},\cdots,x_N^{2}}\]
 \[y=\alpha x^{1}+\beta x^{2}\]
 \subsection{Selección}
 \subsubsection{Torneo}
-Este modelo se trata de ir realizando un $k$ número de arreglos permutados de forma aleatoria de tamaño $N$ que es el tamaño dimensional de la respuesta de tal modo en que se busca seleccionar el valor indice de aquellos datos que esten mejor evaluados en el torneo, gráficamente el torneo se ve de la siguiente manera:\\
-\(\displaystyle k=2\), entonces \(\displaystyle [0.5,1,4,0.1]\), la generación aleatoria, generaria lo siguiente por ejempo:\\
+Este modelo se trata de ir realizando un $k$ número de arreglos permutados de forma aleatoria de tamaño $N$ que es el tamaño dimensional de la respuesta de tal modo en que se busca seleccionar el valor índice de aquellos datos que estén mejor evaluados en el torneo, gráficamente el torneo se ve de la siguiente manera:\\
+\(\displaystyle k=2\), entonces \(\displaystyle [0.5,1,4,0.1]\), la generación aleatoria, generaría lo siguiente por ejemplo:\\
 \begin{center}
   \begin{tabular}{|c|c|c|c|}
     \hline
@@ -163,7 +163,7 @@ Este modelo se trata de ir realizando un $k$ número de arreglos permutados de f
     4&2&3&1\\
     \hline
   \end{tabular}\\
-  \textit{Se accedera a los valores de cada subindice del arreglo en su valor y se evaluara el menor valor vía indices es decir de arriba hacia abajo para seleccionar al mejor.}\\
+  \textit{Se accederá a los valores de cada subíndice del arreglo en su valor y se evaluara el menor valor vía índices es decir de arriba hacia abajo para seleccionar al mejor.}\\
   \begin{tabular}{|c|c|c|c|}
     \hline
     4&1&4&1\\
@@ -177,14 +177,14 @@ Para este tipo de selección se usa la función
 Donde:\\
 \(\displaystyle p_i\) es la probabilidad de ser seleccionado \(\displaystyle p_{i}\)\\\vspace{0.25cm}
 \(\displaystyle f_{i}\) es la función de fitness para ese valor de \(\displaystyle i\)\\\vspace{0.25cm}
-Por tanto al obtener esto tendremos un pequeño sesgo probabilistico a la hora de seleccionar un área por tanto definiremos al error selectivo como:
+Por tanto al obtener esto tendremos un pequeño sesgo probabilístico a la hora de seleccionar un área por tanto definiremos al error selectivo como:
 \[n_{i}=p_i\;\times\;N\;=\;\left\lfloor\;N\;\times\;\cfrac{f_{i}}{\sum_{j=1}^{N}f_{j}}\right\rfloor\]
 En esta ecuación nos podremos percatar de que redondeamos el error a un valor entero, lo que significa que cada individuo podría perderse cualquiera que sea su valor relativo de aptitud.
 
 \subsubsection{Por Emparejamiento Variado Inverso (NAM)}
 Un padre se escoge aleatoriamente, para el otro selecciona Nnam padres y escoge el más lejano al primer (\(\displaystyle Nnam=3,5,\cdots\)). Está orientado a generar diversidad.
 \section{Impacto en convergencia a la solución con GA}
-Como bien sabemos la existencia de un algoritmo bioinspirado en la selección natural y el la biología en si misma nos hace pensar que en cuestion de generación de soluciones ya sean aleatorias en cada nueva iteración o con alguna conservación en sus estados es de suma importancia ya que de este modo podemos explorar ya sea de forma continua o paralela el espacio de soluciones de modo en que se puede converger en la solución al problema de una forma más rápida y sencilla, por lo que a mayor tamaño de población podría significar mayor procesamiento pero si se implementa alguna técnica de paralelización pueda que en tiempo sea casi aproximado a las soluciones de los otros algoritmos heurísticos como lo son Random-Mutation Hill-Climbing (RMHC) o Simulated Annelling (SA).
+Como bien sabemos la existencia de un algoritmo bioinspirado en la selección natural y el la biología en si misma nos hace pensar que en cuestión de generación de soluciones ya sean aleatorias en cada nueva iteración o con alguna conservación en sus estados es de suma importancia ya que de este modo podemos explorar ya sea de forma continua o paralela el espacio de soluciones de modo en que se puede converger en la solución al problema de una forma más rápida y sencilla, por lo que a mayor tamaño de población podría significar mayor procesamiento pero si se implementa alguna técnica de paralelización pueda que en tiempo sea casi aproximado a las soluciones de los otros algoritmos heurísticos como lo son Random-Mutation Hill-Climbing (RMHC) o Simulated Annelling (SA).
 
 
 \section{Estructuras de datos necesarias para la implementación en problemas}
@@ -199,7 +199,7 @@ Donde:\\
 \(\displaystyle h(x_{i})\;es\;una\;funci\acute{o}n\;la\;cual\;devuelve\;el\;beneficio\;total\;de\;los\;objetos\;x_{i}\;en\;la\;mochila\)\\\vspace{0.25cm}
 \(\displaystyle p(x_{i})\;es\;una\;funci\acute{o}n\;la\;cual\;devuelve\;el\;peso\;total\;de\;los\;objetos\;x_{i}\;en\;la\;mochila\)\\\vspace{0.25cm}
 De modo que para los operadores GA en este problema el genotipo puede ser la cadena de bits de modo que el fenotipo que representa de la cadena es la representación de un valor binario de si el objeto es incluido o no es incluido en la solución.\\
-Finalmente la estructura de datos para esta solución es un arreglo binario el cual contendra un valor $0$ o $1$ de tal forma en que se pueda veter cada arreglo a la selección y torneo de GA, por tanto así podria calcularle los valores de su función de maximización de beneficio y de tratar de minimizar o no sobrepasar el peso máximo de la mochila
+Finalmente la estructura de datos para esta solución es un arreglo binario el cual contendrá un valor $0$ o $1$ de tal forma en que se pueda tener cada arreglo a la selección y torneo de GA, por tanto así podría calcularle los valores de su función de maximización de beneficio y de tratar de minimizar o no sobrepasar el peso máximo de la mochila
 \subsection{Travel Salesman Problem (TSP)}
 Modelación Matemática\\
 Sea la función
@@ -219,7 +219,7 @@ Donde:\\
 \(\displaystyle x_{i}\in\mathbb{R}\)\\\vspace{0.25cm}Descrito en los intervalos \(\displaystyle x_{i}\in[-10,10]\)\\\vspace{0.25cm}
 Donde sabemos que los puntos mínimos de cada $x_{i}$ los encontramos cuando el valor asignado a el es $x_{i}=0$ por lo tanto el ir variando los valores para que el programa se acerque hacia $0$\\\vspace{0.25cm}
 Por lo tanto para este GA podemos implementarlo con un fenotipo de valor real que vaya del intervalo indicado.\\
-Para este problema podemos pensar en un arreglo de valores reales los cuales nos permitiran realizar o almacenar las soluciones para así pasar por cada etapa del GA.
+Para este problema podemos pensar en un arreglo de valores reales los cuales nos permitirán realizar o almacenar las soluciones para así pasar por cada etapa del GA.
 \section{Equipo de ejecución para la solución de los problemas}
 \subsection{Características de Hardware}
 \begin{itemize}
@@ -255,7 +255,8 @@ Para el lenguaje seleccionado (Ruby) es difícil la realización de una interfaz
   \includegraphics[scale=0.5]{imgs/ventana-func-sol.png}
   \\\textit{Figura 6: Ventana de la interfaz con la solución dada por el programa}
 \end{center}
-
+\section{Conclusión}
+La implementación de una heurística bioinspirada en la biología nos permite verificar y analizar que para la búsqueda de una solución con múltiples alternativas puede ser más sencillo llegar a una convergencia donde el problema pueda tener una cercanía más a una solución de tipo determinista bajo una metodología heurística.
 
 
 \end{document}
