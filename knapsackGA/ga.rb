@@ -24,10 +24,10 @@ class GA
     array
   end
 
-  def algoritmo(num=0)
+  def algoritmo(poblacion=0)
     arr_sol=[]
     thread=[]
-    num.times{|i|
+    poblacion.times{|i|
       # Generacion de soluciones via paralela de modo en que se puede
       #   realizar en menor tiempo el encuentro de soluciones validas
       thread<<Thread.new{
@@ -45,6 +45,7 @@ class GA
       }
     }
     thread.each{|i|i.join}
+    thread.clear()
     #puts "arreglo #{arr_sol.to_s}"
     iter=0
     while iter<@max_iteracion
@@ -102,6 +103,22 @@ class GA
           end
         end
       end
+      arr_sol_new=[arr_sol[index],arr_sol[index2]]
+      thread.clear
+      (poblacion-2).times{|i|
+        thread<<Thread.new{
+          ban=true
+          while ban
+            sol=gen_sol()
+            if(@peso_max>=@mochila.get_peso(sol))
+              arr_sol_new.push(sol)
+              ban=false
+            end
+          end
+        }
+      }
+      thread.each{|i|i.join}
+      arr_sol=arr_sol_new
       iter+=1
     end
     str="Objetos de la mochila\n#{@mochila.get_objetos}\n\t"+
