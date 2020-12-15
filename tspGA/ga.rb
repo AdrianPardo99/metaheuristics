@@ -83,6 +83,13 @@ class GA
       elsif string.include?(:p2c2) && fp2>=ch2
         arr_sol[p2]=c2
       end
+      arr_sol_new=[arr_sol[p1],arr_sol[p2]]
+      thread.clear
+      (poblacion-2).times{|i|
+        thread<<Thread.new{arr_sol_new.push(gen_sol())}
+      }
+      thread.each{|i|i.join}
+      arr_sol=arr_sol_new
       iter+=1
     end
     sol=""
