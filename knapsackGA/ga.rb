@@ -58,61 +58,63 @@ class GA
     # Modificar para N evaluaciones y verificar cual es la mejor poblacion
     #  y en que generacion fue generada la mejor evaluacion
     while iter<@max_iteracion
-      s=Seleccion.new(arr_ben)
-      #puts "Seleccion por ruleta \n\tPadre 1: #{}\t"+
-      #  "Padre 2: #{}\n"
-      index=s.ruleta()
-      index2=s.ruleta()
-      # Verificar si no hay cruza no debe realizar la operacion
-      c=Crossover.new(arr_sol[index],arr_sol[index2])
-      c.uniforme()
-      hijo1=c.child1
-      hijo2=c.child2
-      #puts "\tPadre 1: #{arr_sol[index]}\tPadre 2: #{arr_sol[index2]}\n\t"+
-      #  "Hijo 1: #{hijo1.to_s}\tHijo 2: #{hijo2.to_s}"
-      # Si son
-      m=Mutation.new(hijo1)
-      m.mut_bin(0.05)
-      hijo1=m.array
-      m.array=hijo2
-      m.mut_bin(0.05)
-      hijo2=m.array
-      ph1=@mochila.get_peso(hijo1)
-      bh1=@mochila.get_beneficio(hijo1)
-      ph2=@mochila.get_peso(hijo2)
-      bh2=@mochila.get_beneficio(hijo2)
-      #puts "\n\tHM1: #{hijo1.to_s}\tHM2: #{hijo2.to_s}\n\tPeso: #{ph1} y "+
-      #   "Beneficio: #{bh1} de HM1\n\tPeso: #{ph2} y Beneficio: #{bh2} de HM2"
-      r=Replacement.new([@mochila.get_beneficio(arr_sol[index])],
-        [@mochila.get_beneficio(arr_sol[index2])],[bh1],[bh2])
-      string=r.elitism(1)
-      if !string.include?(:p1) || !string.include?(:p2)
-        if !string.include?:p1
-          if string.include?:p2
-            arr_sol[index]=arr_sol[index2]
-            arr_ben[index]=arr_ben[index2]
-          elsif string.include?(:c1) && ph1<=@peso_max
-            arr_sol[index]=hijo1
-            arr_ben[index]=bh1
-          elsif string.include?(:c2) && ph2<=@peso_max
-            arr_sol[index]=hijo2
-            arr_ben[index]=bh2
+      #  Probabilidad de realizar la mutacion y seleccion de datos...
+      if rand()<0.5
+        s=Seleccion.new(arr_ben)
+        #puts "Seleccion por ruleta \n\tPadre 1: #{}\t"+
+        #  "Padre 2: #{}\n"
+        index=s.ruleta()
+        index2=s.ruleta()
+        # Verificar si no hay cruza no debe realizar la operacion
+        c=Crossover.new(arr_sol[index],arr_sol[index2])
+        c.uniforme()
+        hijo1=c.child1
+        hijo2=c.child2
+        #puts "\tPadre 1: #{arr_sol[index]}\tPadre 2: #{arr_sol[index2]}\n\t"+
+        #  "Hijo 1: #{hijo1.to_s}\tHijo 2: #{hijo2.to_s}"
+        # Si son
+        m=Mutation.new(hijo1)
+        m.mut_bin(0.05)
+        hijo1=m.array
+        m.array=hijo2
+        m.mut_bin(0.05)
+        hijo2=m.array
+        ph1=@mochila.get_peso(hijo1)
+        bh1=@mochila.get_beneficio(hijo1)
+        ph2=@mochila.get_peso(hijo2)
+        bh2=@mochila.get_beneficio(hijo2)
+        #puts "\n\tHM1: #{hijo1.to_s}\tHM2: #{hijo2.to_s}\n\tPeso: #{ph1} y "+
+        #   "Beneficio: #{bh1} de HM1\n\tPeso: #{ph2} y Beneficio: #{bh2} de HM2"
+        r=Replacement.new([@mochila.get_beneficio(arr_sol[index])],
+          [@mochila.get_beneficio(arr_sol[index2])],[bh1],[bh2])
+        string=r.elitism(1)
+        if !string.include?(:p1) || !string.include?(:p2)
+          if !string.include?:p1
+            if string.include?:p2
+              arr_sol[index]=arr_sol[index2]
+              arr_ben[index]=arr_ben[index2]
+            elsif string.include?(:c1) && ph1<=@peso_max
+              arr_sol[index]=hijo1
+              arr_ben[index]=bh1
+            elsif string.include?(:c2) && ph2<=@peso_max
+              arr_sol[index]=hijo2
+              arr_ben[index]=bh2
+            end
           end
-        end
-        if !string.include?:p2
-          if string.include?:p1
-            arr_sol[index2]=arr_sol[index]
-            arr_ben[index2]=arr_ben[index]
-          elsif string.include?(:c1) && ph1<=@peso_max
-            arr_sol[index2]=hijo1
-            arr_ben[index2]=bh1
-          elsif string.include?(:c2) && ph2<=@peso_max
-            arr_sol[index2]=hijo2
-            arr_ben[index2]=bh2
+          if !string.include?:p2
+            if string.include?:p1
+              arr_sol[index2]=arr_sol[index]
+              arr_ben[index2]=arr_ben[index]
+            elsif string.include?(:c1) && ph1<=@peso_max
+              arr_sol[index2]=hijo1
+              arr_ben[index2]=bh1
+            elsif string.include?(:c2) && ph2<=@peso_max
+              arr_sol[index2]=hijo2
+              arr_ben[index2]=bh2
+            end
           end
         end
       end
-      
       iter+=1
     end
     str="Objetos de la mochila\n#{@mochila.get_objetos}\n\t"+

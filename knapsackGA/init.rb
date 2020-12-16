@@ -2,7 +2,7 @@
 require "./ga.rb"
 require "./mochila.rb"
 require "./fileLoader.rb"
-puts "Hola bienvenido al Knapsack Problem"
+puts "Hola bienvenido al Knapsack Problem con GA Estacionarios"
 peso=10
 max_iteration=100
 poblacion=10
