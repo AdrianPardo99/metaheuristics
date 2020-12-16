@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require "./fileLoader.rb"
 require "./ga.rb"
-puts "Hola bienvenido al Travel Salesman Problem TSP"
+puts "Hola bienvenido al Travel Salesman Problem TSP con GA Estacionario"
 max_iteration=100
 poblacion=10
 

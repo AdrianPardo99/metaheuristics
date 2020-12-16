@@ -42,52 +42,54 @@ class GA
       #  "\n\tCosto: #{arr_cost[-1]}"
     }
     while iter<@max_iteracion
-      s=Seleccion.new(arr_sol)
-      s.table_cost()
-      arrp=s.nam
-      p1=arrp[0]
-      p2=arrp[1]
-      #puts "Seleccion por NAM cuyos valores tengan una distancia grande\n"+
-      #      "\tPadre 1 index: #{p1}\tPadre 2 index: #{p2}\n"+
-      #      "\tPadre 1: #{arr_sol[p1]}\tPadre 2: #{arr_sol[p2]}"
-      c=Crossover.new(arr_sol[p1],arr_sol[p2])
-      # Genera una ventana aleatoria para la seleccion de casillas
-      c.order_crossover(rand(1..arr_sol[p1].length))
-      c1=c.child1
-      c2=c.child2
-      #puts "\tHijo 1: #{c1.to_s}\tHijo 2: #{c2.to_s}"
-      m=Mutation.new(c1)
-      m.mut_ord(0.05)
-      c1=m.array
-      m.array=c2
-      m.mut_ord(0.05)
-      c2=m.array
-      #puts "\tHM1: #{c1.to_s}\tHM2: #{c2.to_s}"
-      ch1=@tsp.calculate_cost(c1)
-      ch2=@tsp.calculate_cost(c2)
-      fp1=@tsp.calculate_cost(arr_sol[p1])
-      fp2=@tsp.calculate_cost(arr_sol[p2])
-      r=Replacement.new(arr_sol[p1],arr_sol[p2],c1,c2)
-      string=r.crowding(1)
-      #puts string.to_s
-      if string.include?(:p1c1) && fp1>=ch1
-        arr_sol[p1]=c1
-        arr_cost[p1]=ch1
-      elsif string.include?(:p1c2) && fp1>=ch2
-        arr_sol[p1]=c2
-        arr_cost[p1]=ch2
-      elsif string.include?(:p1p2) && fp1>=fp2
-        arr_sol[p1]=arr_sol[p2]
-        arr_sol[p2]=c1
-        arr_cost[p1]=fp2
-        arr_cost[p2]=ch1
-      end
-      if string.include?(:p2c1) && fp2>=ch1
-        arr_sol[p2]=c1
-        arr_cost[p2]=ch1
-      elsif string.include?(:p2c2) && fp2>=ch2
-        arr_sol[p2]=c2
-        arr_cost[p2]=ch2
+      if rand<0.5
+        s=Seleccion.new(arr_sol)
+        s.table_cost()
+        arrp=s.nam
+        p1=arrp[0]
+        p2=arrp[1]
+        #puts "Seleccion por NAM cuyos valores tengan una distancia grande\n"+
+        #      "\tPadre 1 index: #{p1}\tPadre 2 index: #{p2}\n"+
+        #      "\tPadre 1: #{arr_sol[p1]}\tPadre 2: #{arr_sol[p2]}"
+        c=Crossover.new(arr_sol[p1],arr_sol[p2])
+        # Genera una ventana aleatoria para la seleccion de casillas
+        c.order_crossover(rand(1..arr_sol[p1].length))
+        c1=c.child1
+        c2=c.child2
+        #puts "\tHijo 1: #{c1.to_s}\tHijo 2: #{c2.to_s}"
+        m=Mutation.new(c1)
+        m.mut_ord(0.05)
+        c1=m.array
+        m.array=c2
+        m.mut_ord(0.05)
+        c2=m.array
+        #puts "\tHM1: #{c1.to_s}\tHM2: #{c2.to_s}"
+        ch1=@tsp.calculate_cost(c1)
+        ch2=@tsp.calculate_cost(c2)
+        fp1=@tsp.calculate_cost(arr_sol[p1])
+        fp2=@tsp.calculate_cost(arr_sol[p2])
+        r=Replacement.new(arr_sol[p1],arr_sol[p2],c1,c2)
+        string=r.crowding(1)
+        #puts string.to_s
+        if string.include?(:p1c1) && fp1>=ch1
+          arr_sol[p1]=c1
+          arr_cost[p1]=ch1
+        elsif string.include?(:p1c2) && fp1>=ch2
+          arr_sol[p1]=c2
+          arr_cost[p1]=ch2
+        elsif string.include?(:p1p2) && fp1>=fp2
+          arr_sol[p1]=arr_sol[p2]
+          arr_sol[p2]=c1
+          arr_cost[p1]=fp2
+          arr_cost[p2]=ch1
+        end
+        if string.include?(:p2c1) && fp2>=ch1
+          arr_sol[p2]=c1
+          arr_cost[p2]=ch1
+        elsif string.include?(:p2c2) && fp2>=ch2
+          arr_sol[p2]=c2
+          arr_cost[p2]=ch2
+        end
       end
       iter+=1
     end
