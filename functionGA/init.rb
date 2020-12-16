@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
 require "./ga.rb"
-puts "Hola bienvenido al Knapsack Problem"
+puts "Hola bienvenido a optimizacion de funciones en D dimensiones"+
+      " con GA Estacionario"
 dimension=3
 max_iteration=100
 poblacion=10
