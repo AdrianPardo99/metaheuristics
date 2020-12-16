@@ -28,13 +28,13 @@ class GA
     }
     thread.each{|i|i.join}
     iter=0
+    arr_eval=[]
+    arr_sol.each_with_index{|i,j|
+      arr_eval.push(@p.get_eval(i))
+      #puts "Solucion #{j}, con valores: #{@p.get_coord(i)}\tevaludo: "+
+      #  "#{sprintf("%.2f",arr_eval[-1])}"
+    }
     while iter<@max_iteration
-      arr_eval=[]
-      arr_sol.each_with_index{|i,j|
-        arr_eval.push(@p.get_eval(i))
-        #puts "Solucion #{j}, con valores: #{@p.get_coord(i)}\tevaludo: "+
-        #  "#{sprintf("%.2f",arr_eval[-1])}"
-      }
       s=Seleccion.new(arr_eval)
       p1=s.torneo
       p2=s.torneo
@@ -63,29 +63,28 @@ class GA
         if !string.include?:p1
           if string.include?:p2
             arr_sol[p1]=arr_sol[p2]
+            arr_eval[p1]=arr_eval[p2]
           elsif string.include?(:c1)
             arr_sol[p1]=c1
+            arr_eval[p1]=ec1
           elsif string.include?(:c2)
             arr_sol[p1]=c2
+            arr_eval[p1]=ec2
           end
         end
         if !string.include?:p2
           if string.include?:p1
             arr_sol[p2]=arr_sol[p1]
+            arr_eval[p2]=arr_eval[p1]
           elsif string.include?(:c1)
             arr_sol[p2]=c1
+            arr_eval[p2]=ec1
           elsif string.include?(:c2)
             arr_sol[p2]=c2
+            arr_eval[p2]=ec2
           end
         end
       end
-      arr_sol_new=[arr_sol[p1],arr_sol[p2]]
-      thread.clear
-      (poblacion-2).times{|i|
-        thread<<Thread.new{arr_sol_new.push(gen_sol)}
-      }
-      thread.each{|i|i.join}
-      arr_sol=arr_sol_new
       iter+=1
     end
     mejor=0
