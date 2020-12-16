@@ -120,7 +120,7 @@ class GA
       arr_sol.each_with_index{|i,j|
         if@mochila.get_beneficio(i)>=mejor_finess
           mejor_finess=@mochila.get_beneficio(i)
-          str_solucion="Solucion en generacion #{iter} con indice #{j}:\t#{i.to_s}\n\t"+
+          str_solucion="Mejor solucion en generacion #{iter} con indice #{j}:\t#{i.to_s}\n\t"+
             "Con peso: #{@mochila.get_peso(i)} y beneficio #{mejor_finess}\n"+
             "#{@mochila.get_selected_sol(i)}"
         end
