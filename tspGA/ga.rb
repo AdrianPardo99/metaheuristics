@@ -35,13 +35,13 @@ class GA
     }
     thread.each{|i|i.join}
     iter=0
+    arr_cost=[]
+    arr_sol.each_with_index{|i,j|
+      arr_cost.push(@tsp.calculate_cost(i))
+      #puts "Solucion #{j}\t#{i.to_s}\nCamino:\n#{@tsp.marca_trayecto(i)}"+
+      #  "\n\tCosto: #{arr_cost[-1]}"
+    }
     while iter<@max_iteracion
-      arr_cost=[]
-      arr_sol.each_with_index{|i,j|
-        arr_cost.push(@tsp.calculate_cost(i))
-        #puts "Solucion #{j}\t#{i.to_s}\nCamino:\n#{@tsp.marca_trayecto(i)}"+
-        #  "\n\tCosto: #{arr_cost[-1]}"
-      }
       s=Seleccion.new(arr_sol)
       s.table_cost()
       arrp=s.nam
@@ -72,24 +72,23 @@ class GA
       #puts string.to_s
       if string.include?(:p1c1) && fp1>=ch1
         arr_sol[p1]=c1
+        arr_cost[p1]=ch1
       elsif string.include?(:p1c2) && fp1>=ch2
         arr_sol[p1]=c2
+        arr_cost[p1]=ch2
       elsif string.include?(:p1p2) && fp1>=fp2
         arr_sol[p1]=arr_sol[p2]
         arr_sol[p2]=c1
+        arr_cost[p1]=fp2
+        arr_cost[p2]=ch1
       end
       if string.include?(:p2c1) && fp2>=ch1
         arr_sol[p2]=c1
+        arr_cost[p2]=ch1
       elsif string.include?(:p2c2) && fp2>=ch2
         arr_sol[p2]=c2
+        arr_cost[p2]=ch2
       end
-      arr_sol_new=[arr_sol[p1],arr_sol[p2]]
-      thread.clear
-      (poblacion-2).times{|i|
-        thread<<Thread.new{arr_sol_new.push(gen_sol())}
-      }
-      thread.each{|i|i.join}
-      arr_sol=arr_sol_new
       iter+=1
     end
     sol=""
