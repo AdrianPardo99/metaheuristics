@@ -59,7 +59,7 @@
      \hfil\thepage\hfil}\vss}}
 \lstset{style=mystyle}
 
-\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad No. 17\\Solución de problemas mediante Algoritmos Genéticos Estacionarios\\Curso impartido por: Dra Yenny Villuendas Rey}
+\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad No. 17\\Solución de problemas mediante Algoritmos Genéticos Generacionales\\Curso impartido por: Dra Yenny Villuendas Rey}
 
 \author{Adrian González Pardo}
 
@@ -184,7 +184,8 @@ En esta ecuación nos podremos percatar de que redondeamos el error a un valor e
 \subsubsection{Por Emparejamiento Variado Inverso (NAM)}
 Un padre se escoge aleatoriamente, para el otro selecciona Nnam padres y escoge el más lejano al primer (\(\displaystyle Nnam=3,5,\cdots\)). Está orientado a generar diversidad.
 \section{Impacto en convergencia a la solución con GA}
-Como bien sabemos la existencia de un algoritmo bioinspirado en la selección natural y el la biología en si misma nos hace pensar que en cuestión de generación de soluciones ya sean aleatorias en cada nueva iteración o con alguna conservación en sus estados es de suma importancia ya que de este modo podemos explorar ya sea de forma continua o paralela el espacio de soluciones de modo en que se puede converger en la solución al problema de una forma más rápida y sencilla, por lo que a mayor tamaño de población podría significar mayor procesamiento pero si se implementa alguna técnica de paralelización pueda que en tiempo sea casi aproximado a las soluciones de los otros algoritmos heurísticos como lo son Random-Mutation Hill-Climbing (RMHC) o Simulated Annelling (SA).
+Como bien sabemos la existencia de un algoritmo bioinspirado en la selección natural y el la biología en si misma nos hace pensar que en cuestión de generación de soluciones ya sean aleatorias en cada nueva iteración o con alguna conservación en sus estados es de suma importancia ya que de este modo podemos explorar ya sea de forma continua o paralela el espacio de soluciones de modo en que se puede converger en la solución al problema de una forma más rápida y sencilla, por lo que a mayor tamaño de población podría significar mayor procesamiento pero si se implementa alguna técnica de paralelización pueda que en tiempo sea casi aproximado a las soluciones de los otros algoritmos heurísticos como lo son Random-Mutation Hill-Climbing (RMHC) o Simulated Annelling (SA).\\
+Para este caso es necesario guardar en memoria cual fue la mejor generación y la mejor respuesta arrojada por el programa, por lo que es necesario conocer y reconocer la implementación de algunas variables auxiales las cuales almacenaran los datos previamente utilizados
 
 
 \section{Estructuras de datos necesarias para la implementación en problemas}
