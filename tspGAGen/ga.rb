@@ -108,7 +108,16 @@ class GA
       }
       iter+=1
     end
-    str_solucion
+    sol=""
+    mejor=0
+    arr_sol.each_with_index{|i,j|
+      if @tsp.calculate_cost(i)<=@tsp.calculate_cost(arr_sol[mejor])
+        mejor=j
+        sol="Solucion mejor obtenida de la ultima generacion con indice #{j}:\nCamino:\n"+
+            "#{@tsp.marca_trayecto(i)}\nY costo: #{@tsp.calculate_cost(i)}"
+      end
+    }
+    "#{str_solucion}\n#{sol}"
   end
 end
 
