@@ -129,6 +129,18 @@ class GA
     end
     str="Objetos de la mochila\n#{@mochila.get_objetos}\n\t"+
       "Maximo peso #{@peso_max}"
-    str+="\n#{str_solucion}"
+      sol=""
+      mejor=0
+      arr_sol.each_with_index{|i,j|
+        if @mochila.get_beneficio(i)>=@mochila.get_beneficio(arr_sol[mejor])
+          mejor=j
+          sol="Solucion mejor obtenida de la ultima generacion con indice #{j}: #{i.to_s}\n\t"+
+            "Con peso #{@mochila.get_peso(i)}"+
+            " y beneficio #{@mochila.get_beneficio(i)}\n"+
+            "#{@mochila.get_selected_sol(i)}"
+        end
+        #"\n#{@mochila.get_selected_sol(i)}"
+      }
+    str+="\n#{str_solucion}\n#{sol}"
   end
 end
