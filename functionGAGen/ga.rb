@@ -97,13 +97,23 @@ class GA
         if @p.get_eval(i)<=mejor_eval
           mejor_eval=@p.get_eval(i)
           str_solucion="Mejor solucion en generacion #{iter} con indice #{j}\n"+
-              "Con puntos: #{@p.get_coord(i)} y funcion evaluada:"+
+              "Con puntos: #{@p.get_coord(i)} y funcion evaluada: "+
               "#{sprintf("%.2f",mejor_eval)}"
         end
       }
       iter+=1
     end
-    str_solucion
+    sol=""
+    mejor=0
+    arr_sol.each_with_index{|i,j|
+      if @p.get_eval(i)<=@p.get_eval(arr_sol[mejor])
+        mejor=j
+        sol="Solucion mejor obtenida de la ultima generacion con indice #{j}\n"+
+            "En los puntos: #{@p.get_coord(i)} y funcion evaluada:"+
+            " #{sprintf("%.2f",@p.get_eval(i))}"
+      end
+    }
+    "#{str_solucion}\n#{sol}"
   end
 end
 
