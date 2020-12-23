@@ -1,0 +1,170 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\usepackage[document]{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=3
+}
+\def\fillandplacepagenumber{%
+ \par\pagestyle{empty}%
+ \vbox to 0pt{\vss}\vfill
+ \vbox to 0pt{\baselineskip0pt
+   \hbox to\linewidth{\hss}%
+   \baselineskip\footskip
+   \hbox to\linewidth{%
+     \hfil\thepage\hfil}\vss}}
+\lstset{style=mystyle}
+
+\title{Centro de Investigación en Cómputo\\Instituto Politécnico Nacional\\Metaheurísticas\\Actividad 18: Solución de problemas mediante Algoritmos Genéticos\\Curso impartido por: Dra Yenny Villuendas Rey}
+
+\author{Adrian González Pardo}
+
+\date{\today}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+\maketitle
+\section{Funciones a optimizar}
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    Función a evaluar & Forma o descripción de la función\\
+    \hline
+    Alpine Function & \(\displaystyle f_{1}(x)=\sum_{i=1}^{D} \left|x_{i}\sin(x_{i})+0.1x_{i}\right|\) \\
+    \hline
+    Dixon \& Price Function & \(\displaystyle f_{2}(x)=(x_{1}-1)^{2}\sum_{i=2}^{D} i\left(2\sin(x_{i})-x_{i-1}\right)^{2}\)\\
+    \hline
+    Quintic Function & \(\displaystyle f_{3}(x)=\sum_{i=1}^{D} \left|x_{i}^{5}-3x_{i}^{4}+4x_{i}^3-2x_{i}^{2}-10x_{i}-4\right|\)\\
+    \hline
+    Schwefel 2.23 Function & \(\displaystyle f_{4}(x)=\sum_{i=1}^{D}x_{i}^{10}\)\\
+    \hline
+    Streched V Sine Wave Function & \(\displaystyle f_{5}(x)=\sum_{i=1}^{D-1}(x_{i+1}^{2}+x_{i}^{2})^{0.25}\left[\sin^{2}\left\{50(x_{i+1}^{2}+x_{i}^{2})^{0.1}\right\}+1\right]\)\\
+    \hline
+    Sum Squares Function & \(\displaystyle f_{6}(x)=\sum_{i=1}^{D}ix_{i}^{2}\)\\
+    \hline
+  \end{tabular}
+\end{center}
+\clearpage
+\section{Código de implementación}
+El código fue implementado en lenguaje Ruby para el cálculo de las funciones en $D$ dimensiones y a traves de 1 indice se determina la selección de que función se trabajara.
+\subsection{Función que selecciona que $f(x)$ trabajara}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion0.rb}
+\end{center}
+\subsection{Función Alpine}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion1.rb}
+\end{center}
+
+\subsection{Función Dixon \& Price}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion2.rb}
+\end{center}
+
+\subsection{Función Quintic}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion3.rb}
+\end{center}
+
+\subsection{Función Schwefel}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion4.rb}
+\end{center}
+
+\subsection{Función Streched}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion5.rb}
+\end{center}
+
+\subsection{Función Sum Squares}
+\begin{center}
+  \lstinputlisting[language=Ruby]{funcion6.rb}
+\end{center}
+\section{Características de Hardware}
+\begin{itemize}
+  \item Procesador Intel Core i5-3210M CPU 2.50GHz
+  \item Memoria RAM DDR3 12 GB
+  \item Sistema Operativo Fedora 32 x86\_64
+  \item Ruby 2.7.2p137 para la ejecución
+\end{itemize}
+\section{Características de ejecución:}
+\begin{itemize}
+  \item Dimensiones de la función $10$ y $30$
+  \item Máximo número de iteraciones $500$
+  \item Poblacion $10$
+  \item Adaptación de intervalos de mutación dependiendo la función a optimizar
+  \begin{itemize}
+    \item Alpine mutación $\forall x_{i}\in[-10/random(1\;a\;8),10/random(1\;a\;7)]$
+    \item Quintic mutación $\forall x_{i}\in[2.47,2.479]$
+    \item Suma de cuadrados $\forall x_{i}\in[-5/(random(1\;a\;40)*5),5/(random(1\;a\;39)*5)]$
+    \item Resto de funciones $\forall x_{i}\in[-10(/random(1\;a\;30)*j),10/(random(1\;a\;7)*j)]$ tal que $j$ es el número de función que le corresponde trabajar al algoritmo
+  \end{itemize}
+  \item Variación en el tipo de algoritmo genético fue utilizado para la resolución de cada problema
+  \begin{itemize}
+    \item \textit{Alpine, Quintic, Streched }GA Estacionario
+    \item \textit{Dixon, Schwefel, Sum Cuadrados} GA Generacional
+  \end{itemize}
+  \item Variación en operador de seleccion por función
+  \begin{itemize}
+    \item \textit{Alpine, Schwefel} Selección por torneo
+    \item \textit{Dixon, Streched} Selección por ruleta
+    \item \textit{Quintic, Sum Cuadrados} Selección proporcional
+  \end{itemize}
+\end{itemize}
+\begin{landscape}
+  \includegraphics[scale=0.5]{imgs/tablas.png}
+  \begin{center}
+    \textit{Figura 1: Tabla de resultados obtenidos de los algoritmos genéticos}
+  \end{center}
+  \section{Conclusiones}
+  La implementación y planteamiento de nuevos operadores que permite crear o encontrar soluciones a funciones cuyos puntos críticos de minimización están definidos en intervalos muy fijos, fueron encontrados gracias a operadores aleatorios y fijos que permiten apoyar a la mutación de cada componente de la función a converger de forma rápida o esperada en un valor cercano a $0$ de modo en que es sencillo de pensar que se puede computar de forma sencilla y que se obtenga una respuesta teóricamente rápida y aceptable.
+  \fillandplacepagenumber
+
+\end{landscape}
+
+\end{document}
