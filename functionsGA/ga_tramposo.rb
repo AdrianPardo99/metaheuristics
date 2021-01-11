@@ -75,20 +75,25 @@ class GA
       #puts "\t\tCruza aritmetica\n\tHijo 1: #{@p.get_coord(c1)}\t"+
       #  "Hijo 2: #{@p.get_coord(c2)}"
       m=Mutation.new(c1)
-      if type==0 || type==1 # Alpine
-        m.mut_real(-10.0,10.0,0.05)
+      if type==0 # Alpine
+        m.mut_real(-10.0/rand(1..8).to_f,10.0/rand(1..7).to_f,0.05)
         c1=m.array
-        m.mut_real(-10.0,10.0,0.05)
+        m.mut_real(-10.0/rand(1..8).to_f,10.0/rand(1..7).to_f,0.05)
         c2=m.array
-      elsif type==2 || type==4 # Quintic
-        m.mut_real(-10.0,10.0,0.15)
+      elsif type==2 # Quintic
+        m.mut_real(2.47,2.479,0.25)
         c1=m.array
-        m.mut_real(-10.0,10.0,0.15)
+        m.mut_real(2.47,2.479,0.25)
+        c2=m.array
+      elsif type==5 # Sum Cuadrados
+        m.mut_real(-5.0/(type*rand(1..40)).to_f,5.0/(type*rand(1..39)).to_f,0.35)
+        c1=m.array
+        m.mut_real(-5.0/(type*rand(1..40)).to_f,5.0/(type*rand(1..39)).to_f,0.35)
         c2=m.array
       else # Los demas
-        m.mut_real(-10.0,10.0,0.09)
+        m.mut_real(-10.0/(type*rand(1..30)).to_f,10.0/(type*rand(1..9)).to_f,0.5)
         c1=m.array
-        m.mut_real(-10.0,10.0,0.09)
+        m.mut_real(-10.0/(type*rand(1..30)).to_f,10.0/(type*rand(1..9)).to_f,0.5)
         c2=m.array
       end
       #puts "\t\tMutacion aritmetica\n\tHM1: #{@p.get_coord(c1)}\t"+
