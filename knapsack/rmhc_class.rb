@@ -20,8 +20,9 @@ class Rmhc_class
     @mejor_iteracion=[-1]
     # Validacion de que la primer respuesta sea valida
     loop{
-      best_solution=@evolution.random_string(@mochila.lista_objetos)
-      cadena=@evolution.n_to_b_s(best_solution)
+      best_solution=@evolution.random_string(@mochila.lista_objetos) # 1 hasta N
+      cadena=@evolution.n_to_b_s(best_solution) # N <=> [x,x,x,x,x,x,x,x,x]
+      # cadena sirve para generar la primer sol aleatoria
       cadena.each_with_index{|v,i|
         if v==1
           @nueva_solucion.lista_objetos[i].selected=true
@@ -37,8 +38,9 @@ class Rmhc_class
     str="Solucion inicial\n#{@nueva_solucion.to_s}\nPeso total: #{@nueva_solucion.get_all_peso}\n"+
           "Con beneficio: #{@nueva_solucion.get_all_beneficio}\n"
     while i<@max_iteracion
-      locus=@evolution.get_locus(best_solution)
-      new_best=@evolution.evolution(locus,best_solution).to_i
+      locus=@evolution.get_locus(best_solution) # Mochila es N  best_s=N-5 locus=random(0,N-6) 3
+      new_best=@evolution.evolution(locus,best_solution).to_i # evo=random(3,N-5) 4
+      # times <=> for(i=0;i<new_best;i++)
       new_best.times{|j| @nueva_solucion.lista_objetos[j].selected=!@nueva_solucion.lista_objetos[j].selected}
       f_new=@nueva_solucion.get_all_beneficio
       peso_new=@nueva_solucion.get_all_peso
@@ -47,9 +49,9 @@ class Rmhc_class
         if f_new==f_best
           @mejor_iteracion.pop
         end
-        best_solution=new_best
-        f_best=f_new
-      elsif f_new>@nueva_solucion.peso_max
+        best_solution=new_best # Esta es la sol de arreglo de objetos actualizas clase mochila
+        f_best=f_new # Este es el beneficio de la mochila
+      else
         new_best.times{|j| @nueva_solucion.lista_objetos[j].selected=!@nueva_solucion.lista_objetos[j].selected}
       end
       i+=1
